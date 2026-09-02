@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/MossaJehad/UI-System-Selector-MCP/main/schemas/ui-system-config.json",
+  "title": "UI System Selector project configuration",
+  "description": "Persisted UI design-system selection used by UI System Selector MCP.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "selectedSystem",
+    "selectedAt"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "selectedSystem": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "framework": {
+      "type": "string",
+      "enum": [
+        "react",
+        "next",
+        "vue",
+        "nuxt",
+        "svelte",
+        "sveltekit",
+        "solid",
+        "astro",
+        "angular",
+        "react-native",
+        "web-components",
+        "css-only",
+        "vanilla",
+        "html-css",
+        "framework-agnostic"
+      ],
+      "default": "react"
+    },
+    "selectedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "strictMode": {
+      "type": "boolean",
+      "default": true
+    },
+    "customRules": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    }
+  }
+}
