@@ -115,6 +115,22 @@ import * as siemens_ixComponents from '../design-systems/siemens-ix/index.ts';
 import * as nasa_jplComponents from '../design-systems/nasa-jpl/index.ts';
 import * as daisyuiComponents from '../design-systems/daisyui/index.ts';
 import * as herouiComponents from '../design-systems/heroui/index.ts';
+import * as paper_cssComponents from '../design-systems/paper-css/index.ts';
+import * as nes_cssComponents from '../design-systems/nes-css/index.ts';
+import * as rpguiComponents from '../design-systems/rpgui/index.ts';
+import * as terminal_cssComponents from '../design-systems/terminal-css/index.ts';
+import * as webtuiComponents from '../design-systems/webtui/index.ts';
+import * as xp_cssComponents from '../design-systems/xp-css/index.ts';
+import * as ds_7_cssComponents from '../design-systems/7-css/index.ts';
+import * as arwesComponents from '../design-systems/arwes/index.ts';
+import * as warcraftcn_uiComponents from '../design-systems/warcraftcn-ui/index.ts';
+import * as metro_uiComponents from '../design-systems/metro-ui/index.ts';
+import * as react95Components from '../design-systems/react95/index.ts';
+import * as neobrutalismComponents from '../design-systems/neobrutalism/index.ts';
+import * as hana_uiComponents from '../design-systems/hana-ui/index.ts';
+import * as vengeance_uiComponents from '../design-systems/vengeance-ui/index.ts';
+import * as psone_cssComponents from '../design-systems/psone-css/index.ts';
+import * as c64_cssComponents from '../design-systems/c64-css/index.ts';
 
 export const ALL_SYSTEM_ENTRIES: Record<string, DesignSystemEntry> = {
   'material': {
@@ -572,6 +588,70 @@ export const ALL_SYSTEM_ENTRIES: Record<string, DesignSystemEntry> = {
   'heroui': {
     meta: DESIGN_SYSTEMS.find(m => m.id === 'heroui')!,
     components: herouiComponents,
+  },
+  'paper-css': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === 'paper-css')!,
+    components: paper_cssComponents,
+  },
+  'nes-css': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === 'nes-css')!,
+    components: nes_cssComponents,
+  },
+  'rpgui': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === 'rpgui')!,
+    components: rpguiComponents,
+  },
+  'terminal-css': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === 'terminal-css')!,
+    components: terminal_cssComponents,
+  },
+  'webtui': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === 'webtui')!,
+    components: webtuiComponents,
+  },
+  'xp-css': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === 'xp-css')!,
+    components: xp_cssComponents,
+  },
+  '7-css': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === '7-css')!,
+    components: ds_7_cssComponents,
+  },
+  'arwes': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === 'arwes')!,
+    components: arwesComponents,
+  },
+  'warcraftcn-ui': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === 'warcraftcn-ui')!,
+    components: warcraftcn_uiComponents,
+  },
+  'metro-ui': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === 'metro-ui')!,
+    components: metro_uiComponents,
+  },
+  'react95': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === 'react95')!,
+    components: react95Components,
+  },
+  'neobrutalism': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === 'neobrutalism')!,
+    components: neobrutalismComponents,
+  },
+  'hana-ui': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === 'hana-ui')!,
+    components: hana_uiComponents,
+  },
+  'vengeance-ui': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === 'vengeance-ui')!,
+    components: vengeance_uiComponents,
+  },
+  'psone-css': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === 'psone-css')!,
+    components: psone_cssComponents,
+  },
+  'c64-css': {
+    meta: DESIGN_SYSTEMS.find(m => m.id === 'c64-css')!,
+    components: c64_cssComponents,
   },
 };
 

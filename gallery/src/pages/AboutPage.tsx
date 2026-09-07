@@ -8,7 +8,7 @@ export const AboutPage: React.FC = () => {
           About Design Systems Gallery
         </h1>
         <p style={{ color: 'var(--fg-default)', fontSize: '16px', lineHeight: 1.6 }}>
-          <strong>Design Systems Gallery</strong> is an interactive visual encyclopedia and component reference library demonstrating how the <em>same UI components</em> look and behave across <strong>114 real production design systems</strong>.
+          <strong>Design Systems Gallery</strong> is an interactive visual encyclopedia and component reference library demonstrating how the <em>same UI components</em> look and behave across <strong>130 real production design systems and creative UI libraries</strong>.
         </p>
       </div>
 
@@ -21,7 +21,7 @@ export const AboutPage: React.FC = () => {
             When developers and AI coding agents build modern web applications, they almost universally default to the same small set of generic libraries (like unstyled Tailwind divs, shadcn/ui, or standard MUI).
           </p>
           <p>
-            Meanwhile, global software leaders and public institutions have engineered dozens of <strong>battle-tested, domain-optimized design systems</strong>:
+            Meanwhile, global software leaders, open-source communities, and creative engineers have engineered dozens of <strong>battle-tested, domain-optimized, and creative design systems</strong>:
           </p>
           <ul style={{ paddingLeft: '24px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
             <li><strong>GitHub Primer, Red Hat &amp; GitLab Pajamas:</strong> Engineered for developers, code diffs, and developer workflows.</li>
@@ -30,17 +30,19 @@ export const AboutPage: React.FC = () => {
             <li><strong>Shopify Polaris, VTEX &amp; SumUp Circuit:</strong> Gold standard merchant e-commerce and point-of-sale administration.</li>
             <li><strong>GOV.UK, USWDS, Singapore GovTech, NSW &amp; DSFR:</strong> High-legibility public accessibility and federal standards.</li>
             <li><strong>Porsche &amp; Audi:</strong> Ultra-precise automotive luxury minimalism.</li>
+            <li><strong>PaperCSS, NES.css, RPGUI &amp; Terminal.css:</strong> Hand-drawn sketches, 8-bit Nintendo nostalgia, 16-bit RPG game frames, and CRT command-line green phosphors.</li>
+            <li><strong>Neobrutalism, Arwes &amp; XP.css:</strong> Hard black shadows, futuristic cyberpunk HUDs, and Windows XP Luna glass nostalgia.</li>
           </ul>
         </div>
       </div>
 
       <div className="component-card">
         <div className="card-header">
-          <h2 style={{ fontSize: '16px', fontWeight: 700 }}>10 Core Components Across 114 Systems</h2>
+          <h2 style={{ fontSize: '16px', fontWeight: 700 }}>10 Core Components Across 130 Systems</h2>
         </div>
         <div className="card-body" style={{ display: 'flex', flexDirection: 'column', gap: '14px', fontSize: '15px', lineHeight: 1.6 }}>
           <p>
-            To provide comprehensive breadth and precision, the gallery implements 10 fundamental interactive components across all 114 systems:
+            To provide comprehensive breadth and precision, the gallery implements 10 fundamental interactive components across all 130 systems:
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '12px', marginTop: '8px' }}>
             <div style={{ padding: '14px', backgroundColor: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>

@@ -11926,5 +11926,1429 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "dialog": "<HeroUIModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
       "tooltip": "<HeroUITooltip content=\"SOC2 Verified\"><Button>Status</Button></HeroUITooltip>"
     }
+  },
+  {
+    "id": "paper-css",
+    "name": "PaperCSS",
+    "organization": "PaperCSS Community",
+    "status": "active",
+    "type": "ui-library",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://www.getpapercss.com",
+    "repoUrl": "https://github.com/papercss/papercss",
+    "description": "The less-formal, hand-drawn sketch CSS framework that makes web applications look like pencil-drawn notebook sketches with uneven borders and whimsical charm.",
+    "aestheticNotes": "Hand-drawn notebook sketch with wobbly pencil borders (255px 15px 225px 15px), off-white paper backgrounds, and playful indie zine charm.",
+    "tokens": {
+      "primaryColor": "#41403e",
+      "borderRadius": "255px 15px 225px 15px / 15px 225px 15px 255px",
+      "controlHeight": "38px",
+      "fontFamily": "'Neucha', 'Patrick Hand', 'Comic Sans MS', cursive, sans-serif",
+      "focusStyle": "0 0 0 2px #41403e"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-paper-css ds-btn-paper-css-primary\">Action</button>",
+      "input": "<input className=\"ds-input-paper-css\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-paper-css\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-paper-css\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-paper-css\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-paper-css\" />",
+      "textarea": "<textarea className=\"ds-textarea-paper-css\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-paper-css\"><button className=\"ds-tab-paper-css active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-paper-css\"><h3 className=\"ds-dialog-header-paper-css\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-paper-css\">Tooltip info</div>"
+    }
+  },
+  {
+    "id": "nes-css",
+    "name": "NES.css",
+    "organization": "nostalgic-css Community",
+    "status": "active",
+    "type": "ui-library",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://nostalgic-css.github.io/NES.css/",
+    "repoUrl": "https://github.com/nostalgic-css/NES.css",
+    "description": "An 8-bit NES console-style pure CSS framework with pixelated borders, retro gaming dialog balloons, pixel art buttons, and classic Nintendo charm.",
+    "aestheticNotes": "8-bit retro gaming NES nostalgia: pixelated borders, speech balloons, chunky pixel buttons, and Press Start 2P font.",
+    "tokens": {
+      "primaryColor": "#209cee",
+      "borderRadius": "0px",
+      "controlHeight": "44px",
+      "fontFamily": "'Press Start 2P', monospace, cursive",
+      "focusStyle": "0 0 0 2px #000000"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-nes-css ds-btn-nes-css-primary\">Action</button>",
+      "input": "<input className=\"ds-input-nes-css\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-nes-css\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-nes-css\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-nes-css\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-nes-css\" />",
+      "textarea": "<textarea className=\"ds-textarea-nes-css\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-nes-css\"><button className=\"ds-tab-nes-css active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-nes-css\"><h3 className=\"ds-dialog-header-nes-css\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-nes-css\">Tooltip info</div>"
+    }
+  },
+  {
+    "id": "rpgui",
+    "name": "RPGUI",
+    "organization": "Ronen Ness / RPGUI Community",
+    "status": "active",
+    "type": "ui-library",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://ronenness.github.io/rpgui/",
+    "repoUrl": "https://github.com/RonenNess/RPGUI",
+    "description": "Classic 16-bit RPG video game interface CSS framework with wooden and stone containers, golden borders, health/mana bars, and parchment panels.",
+    "aestheticNotes": "16-bit SNES / RPG Maker game aesthetic: stone and wooden border containers, red Health / blue Mana progress indicators, and golden dialogue boxes.",
+    "tokens": {
+      "primaryColor": "#c3a177",
+      "borderRadius": "0px",
+      "controlHeight": "40px",
+      "fontFamily": "'Press Start 2P', monospace",
+      "focusStyle": "0 0 0 2px #ffd700"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-rpgui ds-btn-rpgui-primary\">Action</button>",
+      "input": "<input className=\"ds-input-rpgui\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-rpgui\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-rpgui\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-rpgui\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-rpgui\" />",
+      "textarea": "<textarea className=\"ds-textarea-rpgui\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-rpgui\"><button className=\"ds-tab-rpgui active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-rpgui\"><h3 className=\"ds-dialog-header-rpgui\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-rpgui\">Tooltip info</div>"
+    }
+  },
+  {
+    "id": "terminal-css",
+    "name": "Terminal.css",
+    "organization": "Terminal.css Community",
+    "status": "active",
+    "type": "ui-library",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://terminalcss.xyz/",
+    "repoUrl": "https://github.com/gbl/terminal.css",
+    "description": "Modern, lightweight CSS framework inspired by retro CRT terminal command lines, featuring monospace typography, green phosphor glow, and ASCII boxes.",
+    "aestheticNotes": "Retro CRT terminal: pitch black background (#000000), bright phosphor green text (#00ff00), monospace typography, and ASCII box-drawn border frames.",
+    "tokens": {
+      "primaryColor": "#00ff00",
+      "borderRadius": "0px",
+      "controlHeight": "36px",
+      "fontFamily": "'Courier New', 'Fira Code', monospace",
+      "focusStyle": "0 0 0 1px #00ff00"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-terminal-css ds-btn-terminal-css-primary\">Action</button>",
+      "input": "<input className=\"ds-input-terminal-css\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-terminal-css\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-terminal-css\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-terminal-css\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-terminal-css\" />",
+      "textarea": "<textarea className=\"ds-textarea-terminal-css\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-terminal-css\"><button className=\"ds-tab-terminal-css active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-terminal-css\"><h3 className=\"ds-dialog-header-terminal-css\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-terminal-css\">Tooltip info</div>"
+    }
+  },
+  {
+    "id": "webtui",
+    "name": "WebTUI",
+    "organization": "WebTUI Community",
+    "status": "active",
+    "type": "ui-library",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://github.com/webtui/webtui",
+    "repoUrl": "https://github.com/webtui/webtui",
+    "description": "Terminal User Interface for web with authentic ASCII box-drawing characters, curses menus, and VT100 command-line mechanics.",
+    "aestheticNotes": "ANSI/VT100 Terminal UI aesthetic: ASCII box-drawing characters, monospace fonts, CRT phosphor cyan accents, and curses window borders.",
+    "tokens": {
+      "primaryColor": "#58a6ff",
+      "borderRadius": "0px",
+      "controlHeight": "34px",
+      "fontFamily": "monospace",
+      "focusStyle": "0 0 0 1px #58a6ff"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-webtui ds-btn-webtui-primary\">Action</button>",
+      "input": "<input className=\"ds-input-webtui\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-webtui\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-webtui\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-webtui\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-webtui\" />",
+      "textarea": "<textarea className=\"ds-textarea-webtui\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-webtui\"><button className=\"ds-tab-webtui active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-webtui\"><h3 className=\"ds-dialog-header-webtui\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-webtui\">Tooltip info</div>"
+    }
+  },
+  {
+    "id": "xp-css",
+    "name": "XP.css",
+    "organization": "botoxparty / XP.css Community",
+    "status": "legacy",
+    "type": "legacy-ui",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://botoxparty.github.io/XP.css/",
+    "repoUrl": "https://github.com/botoxparty/XP.css",
+    "description": "Windows XP Luna theme UI framework replicating royal blue window bars, glossy gradient buttons, green Start button accents, and 2000s desktop UI.",
+    "aestheticNotes": "Windows XP Luna blue: glossy buttons with linear gradient reflections, royal blue title bars (#0055ea), and early-2000s OS nostalgia.",
+    "tokens": {
+      "primaryColor": "#0055ea",
+      "borderRadius": "3px",
+      "controlHeight": "26px",
+      "fontFamily": "'Tahoma', 'MS Sans Serif', sans-serif",
+      "focusStyle": "0 0 0 1px #0055ea"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-xp-css ds-btn-xp-css-primary\">Action</button>",
+      "input": "<input className=\"ds-input-xp-css\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-xp-css\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-xp-css\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-xp-css\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-xp-css\" />",
+      "textarea": "<textarea className=\"ds-textarea-xp-css\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-xp-css\"><button className=\"ds-tab-xp-css active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-xp-css\"><h3 className=\"ds-dialog-header-xp-css\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-xp-css\">Tooltip info</div>"
+    }
+  },
+  {
+    "id": "7-css",
+    "name": "7.css",
+    "organization": "Khaled Hosseini / 7.css Community",
+    "status": "legacy",
+    "type": "legacy-ui",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://khang-nd.github.io/7.css/",
+    "repoUrl": "https://github.com/khang-nd/7.css",
+    "description": "Windows 7 Aero Glass CSS framework with translucent frosted glass frames, reflective skeuomorphic gloss buttons, and Frutiger Aero aesthetic.",
+    "aestheticNotes": "Authentic 2009 Windows 7 Aero Glass: translucent blurred glass window title bars, glossy blue reflective highlights, and skeuomorphic tracks.",
+    "tokens": {
+      "primaryColor": "#2a8dd4",
+      "borderRadius": "3px",
+      "controlHeight": "26px",
+      "fontFamily": "'Segoe UI', Tahoma, sans-serif",
+      "focusStyle": "0 0 0 2px #2a8dd4"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-7-css ds-btn-7-css-primary\">Action</button>",
+      "input": "<input className=\"ds-input-7-css\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-7-css\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-7-css\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-7-css\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-7-css\" />",
+      "textarea": "<textarea className=\"ds-textarea-7-css\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-7-css\"><button className=\"ds-tab-7-css active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-7-css\"><h3 className=\"ds-dialog-header-7-css\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-7-css\">Tooltip info</div>"
+    }
+  },
+  {
+    "id": "arwes",
+    "name": "Arwes",
+    "organization": "Arwes Community",
+    "status": "active",
+    "type": "ui-library",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://arwes.dev",
+    "repoUrl": "https://github.com/arwes/arwes",
+    "description": "Futuristic cyberpunk sci-fi UI framework with glowing neon vectors, 45-degree angled corner cuts, holographic card frames, and sci-fi HUD monitors.",
+    "aestheticNotes": "High-tech cyberpunk and sci-fi HUD: glowing cyan (#00f8f8) vector frames, 45-degree angled corner clips, and holographic scanlines.",
+    "tokens": {
+      "primaryColor": "#00f8f8",
+      "borderRadius": "0px",
+      "controlHeight": "38px",
+      "fontFamily": "'Titillium Web', 'Orbitron', monospace, sans-serif",
+      "focusStyle": "0 0 8px #00f8f8"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-arwes ds-btn-arwes-primary\">Action</button>",
+      "input": "<input className=\"ds-input-arwes\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-arwes\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-arwes\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-arwes\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-arwes\" />",
+      "textarea": "<textarea className=\"ds-textarea-arwes\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-arwes\"><button className=\"ds-tab-arwes active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-arwes\"><h3 className=\"ds-dialog-header-arwes\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-arwes\">Tooltip info</div>"
+    }
+  },
+  {
+    "id": "warcraftcn-ui",
+    "name": "warcraftcn/ui",
+    "organization": "warcraftcn Community",
+    "status": "active",
+    "type": "ui-library",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://warcraftcn.com",
+    "repoUrl": "https://github.com/warcraftcn/ui",
+    "description": "Component library bringing the iconic World of Warcraft fantasy gaming aesthetic with parchment paper dialogs, stone and gold beveled frames.",
+    "aestheticNotes": "Epic fantasy video game: Warcraft gold-trimmed beveled borders, parchment quest scroll dialogs, spell action buttons, and dark stone surfaces.",
+    "tokens": {
+      "primaryColor": "#ffd100",
+      "borderRadius": "2px",
+      "controlHeight": "36px",
+      "fontFamily": "'Cinzel', 'Trajan Pro', Georgia, serif",
+      "focusStyle": "0 0 0 2px #ffd100"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-warcraftcn-ui ds-btn-warcraftcn-ui-primary\">Action</button>",
+      "input": "<input className=\"ds-input-warcraftcn-ui\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-warcraftcn-ui\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-warcraftcn-ui\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-warcraftcn-ui\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-warcraftcn-ui\" />",
+      "textarea": "<textarea className=\"ds-textarea-warcraftcn-ui\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-warcraftcn-ui\"><button className=\"ds-tab-warcraftcn-ui active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-warcraftcn-ui\"><h3 className=\"ds-dialog-header-warcraftcn-ui\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-warcraftcn-ui\">Tooltip info</div>"
+    }
+  },
+  {
+    "id": "metro-ui",
+    "name": "Metro UI",
+    "organization": "Metro UI Community",
+    "status": "legacy",
+    "type": "legacy-ui",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://metroui.org.ua",
+    "repoUrl": "https://github.com/olton/Metro-UI-CSS",
+    "description": "Microsoft Windows 8 Modern / Metro design language framework with flat saturated color live tiles, ribbon bars, and Segoe UI typography.",
+    "aestheticNotes": "Iconic Microsoft Windows 8/10 Modern Metro: bold flat color tiles, sharp 0px corners, high contrast typography, and Windows live tile grids.",
+    "tokens": {
+      "primaryColor": "#0072c6",
+      "borderRadius": "0px",
+      "controlHeight": "36px",
+      "fontFamily": "'Segoe UI', sans-serif",
+      "focusStyle": "0 0 0 2px #0072c6"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-metro-ui ds-btn-metro-ui-primary\">Action</button>",
+      "input": "<input className=\"ds-input-metro-ui\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-metro-ui\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-metro-ui\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-metro-ui\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-metro-ui\" />",
+      "textarea": "<textarea className=\"ds-textarea-metro-ui\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-metro-ui\"><button className=\"ds-tab-metro-ui active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-metro-ui\"><h3 className=\"ds-dialog-header-metro-ui\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-metro-ui\">Tooltip info</div>"
+    }
+  },
+  {
+    "id": "react95",
+    "name": "React95",
+    "organization": "React95 Community",
+    "status": "legacy",
+    "type": "legacy-ui",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://react95.io",
+    "repoUrl": "https://github.com/react95/react95",
+    "description": "Nostalgic Windows 95 UI component library crafted with styled-components, pixel-perfect beveled borders, retro window title bars, and desktop icons.",
+    "aestheticNotes": "Windows 95 operating system: iconic desktop teal (#008080), classic grey relief (#c0c0c0), raised/recessed beveled borders, and start menu buttons.",
+    "tokens": {
+      "primaryColor": "#008080",
+      "borderRadius": "0px",
+      "controlHeight": "28px",
+      "fontFamily": "'MS Sans Serif', Tahoma, sans-serif",
+      "focusStyle": "1px dotted #000000"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-react95 ds-btn-react95-primary\">Action</button>",
+      "input": "<input className=\"ds-input-react95\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-react95\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-react95\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-react95\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-react95\" />",
+      "textarea": "<textarea className=\"ds-textarea-react95\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-react95\"><button className=\"ds-tab-react95 active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-react95\"><h3 className=\"ds-dialog-header-react95\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-react95\">Tooltip info</div>"
+    }
+  },
+  {
+    "id": "neobrutalism",
+    "name": "Neobrutalism UI",
+    "organization": "Neobrutalism Community",
+    "status": "active",
+    "type": "ui-library",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://neobrutalism.dev",
+    "repoUrl": "https://github.com/ekmas/neobrutalism-components",
+    "description": "Edgy neo-brutalist component design system with thick 3px solid black borders, hard unblurred drop shadows, and hyper-saturated candy pop colors.",
+    "aestheticNotes": "Neo-brutalist pop style: 3px solid black outlines, hard unblurred offset drop shadows (4px 4px 0 #000), bold sans-serif type, and electric candy yellow (#fee140).",
+    "tokens": {
+      "primaryColor": "#fee140",
+      "borderRadius": "0px",
+      "controlHeight": "42px",
+      "fontFamily": "'Space Grotesk', 'Public Sans', system-ui, sans-serif",
+      "focusStyle": "0 0 0 3px #000000"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-neobrutalism ds-btn-neobrutalism-primary\">Action</button>",
+      "input": "<input className=\"ds-input-neobrutalism\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-neobrutalism\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-neobrutalism\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-neobrutalism\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-neobrutalism\" />",
+      "textarea": "<textarea className=\"ds-textarea-neobrutalism\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-neobrutalism\"><button className=\"ds-tab-neobrutalism active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-neobrutalism\"><h3 className=\"ds-dialog-header-neobrutalism\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-neobrutalism\">Tooltip info</div>"
+    }
+  },
+  {
+    "id": "hana-ui",
+    "name": "Hana UI",
+    "organization": "Hana UI Community",
+    "status": "active",
+    "type": "ui-library",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://hana-ui.github.io",
+    "repoUrl": "https://github.com/hana-ui/hana-ui",
+    "description": "Anime & pastel expressive React component library designed with sakura pink and lavender accents, pill-shaped glowing buttons, and playful micro-interactions.",
+    "aestheticNotes": "Playful pastel & anime aesthetic: Sakura Pink (#ffb6c1) / Lavender Purple accents, pill-shaped glowing buttons, and soft floating card overlays.",
+    "tokens": {
+      "primaryColor": "#ffb6c1",
+      "borderRadius": "9999px",
+      "controlHeight": "40px",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "focusStyle": "0 0 0 3px rgba(255, 182, 193, 0.6)"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-hana-ui ds-btn-hana-ui-primary\">Action</button>",
+      "input": "<input className=\"ds-input-hana-ui\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-hana-ui\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-hana-ui\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-hana-ui\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-hana-ui\" />",
+      "textarea": "<textarea className=\"ds-textarea-hana-ui\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-hana-ui\"><button className=\"ds-tab-hana-ui active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-hana-ui\"><h3 className=\"ds-dialog-header-hana-ui\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-hana-ui\">Tooltip info</div>"
+    }
+  },
+  {
+    "id": "vengeance-ui",
+    "name": "VengeanceUI",
+    "organization": "VengeanceUI Community",
+    "status": "active",
+    "type": "ui-library",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://vengeanceui.com",
+    "repoUrl": "https://github.com/vengeance-ui/vengeance-ui",
+    "description": "Component library inspired by dark brutalism, high-contrast cyberpunk accents, sharp 0px corners, and aggressive neon typography.",
+    "aestheticNotes": "Dark brutalist cyberpunk aesthetic: high-contrast neon crimson (#ff003c) / electric lime (#00ff66) accents, sharp 0px border-radii, and technical badges.",
+    "tokens": {
+      "primaryColor": "#ff003c",
+      "borderRadius": "0px",
+      "controlHeight": "38px",
+      "fontFamily": "'Share Tech Mono', 'Courier New', monospace",
+      "focusStyle": "0 0 10px #ff003c"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-vengeance-ui ds-btn-vengeance-ui-primary\">Action</button>",
+      "input": "<input className=\"ds-input-vengeance-ui\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-vengeance-ui\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-vengeance-ui\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-vengeance-ui\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-vengeance-ui\" />",
+      "textarea": "<textarea className=\"ds-textarea-vengeance-ui\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-vengeance-ui\"><button className=\"ds-tab-vengeance-ui active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-vengeance-ui\"><h3 className=\"ds-dialog-header-vengeance-ui\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-vengeance-ui\">Tooltip info</div>"
+    }
+  },
+  {
+    "id": "psone-css",
+    "name": "PSone.css",
+    "organization": "AisVisual / PSone Community",
+    "status": "legacy",
+    "type": "legacy-ui",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://github.com/AisVisual/PSone.css",
+    "repoUrl": "https://github.com/AisVisual/PSone.css",
+    "description": "PlayStation 1 retro 32-bit console UI framework with grey memory card blocks, classic PS1 start menu buttons, and DualShock symbol accents.",
+    "aestheticNotes": "Authentic 1994 PS1 console BIOS: matte grey chassis tones (#2a2a2e), beveled memory card relief borders, and pixelated action prompts.",
+    "tokens": {
+      "primaryColor": "#003791",
+      "borderRadius": "0px",
+      "controlHeight": "36px",
+      "fontFamily": "'Press Start 2P', monospace",
+      "focusStyle": "0 0 0 2px #003791"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-psone-css ds-btn-psone-css-primary\">Action</button>",
+      "input": "<input className=\"ds-input-psone-css\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-psone-css\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-psone-css\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-psone-css\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-psone-css\" />",
+      "textarea": "<textarea className=\"ds-textarea-psone-css\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-psone-css\"><button className=\"ds-tab-psone-css active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-psone-css\"><h3 className=\"ds-dialog-header-psone-css\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-psone-css\">Tooltip info</div>"
+    }
+  },
+  {
+    "id": "c64-css",
+    "name": "Commodore 64 CSS",
+    "organization": "C64 Web Community",
+    "status": "legacy",
+    "type": "legacy-ui",
+    "category": "specialty-retro",
+    "categoryLabel": "Specialty & Retro",
+    "docsUrl": "https://github.com/c64-css/c64-css",
+    "repoUrl": "https://github.com/c64-css/c64-css",
+    "description": "Commodore 64 8-bit home computer UI framework replicating the iconic 1982 C64 BASIC screen with deep blue background and light blue uppercase typography.",
+    "aestheticNotes": "Classic 1982 Commodore 64 PETSCII: deep blue background (#4040e0), thick light blue outer border (#a0a0ff), and blocky 8-bit uppercase text.",
+    "tokens": {
+      "primaryColor": "#a0a0ff",
+      "borderRadius": "0px",
+      "controlHeight": "36px",
+      "fontFamily": "'Courier New', monospace",
+      "focusStyle": "0 0 0 2px #a0a0ff"
+    },
+    "componentSupport": {
+      "button": true,
+      "input": true,
+      "select": true,
+      "radio": true,
+      "checkbox": true,
+      "switch": true,
+      "textarea": true,
+      "tabs": true,
+      "dialog": true,
+      "tooltip": true
+    },
+    "variants": {
+      "buttons": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "danger"
+      ],
+      "inputs": [
+        "default",
+        "filled",
+        "error",
+        "disabled"
+      ],
+      "selects": [
+        "default",
+        "disabled"
+      ],
+      "radios": [
+        "default",
+        "disabled"
+      ],
+      "checkboxes": [
+        "default",
+        "indeterminate",
+        "disabled"
+      ],
+      "switches": [
+        "default",
+        "disabled"
+      ],
+      "textareas": [
+        "default",
+        "error",
+        "disabled"
+      ],
+      "tabs": [
+        "default"
+      ],
+      "dialogs": [
+        "default"
+      ],
+      "tooltips": [
+        "default"
+      ]
+    },
+    "canonicalCode": {
+      "button": "<button className=\"ds-btn-c64-css ds-btn-c64-css-primary\">Action</button>",
+      "input": "<input className=\"ds-input-c64-css\" placeholder=\"Enter text...\" />",
+      "select": "<select className=\"ds-select-c64-css\"><option>Option 1</option></select>",
+      "radio": "<input type=\"radio\" className=\"ds-radio-c64-css\" name=\"group\" />",
+      "checkbox": "<input type=\"checkbox\" className=\"ds-checkbox-c64-css\" />",
+      "switch": "<button role=\"switch\" aria-checked={checked} className=\"ds-switch-track-c64-css\" />",
+      "textarea": "<textarea className=\"ds-textarea-c64-css\" rows={4} />",
+      "tabs": "<div className=\"ds-tablist-c64-css\"><button className=\"ds-tab-c64-css active\">Overview</button></div>",
+      "dialog": "<div className=\"ds-dialog-box-c64-css\"><h3 className=\"ds-dialog-header-c64-css\">Dialog</h3></div>",
+      "tooltip": "<div className=\"ds-tooltip-bubble-c64-css\">Tooltip info</div>"
+    }
   }
 ];
