@@ -143,7 +143,7 @@ export const SystemDetailPage: React.FC<SystemDetailPageProps> = ({
           <span>
             Component Coverage:{' '}
             <strong>
-              {Object.values(meta.componentSupport).filter(Boolean).length}/10 Components Documented
+              {Object.values(meta.componentSupport).filter(Boolean).length}/20 Components Documented
             </strong>
           </span>
         </div>
@@ -321,6 +321,136 @@ export const SystemDetailPage: React.FC<SystemDetailPageProps> = ({
           </div>
         </section>
 
+        {/* Card */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>11. Card Containers</h2>
+              <span className="org-tag">Structured Content Surface, Elevation & Interactive State</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.Card />
+          </div>
+        </section>
+
+        {/* Dropdown Menu */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>12. Dropdown Action Menu</h2>
+              <span className="org-tag">Interactive Menu Popup with Outside-Click & Escape Dismissal</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.DropdownMenu />
+          </div>
+        </section>
+
+        {/* Table */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>13. Data Table</h2>
+              <span className="org-tag">Sortable Columns, Row Checkbox Selection & Responsive Overflow</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.Table />
+          </div>
+        </section>
+
+        {/* Alert */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>14. Persistent Alerts & Banners</h2>
+              <span className="org-tag">Info, Success, Error Severities with Smooth Dismissibility</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.Alert />
+          </div>
+        </section>
+
+        {/* Toast */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>15. Toast Feedback Notification</h2>
+              <span className="org-tag">Auto-Dismissing (4s) Temporary Feedback Trigger</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.Toast />
+          </div>
+        </section>
+
+        {/* Badge, Tag & Chip */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>16. Badges, Tags & Chips</h2>
+              <span className="org-tag">Status Indicators, Numeric Counters, Removable Tags & Filter Chips</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.Badge />
+          </div>
+        </section>
+
+        {/* Accordion */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>17. Accordion / Disclosure</h2>
+              <span className="org-tag">Expandable Multi-Section Panels with Accessible Disclosure</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.Accordion />
+          </div>
+        </section>
+
+        {/* Pagination */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>18. Pagination Navigation</h2>
+              <span className="org-tag">Page Number Selector with Disabled Boundary States</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.Pagination />
+          </div>
+        </section>
+
+        {/* Breadcrumbs */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>19. Breadcrumbs Trail</h2>
+              <span className="org-tag">Hierarchical Navigation with Semantic Ordered List</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.Breadcrumbs />
+          </div>
+        </section>
+
+        {/* Avatar */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>20. Avatar & User Identity</h2>
+              <span className="org-tag">Initials Fallbacks, Presence Status Indicators & Collaborator Group</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.Avatar />
+          </div>
+        </section>
+
         {/* Canonical Code */}
         <section className="component-card">
           <div className="card-header">
@@ -340,6 +470,16 @@ export const SystemDetailPage: React.FC<SystemDetailPageProps> = ({
                 'tabs',
                 'dialog',
                 'tooltip',
+                'card',
+                'dropdown-menu',
+                'table',
+                'alert',
+                'toast',
+                'badge',
+                'accordion',
+                'pagination',
+                'breadcrumbs',
+                'avatar',
               ] as const).map(tab => (
                 <button
                   key={tab}
@@ -348,7 +488,7 @@ export const SystemDetailPage: React.FC<SystemDetailPageProps> = ({
                   style={{
                     padding: '4px 10px',
                     borderRadius: '4px',
-                    fontSize: '12px',
+                    fontSize: '11px',
                     fontWeight: 600,
                     border: '1px solid var(--border-color)',
                     backgroundColor: activeCodeTab === tab ? 'var(--accent-primary)' : 'var(--bg-surface)',

@@ -77,6 +77,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -89,7 +131,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<TextField multiline rows={4} label=\"Notes\" />",
       "tabs": "<Tabs value={tab} onChange={setTab}><Tab label=\"Overview\" /><Tab label=\"Settings\" /></Tabs>",
       "dialog": "<Dialog open={open} onClose={handleClose}><DialogTitle>Delete Environment?</DialogTitle></Dialog>",
-      "tooltip": "<Tooltip title=\"SOC2 Verified\"><IconButton /></Tooltip>"
+      "tooltip": "<Tooltip title=\"SOC2 Verified\"><IconButton /></Tooltip>",
+      "card": "<div className=\"ds-card-material\"><h3 className=\"ds-card-title-material\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-material ds-menu-trigger-material\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-material\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-material ds-alert-material-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-material\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-material ds-badge-material-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-material\"><button className=\"ds-accordion-trigger-material\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-material\"><button className=\"ds-page-btn-material active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-material\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-material ds-avatar-md-material\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -103,7 +155,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -181,6 +243,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -193,7 +297,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "TextEditor(text: $notes).frame(height: 100)",
       "tabs": "TabView(selection: $selectedTab) { ... }.tabViewStyle(.segmented)",
       "dialog": ".confirmationDialog(\"Delete Environment?\", isPresented: $showDialog)",
-      "tooltip": ".help(\"SOC2 AA Verified\")"
+      "tooltip": ".help(\"SOC2 AA Verified\")",
+      "card": "<div className=\"ds-card-apple\"><h3 className=\"ds-card-title-apple\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-apple ds-menu-trigger-apple\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-apple\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-apple ds-alert-apple-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-apple\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-apple ds-badge-apple-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-apple\"><button className=\"ds-accordion-trigger-apple\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-apple\"><button className=\"ds-page-btn-apple active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-apple\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-apple ds-avatar-md-apple\">SL</div>"
     },
     "status": "active",
     "type": "platform-guidelines",
@@ -207,7 +321,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -285,6 +409,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -297,7 +463,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<Textarea rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<TabList selectedValue={tab} onTabSelect={setTab}><Tab value=\"overview\">Overview</Tab></TabList>",
       "dialog": "<Dialog open={isOpen}><DialogSurface><DialogTitle>Delete Cluster</DialogTitle></DialogSurface></Dialog>",
-      "tooltip": "<Tooltip content=\"SOC2 Verified\" relationship=\"label\"><Button>Status</Button></Tooltip>"
+      "tooltip": "<Tooltip content=\"SOC2 Verified\" relationship=\"label\"><Button>Status</Button></Tooltip>",
+      "card": "<div className=\"ds-card-fluent\"><h3 className=\"ds-card-title-fluent\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-fluent ds-menu-trigger-fluent\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-fluent\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-fluent ds-alert-fluent-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-fluent\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-fluent ds-badge-fluent-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-fluent\"><button className=\"ds-accordion-trigger-fluent\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-fluent\"><button className=\"ds-page-btn-fluent active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-fluent\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-fluent ds-avatar-md-fluent\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -311,7 +487,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -389,6 +575,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -401,7 +629,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<TextArea labelText=\"Notes\" rows={4} />",
       "tabs": "<Tabs><TabList aria-label=\"System details\"><Tab>Overview</Tab></TabList></Tabs>",
       "dialog": "<Modal open={isOpen} modalHeading=\"Delete Cluster\" onRequestClose={close} />",
-      "tooltip": "<Tooltip label=\"SOC2 Verified\"><button type=\"button\">Status</button></Tooltip>"
+      "tooltip": "<Tooltip label=\"SOC2 Verified\"><button type=\"button\">Status</button></Tooltip>",
+      "card": "<div className=\"ds-card-carbon\"><h3 className=\"ds-card-title-carbon\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-carbon ds-menu-trigger-carbon\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-carbon\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-carbon ds-alert-carbon-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-carbon\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-carbon ds-badge-carbon-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-carbon\"><button className=\"ds-accordion-trigger-carbon\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-carbon\"><button className=\"ds-page-btn-carbon active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-carbon\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-carbon ds-avatar-md-carbon\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -415,7 +653,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -493,6 +741,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -505,7 +795,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<TextField multiline={4} label=\"Notes\" value={text} onChange={setText} />",
       "tabs": "<Tabs tabs={tabs} selected={selected} onSelect={setSelected} />",
       "dialog": "<Modal open={open} onClose={handleClose} title=\"Delete Environment?\" />",
-      "tooltip": "<Tooltip content=\"SOC2 Verified\"><Button>Status</Button></Tooltip>"
+      "tooltip": "<Tooltip content=\"SOC2 Verified\"><Button>Status</Button></Tooltip>",
+      "card": "<div className=\"ds-card-polaris\"><h3 className=\"ds-card-title-polaris\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-polaris ds-menu-trigger-polaris\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-polaris\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-polaris ds-alert-polaris-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-polaris\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-polaris ds-badge-polaris-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-polaris\"><button className=\"ds-accordion-trigger-polaris\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-polaris\"><button className=\"ds-page-btn-polaris active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-polaris\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-polaris ds-avatar-md-polaris\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -519,7 +819,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -597,6 +907,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -609,7 +961,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<TextArea placeholder=\"Service notes...\" maxRows={4} />",
       "tabs": "<Tabs id=\"details-tabs\"><TabList><Tab>Overview</Tab></TabList></Tabs>",
       "dialog": "<ModalTransition>{isOpen && <Modal onClose={close}><ModalHeader>Delete?</ModalHeader></Modal>}</ModalTransition>",
-      "tooltip": "<Tooltip content=\"SOC2 Verified\"><Button>Status</Button></Tooltip>"
+      "tooltip": "<Tooltip content=\"SOC2 Verified\"><Button>Status</Button></Tooltip>",
+      "card": "<div className=\"ds-card-atlassian\"><h3 className=\"ds-card-title-atlassian\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-atlassian ds-menu-trigger-atlassian\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-atlassian\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-atlassian ds-alert-atlassian-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-atlassian\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-atlassian ds-badge-atlassian-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-atlassian\"><button className=\"ds-accordion-trigger-atlassian\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-atlassian\"><button className=\"ds-page-btn-atlassian active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-atlassian\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-atlassian ds-avatar-md-atlassian\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -623,7 +985,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -701,6 +1073,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -713,7 +1127,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<Textarea block rows={4} placeholder=\"Notes...\" />",
       "tabs": "<UnderlineNav aria-label=\"Navigation\"><UnderlineNav.Item selected>Overview</UnderlineNav.Item></UnderlineNav>",
       "dialog": "<Dialog isOpen={isOpen} onDismiss={close} title=\"Delete Repository?\" />",
-      "tooltip": "<Tooltip text=\"SOC2 Verified\" direction=\"n\"><Button>Status</Button></Tooltip>"
+      "tooltip": "<Tooltip text=\"SOC2 Verified\" direction=\"n\"><Button>Status</Button></Tooltip>",
+      "card": "<div className=\"ds-card-primer\"><h3 className=\"ds-card-title-primer\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-primer ds-menu-trigger-primer\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-primer\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-primer ds-alert-primer-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-primer\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-primer ds-badge-primer-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-primer\"><button className=\"ds-accordion-trigger-primer\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-primer\"><button className=\"ds-page-btn-primer active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-primer\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-primer ds-avatar-md-primer\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -727,7 +1151,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -805,6 +1239,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -817,7 +1293,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<TextArea label=\"Notes\" value={val} onChange={setVal} />",
       "tabs": "<Tabs aria-label=\"System tabs\"><TabList><Item key=\"overview\">Overview</Item></TabList></Tabs>",
       "dialog": "<DialogContainer onDismiss={close}><Dialog><Heading>Delete Cluster</Heading></Dialog></DialogContainer>",
-      "tooltip": "<TooltipTrigger><ActionButton>Status</ActionButton><Tooltip>SOC2 Verified</Tooltip></TooltipTrigger>"
+      "tooltip": "<TooltipTrigger><ActionButton>Status</ActionButton><Tooltip>SOC2 Verified</Tooltip></TooltipTrigger>",
+      "card": "<div className=\"ds-card-spectrum\"><h3 className=\"ds-card-title-spectrum\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-spectrum ds-menu-trigger-spectrum\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-spectrum\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-spectrum ds-alert-spectrum-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-spectrum\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-spectrum ds-badge-spectrum-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-spectrum\"><button className=\"ds-accordion-trigger-spectrum\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-spectrum\"><button className=\"ds-page-btn-spectrum active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-spectrum\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-spectrum ds-avatar-md-spectrum\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -831,7 +1317,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -909,6 +1405,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -921,7 +1459,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<Textarea label=\"Notes\" placeholder=\"Service notes...\" />",
       "tabs": "<Tabs selectedId={tab} onSelect={setTab}><Tab id=\"overview\" title=\"Overview\" /></Tabs>",
       "dialog": "<Modal isOpen={isOpen} title=\"Delete Environment\" onRequestClose={close} />",
-      "tooltip": "<Tooltip content=\"SOC2 Verified\"><Button label=\"Status\" /></Tooltip>"
+      "tooltip": "<Tooltip content=\"SOC2 Verified\"><Button label=\"Status\" /></Tooltip>",
+      "card": "<div className=\"ds-card-salesforce\"><h3 className=\"ds-card-title-salesforce\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-salesforce ds-menu-trigger-salesforce\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-salesforce\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-salesforce ds-alert-salesforce-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-salesforce\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-salesforce ds-badge-salesforce-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-salesforce\"><button className=\"ds-accordion-trigger-salesforce\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-salesforce\"><button className=\"ds-page-btn-salesforce active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-salesforce\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-salesforce ds-avatar-md-salesforce\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -935,7 +1483,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -1013,6 +1571,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -1025,7 +1625,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<Input.TextArea rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<Tabs defaultActiveKey=\"overview\" items={tabItems} />",
       "dialog": "<Modal open={open} onCancel={close} title=\"Delete Environment?\" />",
-      "tooltip": "<Tooltip title=\"SOC2 Verified\"><Button>Status</Button></Tooltip>"
+      "tooltip": "<Tooltip title=\"SOC2 Verified\"><Button>Status</Button></Tooltip>",
+      "card": "<div className=\"ds-card-ant\"><h3 className=\"ds-card-title-ant\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-ant ds-menu-trigger-ant\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-ant\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-ant ds-alert-ant-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-ant\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-ant ds-badge-ant-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-ant\"><button className=\"ds-accordion-trigger-ant\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-ant\"><button className=\"ds-page-btn-ant active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-ant\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-ant ds-avatar-md-ant\">SL</div>"
     },
     "status": "active",
     "type": "ui-library",
@@ -1039,7 +1649,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -1117,6 +1737,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -1129,7 +1791,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<Textarea placeholder=\"Service notes...\" rows={4} />",
       "tabs": "<Tabs><TabList><Tab>Overview</Tab></TabList></Tabs>",
       "dialog": "<Modal isOpen={isOpen} onClose={onClose}><ModalContent><ModalHeader>Delete?</ModalHeader></ModalContent></Modal>",
-      "tooltip": "<Tooltip label=\"SOC2 Verified\"><Button>Status</Button></Tooltip>"
+      "tooltip": "<Tooltip label=\"SOC2 Verified\"><Button>Status</Button></Tooltip>",
+      "card": "<div className=\"ds-card-chakra\"><h3 className=\"ds-card-title-chakra\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-chakra ds-menu-trigger-chakra\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-chakra\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-chakra ds-alert-chakra-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-chakra\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-chakra ds-badge-chakra-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-chakra\"><button className=\"ds-accordion-trigger-chakra\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-chakra\"><button className=\"ds-page-btn-chakra active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-chakra\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-chakra ds-avatar-md-chakra\">SL</div>"
     },
     "status": "active",
     "type": "ui-library",
@@ -1143,7 +1815,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -1221,6 +1903,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -1233,7 +1957,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<Textarea label=\"Notes\" placeholder=\"Service notes...\" rows={4} />",
       "tabs": "<Tabs defaultValue=\"overview\"><Tabs.List><Tabs.Tab value=\"overview\">Overview</Tabs.Tab></Tabs.List></Tabs>",
       "dialog": "<Modal opened={opened} onClose={close} title=\"Delete Environment?\">...</Modal>",
-      "tooltip": "<Tooltip label=\"SOC2 Verified\"><Button>Status</Button></Tooltip>"
+      "tooltip": "<Tooltip label=\"SOC2 Verified\"><Button>Status</Button></Tooltip>",
+      "card": "<div className=\"ds-card-mantine\"><h3 className=\"ds-card-title-mantine\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-mantine ds-menu-trigger-mantine\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-mantine\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-mantine ds-alert-mantine-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-mantine\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-mantine ds-badge-mantine-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-mantine\"><button className=\"ds-accordion-trigger-mantine\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-mantine\"><button className=\"ds-page-btn-mantine active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-mantine\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-mantine ds-avatar-md-mantine\">SL</div>"
     },
     "status": "active",
     "type": "ui-library",
@@ -1247,7 +1981,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -1325,6 +2069,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -1337,7 +2123,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<TextArea size=\"2\" placeholder=\"Service notes...\" />",
       "tabs": "<Tabs.Root defaultValue=\"overview\"><Tabs.List><Tabs.Trigger value=\"overview\">Overview</Tabs.Trigger></Tabs.List></Tabs.Root>",
       "dialog": "<Dialog.Root open={open} onOpenChange={setOpen}><Dialog.Content><Dialog.Title>Delete?</Dialog.Title></Dialog.Content></Dialog.Root>",
-      "tooltip": "<Tooltip.Root><Tooltip.Trigger asChild><Button>Status</Button></Tooltip.Trigger><Tooltip.Content>SOC2 Verified</Tooltip.Content></Tooltip.Root>"
+      "tooltip": "<Tooltip.Root><Tooltip.Trigger asChild><Button>Status</Button></Tooltip.Trigger><Tooltip.Content>SOC2 Verified</Tooltip.Content></Tooltip.Root>",
+      "card": "<div className=\"ds-card-radix\"><h3 className=\"ds-card-title-radix\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-radix ds-menu-trigger-radix\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-radix\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-radix ds-alert-radix-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-radix\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-radix ds-badge-radix-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-radix\"><button className=\"ds-accordion-trigger-radix\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-radix\"><button className=\"ds-page-btn-radix active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-radix\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-radix ds-avatar-md-radix\">SL</div>"
     },
     "status": "active",
     "type": "ui-library",
@@ -1351,7 +2147,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -1429,6 +2235,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -1441,7 +2289,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<Textarea placeholder=\"Type your message here.\" />",
       "tabs": "<Tabs defaultValue=\"account\"><TabsList><TabsTrigger value=\"account\">Account</TabsTrigger></TabsList></Tabs>",
       "dialog": "<Dialog open={open} onOpenChange={setOpen}><DialogContent><DialogHeader><DialogTitle>Delete?</DialogTitle></DialogHeader></DialogContent></Dialog>",
-      "tooltip": "<TooltipProvider><Tooltip><TooltipTrigger asChild><Button>Status</Button></TooltipTrigger><TooltipContent><p>SOC2 Verified</p></TooltipContent></Tooltip></TooltipProvider>"
+      "tooltip": "<TooltipProvider><Tooltip><TooltipTrigger asChild><Button>Status</Button></TooltipTrigger><TooltipContent><p>SOC2 Verified</p></TooltipContent></Tooltip></TooltipProvider>",
+      "card": "<div className=\"ds-card-shadcn\"><h3 className=\"ds-card-title-shadcn\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-shadcn ds-menu-trigger-shadcn\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-shadcn\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-shadcn ds-alert-shadcn-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-shadcn\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-shadcn ds-badge-shadcn-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-shadcn\"><button className=\"ds-accordion-trigger-shadcn\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-shadcn\"><button className=\"ds-page-btn-shadcn active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-shadcn\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-shadcn ds-avatar-md-shadcn\">SL</div>"
     },
     "status": "active",
     "type": "ui-library",
@@ -1455,7 +2313,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -1533,6 +2401,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -1545,7 +2455,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<EuiTextArea placeholder=\"Service notes...\" rows={4} />",
       "tabs": "<EuiTabs>{tabs.map(t => <EuiTab key={t.id}>{t.name}</EuiTab>)}</EuiTabs>",
       "dialog": "<EuiModal onClose={close}><EuiModalHeader><EuiModalHeaderTitle>Delete?</EuiModalHeaderTitle></EuiModalHeader></EuiModal>",
-      "tooltip": "<EuiToolTip content=\"SOC2 Verified\"><EuiButton>Status</EuiButton></EuiToolTip>"
+      "tooltip": "<EuiToolTip content=\"SOC2 Verified\"><EuiButton>Status</EuiButton></EuiToolTip>",
+      "card": "<div className=\"ds-card-eui\"><h3 className=\"ds-card-title-eui\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-eui ds-menu-trigger-eui\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-eui\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-eui ds-alert-eui-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-eui\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-eui ds-badge-eui-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-eui\"><button className=\"ds-accordion-trigger-eui\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-eui\"><button className=\"ds-page-btn-eui active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-eui\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-eui ds-avatar-md-eui\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -1559,7 +2479,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -1637,6 +2567,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -1649,7 +2621,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<TextArea rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<IconTabBar select={handleSelect}><IconTabFilter text=\"Overview\" /></IconTabBar>",
       "dialog": "<Dialog title=\"Delete Environment\" beginButton={<Button text=\"Delete\" />} />",
-      "tooltip": "<Button text=\"Status\" tooltip=\"SOC2 Verified\" />"
+      "tooltip": "<Button text=\"Status\" tooltip=\"SOC2 Verified\" />",
+      "card": "<div className=\"ds-card-fiori\"><h3 className=\"ds-card-title-fiori\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-fiori ds-menu-trigger-fiori\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-fiori\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-fiori ds-alert-fiori-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-fiori\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-fiori ds-badge-fiori-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-fiori\"><button className=\"ds-accordion-trigger-fiori\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-fiori\"><button className=\"ds-page-btn-fiori active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-fiori\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-fiori ds-avatar-md-fiori\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -1663,7 +2645,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -1740,6 +2732,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -1752,7 +2786,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<govuk-textarea name=\"notes\" id=\"notes\" rows={4} label={{ text: \"Service notes\" }} />",
       "tabs": "<govuk-tabs items={tabItems} />",
       "dialog": "<govuk-modal-dialog title=\"Confirm Action\" />",
-      "tooltip": "<span className=\"govuk-tooltip\" data-tooltip=\"SOC2 Verified\">Status</span>"
+      "tooltip": "<span className=\"govuk-tooltip\" data-tooltip=\"SOC2 Verified\">Status</span>",
+      "card": "<div className=\"ds-card-govuk\"><h3 className=\"ds-card-title-govuk\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-govuk ds-menu-trigger-govuk\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-govuk\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-govuk ds-alert-govuk-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-govuk\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-govuk ds-badge-govuk-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-govuk\"><button className=\"ds-accordion-trigger-govuk\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-govuk\"><button className=\"ds-page-btn-govuk active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-govuk\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-govuk ds-avatar-md-govuk\">SL</div>"
     },
     "status": "active",
     "type": "government-design-system",
@@ -1766,7 +2810,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": false
+      "tooltip": false,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": false,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": false
     }
   },
   {
@@ -1844,6 +2898,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -1856,7 +2952,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<Textarea id=\"notes\" name=\"notes\" placeholder=\"Service notes...\" />",
       "tabs": "<Tabs items={tabList} />",
       "dialog": "<Modal id=\"delete-modal\" title=\"Delete Environment?\" />",
-      "tooltip": "<Tooltip label=\"SOC2 Verified\"><Button>Status</Button></Tooltip>"
+      "tooltip": "<Tooltip label=\"SOC2 Verified\"><Button>Status</Button></Tooltip>",
+      "card": "<div className=\"ds-card-uswds\"><h3 className=\"ds-card-title-uswds\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-uswds ds-menu-trigger-uswds\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-uswds\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-uswds ds-alert-uswds-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-uswds\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-uswds ds-badge-uswds-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-uswds\"><button className=\"ds-accordion-trigger-uswds\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-uswds\"><button className=\"ds-page-btn-uswds active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-uswds\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-uswds ds-avatar-md-uswds\">SL</div>"
     },
     "status": "active",
     "type": "government-design-system",
@@ -1870,7 +2976,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -1947,6 +3063,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -1959,7 +3117,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<MozillaProtocolTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<MozillaProtocolTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<MozillaProtocolDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<MozillaProtocolTooltip content=\"SOC2 Verified\"><button>Status</button></MozillaProtocolTooltip>"
+      "tooltip": "<MozillaProtocolTooltip content=\"SOC2 Verified\"><button>Status</button></MozillaProtocolTooltip>",
+      "card": "<div className=\"ds-card-mozilla\"><h3 className=\"ds-card-title-mozilla\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-mozilla ds-menu-trigger-mozilla\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-mozilla\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-mozilla ds-alert-mozilla-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-mozilla\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-mozilla ds-badge-mozilla-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-mozilla\"><button className=\"ds-accordion-trigger-mozilla\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-mozilla\"><button className=\"ds-page-btn-mozilla active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-mozilla\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-mozilla ds-avatar-md-mozilla\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -1973,7 +3141,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -2051,6 +3229,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -2063,7 +3283,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<UbuntuVanillaFrameworkTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<UbuntuVanillaFrameworkTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<UbuntuVanillaFrameworkDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<UbuntuVanillaFrameworkTooltip content=\"SOC2 Verified\"><button>Status</button></UbuntuVanillaFrameworkTooltip>"
+      "tooltip": "<UbuntuVanillaFrameworkTooltip content=\"SOC2 Verified\"><button>Status</button></UbuntuVanillaFrameworkTooltip>",
+      "card": "<div className=\"ds-card-ubuntu\"><h3 className=\"ds-card-title-ubuntu\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-ubuntu ds-menu-trigger-ubuntu\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-ubuntu\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-ubuntu ds-alert-ubuntu-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-ubuntu\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-ubuntu ds-badge-ubuntu-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-ubuntu\"><button className=\"ds-accordion-trigger-ubuntu\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-ubuntu\"><button className=\"ds-page-btn-ubuntu active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-ubuntu\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-ubuntu ds-avatar-md-ubuntu\">SL</div>"
     },
     "status": "active",
     "type": "platform-guidelines",
@@ -2077,7 +3307,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -2155,6 +3395,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -2167,7 +3449,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<TextArea value={value} onChange={setValue} aria-label=\"notes\" />",
       "tabs": "<Tabs activeKey={tab} onSelect={onSelect}><Tab eventKey={0} title=\"Overview\" /></Tab>",
       "dialog": "<Modal variant=\"small\" title=\"Delete Environment?\" isOpen={open} onClose={close} />",
-      "tooltip": "<Tooltip content=\"SOC2 Verified\"><Button>Status</Button></Tooltip>"
+      "tooltip": "<Tooltip content=\"SOC2 Verified\"><Button>Status</Button></Tooltip>",
+      "card": "<div className=\"ds-card-patternfly\"><h3 className=\"ds-card-title-patternfly\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-patternfly ds-menu-trigger-patternfly\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-patternfly\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-patternfly ds-alert-patternfly-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-patternfly\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-patternfly ds-badge-patternfly-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-patternfly\"><button className=\"ds-accordion-trigger-patternfly\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-patternfly\"><button className=\"ds-page-btn-patternfly active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-patternfly\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-patternfly ds-avatar-md-patternfly\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -2181,7 +3473,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -2258,6 +3560,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -2270,7 +3614,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<Textarea value={value} onChange={e => setValue(e.target.value)} placeholder=\"Service notes...\" />",
       "tabs": "<Tabs activeKey={activeKey} onChange={({ activeKey }) => setActiveKey(activeKey)}><Tab title=\"Overview\">...</Tab></Tabs>",
       "dialog": "<Modal onClose={close} isOpen={isOpen}><ModalHeader>Delete Environment?</ModalHeader></Modal>",
-      "tooltip": "<StatefulTooltip content=\"SOC2 Verified\"><Button>Status</Button></StatefulTooltip>"
+      "tooltip": "<StatefulTooltip content=\"SOC2 Verified\"><Button>Status</Button></StatefulTooltip>",
+      "card": "<div className=\"ds-card-base-web\"><h3 className=\"ds-card-title-base-web\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-base-web ds-menu-trigger-base-web\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-base-web\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-base-web ds-alert-base-web-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-base-web\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-base-web ds-badge-base-web-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-base-web\"><button className=\"ds-accordion-trigger-base-web\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-base-web\"><button className=\"ds-page-btn-base-web active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-base-web\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-base-web ds-avatar-md-base-web\">SL</div>"
     },
     "status": "legacy",
     "type": "ui-library",
@@ -2284,7 +3638,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -2362,6 +3726,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -2374,7 +3780,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<TextArea fill={true} growVertically={true} placeholder=\"Service notes...\" />",
       "tabs": "<Tabs id=\"TabsExample\" selectedTabId={tab} onChange={setTab}><Tab id=\"ov\" title=\"Overview\" /></Tabs>",
       "dialog": "<Dialog isOpen={isOpen} onClose={close} title=\"Delete Environment?\">...</Dialog>",
-      "tooltip": "<Tooltip content=\"SOC2 Verified\" position=\"top\"><Button text=\"Status\" /></Tooltip>"
+      "tooltip": "<Tooltip content=\"SOC2 Verified\" position=\"top\"><Button text=\"Status\" /></Tooltip>",
+      "card": "<div className=\"ds-card-blueprint\"><h3 className=\"ds-card-title-blueprint\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-blueprint ds-menu-trigger-blueprint\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-blueprint\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-blueprint ds-alert-blueprint-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-blueprint\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-blueprint ds-badge-blueprint-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-blueprint\"><button className=\"ds-accordion-trigger-blueprint\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-blueprint\"><button className=\"ds-page-btn-blueprint active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-blueprint\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-blueprint ds-avatar-md-blueprint\">SL</div>"
     },
     "status": "active",
     "type": "ui-library",
@@ -2388,7 +3804,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -2466,6 +3892,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -2478,7 +3946,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<SemanticUITextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<SemanticUITabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<SemanticUIDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<SemanticUITooltip content=\"SOC2 Verified\"><button>Status</button></SemanticUITooltip>"
+      "tooltip": "<SemanticUITooltip content=\"SOC2 Verified\"><button>Status</button></SemanticUITooltip>",
+      "card": "<div className=\"ds-card-semantic\"><h3 className=\"ds-card-title-semantic\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-semantic ds-menu-trigger-semantic\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-semantic\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-semantic ds-alert-semantic-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-semantic\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-semantic ds-badge-semantic-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-semantic\"><button className=\"ds-accordion-trigger-semantic\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-semantic\"><button className=\"ds-page-btn-semantic active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-semantic\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-semantic ds-avatar-md-semantic\">SL</div>"
     },
     "status": "legacy",
     "type": "ui-library",
@@ -2492,7 +3970,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -2569,6 +4057,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -2581,7 +4111,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<PorscheDesignSystemTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<PorscheDesignSystemTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<PorscheDesignSystemDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<PorscheDesignSystemTooltip content=\"SOC2 Verified\"><button>Status</button></PorscheDesignSystemTooltip>"
+      "tooltip": "<PorscheDesignSystemTooltip content=\"SOC2 Verified\"><button>Status</button></PorscheDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-porsche\"><h3 className=\"ds-card-title-porsche\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-porsche ds-menu-trigger-porsche\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-porsche\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-porsche ds-alert-porsche-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-porsche\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-porsche ds-badge-porsche-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-porsche\"><button className=\"ds-accordion-trigger-porsche\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-porsche\"><button className=\"ds-page-btn-porsche active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-porsche\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-porsche ds-avatar-md-porsche\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -2595,7 +4135,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -2672,6 +4222,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -2684,7 +4276,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<AudiDesignSystemTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<AudiDesignSystemTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<AudiDesignSystemDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<AudiDesignSystemTooltip content=\"SOC2 Verified\"><button>Status</button></AudiDesignSystemTooltip>"
+      "tooltip": "<AudiDesignSystemTooltip content=\"SOC2 Verified\"><button>Status</button></AudiDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-audi\"><h3 className=\"ds-card-title-audi\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-audi ds-menu-trigger-audi\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-audi\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-audi ds-alert-audi-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-audi\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-audi ds-badge-audi-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-audi\"><button className=\"ds-accordion-trigger-audi\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-audi\"><button className=\"ds-page-btn-audi active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-audi\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-audi ds-avatar-md-audi\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -2698,7 +4300,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -2775,6 +4387,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -2787,7 +4441,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<GitLabPajamasTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<GitLabPajamasTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<GitLabPajamasDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<GitLabPajamasTooltip content=\"SOC2 Verified\"><button>Status</button></GitLabPajamasTooltip>"
+      "tooltip": "<GitLabPajamasTooltip content=\"SOC2 Verified\"><button>Status</button></GitLabPajamasTooltip>",
+      "card": "<div className=\"ds-card-pajamas\"><h3 className=\"ds-card-title-pajamas\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-pajamas ds-menu-trigger-pajamas\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-pajamas\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-pajamas ds-alert-pajamas-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-pajamas\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-pajamas ds-badge-pajamas-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-pajamas\"><button className=\"ds-accordion-trigger-pajamas\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-pajamas\"><button className=\"ds-page-btn-pajamas active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-pajamas\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-pajamas ds-avatar-md-pajamas\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -2801,7 +4465,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -2878,6 +4552,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -2890,7 +4606,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<WiseDesignSystemTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<WiseDesignSystemTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<WiseDesignSystemDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<WiseDesignSystemTooltip content=\"SOC2 Verified\"><button>Status</button></WiseDesignSystemTooltip>"
+      "tooltip": "<WiseDesignSystemTooltip content=\"SOC2 Verified\"><button>Status</button></WiseDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-wise\"><h3 className=\"ds-card-title-wise\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-wise ds-menu-trigger-wise\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-wise\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-wise ds-alert-wise-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-wise\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-wise ds-badge-wise-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-wise\"><button className=\"ds-accordion-trigger-wise\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-wise\"><button className=\"ds-page-btn-wise active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-wise\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-wise ds-avatar-md-wise\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -2904,7 +4630,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -2981,6 +4717,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -2993,7 +4771,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<MailchimpWinkTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<MailchimpWinkTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<MailchimpWinkDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<MailchimpWinkTooltip content=\"SOC2 Verified\"><button>Status</button></MailchimpWinkTooltip>"
+      "tooltip": "<MailchimpWinkTooltip content=\"SOC2 Verified\"><button>Status</button></MailchimpWinkTooltip>",
+      "card": "<div className=\"ds-card-mailchimp\"><h3 className=\"ds-card-title-mailchimp\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-mailchimp ds-menu-trigger-mailchimp\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-mailchimp\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-mailchimp ds-alert-mailchimp-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-mailchimp\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-mailchimp ds-badge-mailchimp-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-mailchimp\"><button className=\"ds-accordion-trigger-mailchimp\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-mailchimp\"><button className=\"ds-page-btn-mailchimp active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-mailchimp\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-mailchimp ds-avatar-md-mailchimp\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -3007,7 +4795,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -3084,6 +4882,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -3096,7 +4936,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<ZendeskGardenTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<ZendeskGardenTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<ZendeskGardenDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<ZendeskGardenTooltip content=\"SOC2 Verified\"><button>Status</button></ZendeskGardenTooltip>"
+      "tooltip": "<ZendeskGardenTooltip content=\"SOC2 Verified\"><button>Status</button></ZendeskGardenTooltip>",
+      "card": "<div className=\"ds-card-garden\"><h3 className=\"ds-card-title-garden\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-garden ds-menu-trigger-garden\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-garden\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-garden ds-alert-garden-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-garden\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-garden ds-badge-garden-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-garden\"><button className=\"ds-accordion-trigger-garden\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-garden\"><button className=\"ds-page-btn-garden active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-garden\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-garden ds-avatar-md-garden\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -3110,7 +4960,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -3187,6 +5047,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -3199,7 +5101,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<OrbitDesignSystemTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<OrbitDesignSystemTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<OrbitDesignSystemDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<OrbitDesignSystemTooltip content=\"SOC2 Verified\"><button>Status</button></OrbitDesignSystemTooltip>"
+      "tooltip": "<OrbitDesignSystemTooltip content=\"SOC2 Verified\"><button>Status</button></OrbitDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-orbit\"><h3 className=\"ds-card-title-orbit\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-orbit ds-menu-trigger-orbit\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-orbit\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-orbit ds-alert-orbit-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-orbit\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-orbit ds-badge-orbit-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-orbit\"><button className=\"ds-accordion-trigger-orbit\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-orbit\"><button className=\"ds-page-btn-orbit active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-orbit\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-orbit ds-avatar-md-orbit\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -3213,7 +5125,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -3290,6 +5212,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -3302,7 +5266,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<WorkdayCanvasTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<WorkdayCanvasTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<WorkdayCanvasDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<WorkdayCanvasTooltip content=\"SOC2 Verified\"><button>Status</button></WorkdayCanvasTooltip>"
+      "tooltip": "<WorkdayCanvasTooltip content=\"SOC2 Verified\"><button>Status</button></WorkdayCanvasTooltip>",
+      "card": "<div className=\"ds-card-workday\"><h3 className=\"ds-card-title-workday\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-workday ds-menu-trigger-workday\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-workday\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-workday ds-alert-workday-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-workday\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-workday ds-badge-workday-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-workday\"><button className=\"ds-accordion-trigger-workday\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-workday\"><button className=\"ds-page-btn-workday active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-workday\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-workday ds-avatar-md-workday\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -3316,7 +5290,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -3393,6 +5377,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -3405,7 +5431,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<MongoDBLeafyGreenTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<MongoDBLeafyGreenTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<MongoDBLeafyGreenDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<MongoDBLeafyGreenTooltip content=\"SOC2 Verified\"><button>Status</button></MongoDBLeafyGreenTooltip>"
+      "tooltip": "<MongoDBLeafyGreenTooltip content=\"SOC2 Verified\"><button>Status</button></MongoDBLeafyGreenTooltip>",
+      "card": "<div className=\"ds-card-leafygreen\"><h3 className=\"ds-card-title-leafygreen\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-leafygreen ds-menu-trigger-leafygreen\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-leafygreen\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-leafygreen ds-alert-leafygreen-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-leafygreen\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-leafygreen ds-badge-leafygreen-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-leafygreen\"><button className=\"ds-accordion-trigger-leafygreen\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-leafygreen\"><button className=\"ds-page-btn-leafygreen active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-leafygreen\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-leafygreen ds-avatar-md-leafygreen\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -3419,7 +5455,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -3496,6 +5542,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -3508,7 +5596,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<Textarea value={value} onChange={({ detail }) => setValue(detail.value)} placeholder=\"Service notes...\" />",
       "tabs": "<Tabs tabs={[{ label: 'Overview', id: 'overview' }]} activeTabId={activeTab} onChange={({ detail }) => setActiveTab(detail.activeTabId)} />",
       "dialog": "<Modal visible={visible} onDismiss={close} header=\"Delete Environment?\">...</Modal>",
-      "tooltip": "<Popover content=\"SOC2 Verified\" triggerType=\"custom\"><Button>Status</Button></Popover>"
+      "tooltip": "<Popover content=\"SOC2 Verified\" triggerType=\"custom\"><Button>Status</Button></Popover>",
+      "card": "<div className=\"ds-card-cloudscape\"><h3 className=\"ds-card-title-cloudscape\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-cloudscape ds-menu-trigger-cloudscape\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-cloudscape\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-cloudscape ds-alert-cloudscape-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-cloudscape\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-cloudscape ds-badge-cloudscape-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-cloudscape\"><button className=\"ds-accordion-trigger-cloudscape\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-cloudscape\"><button className=\"ds-page-btn-cloudscape active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-cloudscape\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-cloudscape ds-avatar-md-cloudscape\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -3522,7 +5620,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -3599,6 +5707,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -3611,7 +5761,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<TextArea id=\"notes\" name=\"notes\" placeholder=\"Service notes...\" />",
       "tabs": "<Tabs selectedId={tab}><TabList aria-label=\"System details\"><Tab id=\"tab1\">Overview</Tab></TabList></Tabs>",
       "dialog": "<Modal ariaLabelledby=\"modal-header\" isOpen={isOpen} onDismiss={close}><ModalHeader>Delete?</ModalHeader></Modal>",
-      "tooltip": "<Tooltip text=\"SOC2 Verified\"><Button variant=\"secondary\">Status</Button></Tooltip>"
+      "tooltip": "<Tooltip text=\"SOC2 Verified\"><Button variant=\"secondary\">Status</Button></Tooltip>",
+      "card": "<div className=\"ds-card-paste\"><h3 className=\"ds-card-title-paste\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-paste ds-menu-trigger-paste\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-paste\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-paste ds-alert-paste-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-paste\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-paste ds-badge-paste-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-paste\"><button className=\"ds-accordion-trigger-paste\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-paste\"><button className=\"ds-page-btn-paste active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-paste\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-paste ds-avatar-md-paste\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -3625,7 +5785,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -3702,6 +5872,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -3714,7 +5926,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<DecathlonVitaminTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<DecathlonVitaminTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<DecathlonVitaminDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<DecathlonVitaminTooltip content=\"SOC2 Verified\"><button>Status</button></DecathlonVitaminTooltip>"
+      "tooltip": "<DecathlonVitaminTooltip content=\"SOC2 Verified\"><button>Status</button></DecathlonVitaminTooltip>",
+      "card": "<div className=\"ds-card-vitamin\"><h3 className=\"ds-card-title-vitamin\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-vitamin ds-menu-trigger-vitamin\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-vitamin\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-vitamin ds-alert-vitamin-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-vitamin\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-vitamin ds-badge-vitamin-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-vitamin\"><button className=\"ds-accordion-trigger-vitamin\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-vitamin\"><button className=\"ds-page-btn-vitamin active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-vitamin\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-vitamin ds-avatar-md-vitamin\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -3728,7 +5950,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -3805,6 +6037,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -3817,7 +6091,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<SpotifyBackstageTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<SpotifyBackstageTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<SpotifyBackstageDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<SpotifyBackstageTooltip content=\"SOC2 Verified\"><button>Status</button></SpotifyBackstageTooltip>"
+      "tooltip": "<SpotifyBackstageTooltip content=\"SOC2 Verified\"><button>Status</button></SpotifyBackstageTooltip>",
+      "card": "<div className=\"ds-card-backstage\"><h3 className=\"ds-card-title-backstage\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-backstage ds-menu-trigger-backstage\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-backstage\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-backstage ds-alert-backstage-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-backstage\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-backstage ds-badge-backstage-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-backstage\"><button className=\"ds-accordion-trigger-backstage\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-backstage\"><button className=\"ds-page-btn-backstage active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-backstage\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-backstage ds-avatar-md-backstage\">SL</div>"
     },
     "status": "active",
     "type": "ui-library",
@@ -3831,7 +6115,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -3908,6 +6202,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -3920,7 +6256,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<REICedarTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<REICedarTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<REICedarDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<REICedarTooltip content=\"SOC2 Verified\"><button>Status</button></REICedarTooltip>"
+      "tooltip": "<REICedarTooltip content=\"SOC2 Verified\"><button>Status</button></REICedarTooltip>",
+      "card": "<div className=\"ds-card-cedar\"><h3 className=\"ds-card-title-cedar\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-cedar ds-menu-trigger-cedar\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-cedar\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-cedar ds-alert-cedar-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-cedar\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-cedar ds-badge-cedar-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-cedar\"><button className=\"ds-accordion-trigger-cedar\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-cedar\"><button className=\"ds-page-btn-cedar active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-cedar\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-cedar ds-avatar-md-cedar\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -3934,7 +6280,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -4011,6 +6367,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -4023,7 +6421,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<ThumbprintTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<ThumbprintTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<ThumbprintDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<ThumbprintTooltip content=\"SOC2 Verified\"><button>Status</button></ThumbprintTooltip>"
+      "tooltip": "<ThumbprintTooltip content=\"SOC2 Verified\"><button>Status</button></ThumbprintTooltip>",
+      "card": "<div className=\"ds-card-thumbprint\"><h3 className=\"ds-card-title-thumbprint\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-thumbprint ds-menu-trigger-thumbprint\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-thumbprint\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-thumbprint ds-alert-thumbprint-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-thumbprint\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-thumbprint ds-badge-thumbprint-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-thumbprint\"><button className=\"ds-accordion-trigger-thumbprint\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-thumbprint\"><button className=\"ds-page-btn-thumbprint active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-thumbprint\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-thumbprint ds-avatar-md-thumbprint\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -4037,7 +6445,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -4114,6 +6532,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -4126,7 +6586,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<NordHealthTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<NordHealthTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<NordHealthDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<NordHealthTooltip content=\"SOC2 Verified\"><button>Status</button></NordHealthTooltip>"
+      "tooltip": "<NordHealthTooltip content=\"SOC2 Verified\"><button>Status</button></NordHealthTooltip>",
+      "card": "<div className=\"ds-card-nord\"><h3 className=\"ds-card-title-nord\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-nord ds-menu-trigger-nord\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-nord\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-nord ds-alert-nord-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-nord\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-nord ds-badge-nord-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-nord\"><button className=\"ds-accordion-trigger-nord\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-nord\"><button className=\"ds-page-btn-nord active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-nord\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-nord ds-avatar-md-nord\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -4140,7 +6610,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -4217,6 +6697,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -4229,7 +6751,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<FTOrigamiTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<FTOrigamiTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<FTOrigamiDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<FTOrigamiTooltip content=\"SOC2 Verified\"><button>Status</button></FTOrigamiTooltip>"
+      "tooltip": "<FTOrigamiTooltip content=\"SOC2 Verified\"><button>Status</button></FTOrigamiTooltip>",
+      "card": "<div className=\"ds-card-origami\"><h3 className=\"ds-card-title-origami\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-origami ds-menu-trigger-origami\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-origami\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-origami ds-alert-origami-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-origami\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-origami ds-badge-origami-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-origami\"><button className=\"ds-accordion-trigger-origami\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-origami\"><button className=\"ds-page-btn-origami active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-origami\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-origami ds-avatar-md-origami\">SL</div>"
     },
     "status": "legacy",
     "type": "design-system",
@@ -4243,7 +6775,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -4320,6 +6862,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -4332,7 +6916,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<SkyscannerBackpackTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<SkyscannerBackpackTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<SkyscannerBackpackDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<SkyscannerBackpackTooltip content=\"SOC2 Verified\"><button>Status</button></SkyscannerBackpackTooltip>"
+      "tooltip": "<SkyscannerBackpackTooltip content=\"SOC2 Verified\"><button>Status</button></SkyscannerBackpackTooltip>",
+      "card": "<div className=\"ds-card-backpack\"><h3 className=\"ds-card-title-backpack\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-backpack ds-menu-trigger-backpack\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-backpack\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-backpack ds-alert-backpack-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-backpack\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-backpack ds-badge-backpack-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-backpack\"><button className=\"ds-accordion-trigger-backpack\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-backpack\"><button className=\"ds-page-btn-backpack active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-backpack\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-backpack ds-avatar-md-backpack\">SL</div>"
     },
     "status": "active",
     "type": "design-system",
@@ -4346,7 +6940,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -4423,6 +7027,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -4435,7 +7081,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<FirefoxPhotonTextarea rows={4} placeholder=\"Service notes...\" value={text} />",
       "tabs": "<FirefoxPhotonTabs activeTab={activeTab} onChange={setActiveTab} items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<FirefoxPhotonDialog open={isOpen} onClose={() => setIsOpen(false)} title=\"Delete Environment?\" />",
-      "tooltip": "<FirefoxPhotonTooltip content=\"SOC2 Verified\"><button>Status</button></FirefoxPhotonTooltip>"
+      "tooltip": "<FirefoxPhotonTooltip content=\"SOC2 Verified\"><button>Status</button></FirefoxPhotonTooltip>",
+      "card": "<div className=\"ds-card-photon\"><h3 className=\"ds-card-title-photon\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-photon ds-menu-trigger-photon\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-photon\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-photon ds-alert-photon-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-photon\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-photon ds-badge-photon-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-photon\"><button className=\"ds-accordion-trigger-photon\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-photon\"><button className=\"ds-page-btn-photon active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-photon\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-photon ds-avatar-md-photon\">SL</div>"
     },
     "status": "legacy",
     "type": "platform-guidelines",
@@ -4449,7 +7105,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -4526,6 +7192,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -4538,7 +7246,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"win98-textarea\" rows={4} />",
       "tabs": "<div className=\"win98-tabs\"><button className=\"tab active\">Overview</button></div>",
       "dialog": "<div className=\"window\"><div className=\"title-bar\"><span>Delete?</span></div></div>",
-      "tooltip": "<div className=\"win98-tooltip\">SOC2 Verified</div>"
+      "tooltip": "<div className=\"win98-tooltip\">SOC2 Verified</div>",
+      "card": "<div className=\"ds-card-win98\"><h3 className=\"ds-card-title-win98\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-win98 ds-menu-trigger-win98\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-win98\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-win98 ds-alert-win98-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-win98\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-win98 ds-badge-win98-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-win98\"><button className=\"ds-accordion-trigger-win98\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-win98\"><button className=\"ds-page-btn-win98 active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-win98\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-win98 ds-avatar-md-win98\">SL</div>"
     },
     "status": "legacy",
     "type": "legacy-ui",
@@ -4552,7 +7270,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     }
   },
   {
@@ -4585,7 +7313,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -4646,6 +7384,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -4658,7 +7438,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<FirefoxAcornTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<FirefoxAcornTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<FirefoxAcornModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<FirefoxAcornTooltip content=\"SOC2 Verified\"><Button>Status</Button></FirefoxAcornTooltip>"
+      "tooltip": "<FirefoxAcornTooltip content=\"SOC2 Verified\"><Button>Status</Button></FirefoxAcornTooltip>",
+      "card": "<div className=\"ds-card-acorn\"><h3 className=\"ds-card-title-acorn\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-acorn ds-menu-trigger-acorn\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-acorn\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-acorn ds-alert-acorn-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-acorn\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-acorn ds-badge-acorn-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-acorn\"><button className=\"ds-accordion-trigger-acorn\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-acorn\"><button className=\"ds-page-btn-acorn active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-acorn\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-acorn ds-avatar-md-acorn\">SL</div>"
     }
   },
   {
@@ -4691,7 +7481,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -4752,6 +7552,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -4764,7 +7606,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<VercelGeistTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<VercelGeistTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<VercelGeistModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<VercelGeistTooltip content=\"SOC2 Verified\"><Button>Status</Button></VercelGeistTooltip>"
+      "tooltip": "<VercelGeistTooltip content=\"SOC2 Verified\"><Button>Status</Button></VercelGeistTooltip>",
+      "card": "<div className=\"ds-card-geist\"><h3 className=\"ds-card-title-geist\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-geist ds-menu-trigger-geist\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-geist\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-geist ds-alert-geist-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-geist\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-geist ds-badge-geist-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-geist\"><button className=\"ds-accordion-trigger-geist\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-geist\"><button className=\"ds-page-btn-geist active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-geist\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-geist ds-avatar-md-geist\">SL</div>"
     }
   },
   {
@@ -4797,7 +7649,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -4858,6 +7720,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -4870,7 +7774,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<HashiCorpHeliosTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<HashiCorpHeliosTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<HashiCorpHeliosModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<HashiCorpHeliosTooltip content=\"SOC2 Verified\"><Button>Status</Button></HashiCorpHeliosTooltip>"
+      "tooltip": "<HashiCorpHeliosTooltip content=\"SOC2 Verified\"><Button>Status</Button></HashiCorpHeliosTooltip>",
+      "card": "<div className=\"ds-card-helios\"><h3 className=\"ds-card-title-helios\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-helios ds-menu-trigger-helios\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-helios\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-helios ds-alert-helios-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-helios\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-helios ds-badge-helios-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-helios\"><button className=\"ds-accordion-trigger-helios\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-helios\"><button className=\"ds-page-btn-helios active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-helios\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-helios ds-avatar-md-helios\">SL</div>"
     }
   },
   {
@@ -4903,7 +7817,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": false,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -4961,6 +7885,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -4973,7 +7939,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<WikimediaCodexTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<WikimediaCodexTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<WikimediaCodexModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<WikimediaCodexTooltip content=\"SOC2 Verified\"><Button>Status</Button></WikimediaCodexTooltip>"
+      "tooltip": "<WikimediaCodexTooltip content=\"SOC2 Verified\"><Button>Status</Button></WikimediaCodexTooltip>",
+      "card": "<div className=\"ds-card-codex\"><h3 className=\"ds-card-title-codex\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-codex ds-menu-trigger-codex\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-codex\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-codex ds-alert-codex-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-codex\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-codex ds-badge-codex-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-codex\"><button className=\"ds-accordion-trigger-codex\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-codex\"><button className=\"ds-page-btn-codex active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-codex\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-codex ds-avatar-md-codex\">SL</div>"
     }
   },
   {
@@ -5006,7 +7982,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -5067,6 +8053,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -5079,7 +8107,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<EsriCalciteTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<EsriCalciteTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<EsriCalciteModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<EsriCalciteTooltip content=\"SOC2 Verified\"><Button>Status</Button></EsriCalciteTooltip>"
+      "tooltip": "<EsriCalciteTooltip content=\"SOC2 Verified\"><Button>Status</Button></EsriCalciteTooltip>",
+      "card": "<div className=\"ds-card-calcite\"><h3 className=\"ds-card-title-calcite\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-calcite ds-menu-trigger-calcite\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-calcite\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-calcite ds-alert-calcite-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-calcite\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-calcite ds-badge-calcite-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-calcite\"><button className=\"ds-accordion-trigger-calcite\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-calcite\"><button className=\"ds-page-btn-calcite active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-calcite\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-calcite ds-avatar-md-calcite\">SL</div>"
     }
   },
   {
@@ -5112,7 +8150,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -5173,6 +8221,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -5185,7 +8275,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<VMwareClarityTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<VMwareClarityTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<VMwareClarityModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<VMwareClarityTooltip content=\"SOC2 Verified\"><Button>Status</Button></VMwareClarityTooltip>"
+      "tooltip": "<VMwareClarityTooltip content=\"SOC2 Verified\"><Button>Status</Button></VMwareClarityTooltip>",
+      "card": "<div className=\"ds-card-clarity\"><h3 className=\"ds-card-title-clarity\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-clarity ds-menu-trigger-clarity\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-clarity\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-clarity ds-alert-clarity-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-clarity\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-clarity ds-badge-clarity-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-clarity\"><button className=\"ds-accordion-trigger-clarity\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-clarity\"><button className=\"ds-page-btn-clarity active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-clarity\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-clarity ds-avatar-md-clarity\">SL</div>"
     }
   },
   {
@@ -5218,7 +8318,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -5279,6 +8389,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -5291,7 +8443,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<SegmentEvergreenTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<SegmentEvergreenTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<SegmentEvergreenModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<SegmentEvergreenTooltip content=\"SOC2 Verified\"><Button>Status</Button></SegmentEvergreenTooltip>"
+      "tooltip": "<SegmentEvergreenTooltip content=\"SOC2 Verified\"><Button>Status</Button></SegmentEvergreenTooltip>",
+      "card": "<div className=\"ds-card-evergreen\"><h3 className=\"ds-card-title-evergreen\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-evergreen ds-menu-trigger-evergreen\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-evergreen\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-evergreen ds-alert-evergreen-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-evergreen\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-evergreen ds-badge-evergreen-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-evergreen\"><button className=\"ds-accordion-trigger-evergreen\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-evergreen\"><button className=\"ds-page-btn-evergreen active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-evergreen\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-evergreen ds-avatar-md-evergreen\">SL</div>"
     }
   },
   {
@@ -5324,7 +8486,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -5385,6 +8557,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -5397,7 +8611,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<HPEGrommetTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<HPEGrommetTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<HPEGrommetModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<HPEGrommetTooltip content=\"SOC2 Verified\"><Button>Status</Button></HPEGrommetTooltip>"
+      "tooltip": "<HPEGrommetTooltip content=\"SOC2 Verified\"><Button>Status</Button></HPEGrommetTooltip>",
+      "card": "<div className=\"ds-card-grommet\"><h3 className=\"ds-card-title-grommet\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-grommet ds-menu-trigger-grommet\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-grommet\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-grommet ds-alert-grommet-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-grommet\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-grommet ds-badge-grommet-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-grommet\"><button className=\"ds-accordion-trigger-grommet\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-grommet\"><button className=\"ds-page-btn-grommet active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-grommet\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-grommet ds-avatar-md-grommet\">SL</div>"
     }
   },
   {
@@ -5429,7 +8653,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -5490,6 +8724,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -5502,7 +8778,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<OracleRedwoodTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<OracleRedwoodTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<OracleRedwoodModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<OracleRedwoodTooltip content=\"SOC2 Verified\"><Button>Status</Button></OracleRedwoodTooltip>"
+      "tooltip": "<OracleRedwoodTooltip content=\"SOC2 Verified\"><Button>Status</Button></OracleRedwoodTooltip>",
+      "card": "<div className=\"ds-card-redwood\"><h3 className=\"ds-card-title-redwood\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-redwood ds-menu-trigger-redwood\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-redwood\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-redwood ds-alert-redwood-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-redwood\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-redwood ds-badge-redwood-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-redwood\"><button className=\"ds-accordion-trigger-redwood\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-redwood\"><button className=\"ds-page-btn-redwood active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-redwood\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-redwood ds-avatar-md-redwood\">SL</div>"
     }
   },
   {
@@ -5535,7 +8821,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -5596,6 +8892,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -5608,7 +8946,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<CiscoMomentumUITextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<CiscoMomentumUITabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<CiscoMomentumUIModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<CiscoMomentumUITooltip content=\"SOC2 Verified\"><Button>Status</Button></CiscoMomentumUITooltip>"
+      "tooltip": "<CiscoMomentumUITooltip content=\"SOC2 Verified\"><Button>Status</Button></CiscoMomentumUITooltip>",
+      "card": "<div className=\"ds-card-momentum\"><h3 className=\"ds-card-title-momentum\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-momentum ds-menu-trigger-momentum\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-momentum\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-momentum ds-alert-momentum-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-momentum\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-momentum ds-badge-momentum-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-momentum\"><button className=\"ds-accordion-trigger-momentum\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-momentum\"><button className=\"ds-page-btn-momentum active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-momentum\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-momentum ds-avatar-md-momentum\">SL</div>"
     }
   },
   {
@@ -5641,7 +8989,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -5702,6 +9060,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -5714,7 +9114,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<RedHatDesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<RedHatDesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<RedHatDesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<RedHatDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></RedHatDesignSystemTooltip>"
+      "tooltip": "<RedHatDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></RedHatDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-rhds\"><h3 className=\"ds-card-title-rhds\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-rhds ds-menu-trigger-rhds\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-rhds\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-rhds ds-alert-rhds-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-rhds\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-rhds ds-badge-rhds-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-rhds\"><button className=\"ds-accordion-trigger-rhds\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-rhds\"><button className=\"ds-page-btn-rhds active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-rhds\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-rhds ds-avatar-md-rhds\">SL</div>"
     }
   },
   {
@@ -5746,7 +9156,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -5807,6 +9227,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -5819,7 +9281,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<IntuitHarmonyQuickBooksTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<IntuitHarmonyQuickBooksTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<IntuitHarmonyQuickBooksModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<IntuitHarmonyQuickBooksTooltip content=\"SOC2 Verified\"><Button>Status</Button></IntuitHarmonyQuickBooksTooltip>"
+      "tooltip": "<IntuitHarmonyQuickBooksTooltip content=\"SOC2 Verified\"><Button>Status</Button></IntuitHarmonyQuickBooksTooltip>",
+      "card": "<div className=\"ds-card-quickbooks\"><h3 className=\"ds-card-title-quickbooks\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-quickbooks ds-menu-trigger-quickbooks\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-quickbooks\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-quickbooks ds-alert-quickbooks-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-quickbooks\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-quickbooks ds-badge-quickbooks-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-quickbooks\"><button className=\"ds-accordion-trigger-quickbooks\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-quickbooks\"><button className=\"ds-page-btn-quickbooks active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-quickbooks\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-quickbooks ds-avatar-md-quickbooks\">SL</div>"
     }
   },
   {
@@ -5851,7 +9323,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -5912,6 +9394,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -5924,7 +9448,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<ServiceNowDesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<ServiceNowDesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<ServiceNowDesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<ServiceNowDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></ServiceNowDesignSystemTooltip>"
+      "tooltip": "<ServiceNowDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></ServiceNowDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-servicenow\"><h3 className=\"ds-card-title-servicenow\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-servicenow ds-menu-trigger-servicenow\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-servicenow\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-servicenow ds-alert-servicenow-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-servicenow\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-servicenow ds-badge-servicenow-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-servicenow\"><button className=\"ds-accordion-trigger-servicenow\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-servicenow\"><button className=\"ds-page-btn-servicenow active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-servicenow\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-servicenow ds-avatar-md-servicenow\">SL</div>"
     }
   },
   {
@@ -5956,7 +9490,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -6017,6 +9561,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -6029,7 +9615,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<HubSpotCanvasTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<HubSpotCanvasTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<HubSpotCanvasModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<HubSpotCanvasTooltip content=\"SOC2 Verified\"><Button>Status</Button></HubSpotCanvasTooltip>"
+      "tooltip": "<HubSpotCanvasTooltip content=\"SOC2 Verified\"><Button>Status</Button></HubSpotCanvasTooltip>",
+      "card": "<div className=\"ds-card-hubspot\"><h3 className=\"ds-card-title-hubspot\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-hubspot ds-menu-trigger-hubspot\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-hubspot\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-hubspot ds-alert-hubspot-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-hubspot\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-hubspot ds-badge-hubspot-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-hubspot\"><button className=\"ds-accordion-trigger-hubspot\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-hubspot\"><button className=\"ds-page-btn-hubspot active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-hubspot\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-hubspot ds-avatar-md-hubspot\">SL</div>"
     }
   },
   {
@@ -6062,7 +9658,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -6123,6 +9729,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -6135,7 +9783,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<InforDesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<InforDesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<InforDesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<InforDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></InforDesignSystemTooltip>"
+      "tooltip": "<InforDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></InforDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-infor\"><h3 className=\"ds-card-title-infor\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-infor ds-menu-trigger-infor\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-infor\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-infor ds-alert-infor-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-infor\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-infor ds-badge-infor-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-infor\"><button className=\"ds-accordion-trigger-infor\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-infor\"><button className=\"ds-page-btn-infor active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-infor\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-infor ds-avatar-md-infor\">SL</div>"
     }
   },
   {
@@ -6168,7 +9826,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -6229,6 +9897,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -6241,7 +9951,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<InstructureUITextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<InstructureUITabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<InstructureUIModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<InstructureUITooltip content=\"SOC2 Verified\"><Button>Status</Button></InstructureUITooltip>"
+      "tooltip": "<InstructureUITooltip content=\"SOC2 Verified\"><Button>Status</Button></InstructureUITooltip>",
+      "card": "<div className=\"ds-card-instructure\"><h3 className=\"ds-card-title-instructure\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-instructure ds-menu-trigger-instructure\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-instructure\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-instructure ds-alert-instructure-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-instructure\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-instructure ds-badge-instructure-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-instructure\"><button className=\"ds-accordion-trigger-instructure\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-instructure\"><button className=\"ds-page-btn-instructure active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-instructure\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-instructure ds-avatar-md-instructure\">SL</div>"
     }
   },
   {
@@ -6274,7 +9994,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -6335,6 +10065,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -6347,7 +10119,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<LiferayLexiconClayTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<LiferayLexiconClayTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<LiferayLexiconClayModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<LiferayLexiconClayTooltip content=\"SOC2 Verified\"><Button>Status</Button></LiferayLexiconClayTooltip>"
+      "tooltip": "<LiferayLexiconClayTooltip content=\"SOC2 Verified\"><Button>Status</Button></LiferayLexiconClayTooltip>",
+      "card": "<div className=\"ds-card-lexicon\"><h3 className=\"ds-card-title-lexicon\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-lexicon ds-menu-trigger-lexicon\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-lexicon\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-lexicon ds-alert-lexicon-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-lexicon\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-lexicon ds-badge-lexicon-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-lexicon\"><button className=\"ds-accordion-trigger-lexicon\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-lexicon\"><button className=\"ds-page-btn-lexicon active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-lexicon\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-lexicon ds-avatar-md-lexicon\">SL</div>"
     }
   },
   {
@@ -6379,7 +10161,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -6440,6 +10232,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -6452,7 +10286,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<PegaCosmosTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<PegaCosmosTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<PegaCosmosModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<PegaCosmosTooltip content=\"SOC2 Verified\"><Button>Status</Button></PegaCosmosTooltip>"
+      "tooltip": "<PegaCosmosTooltip content=\"SOC2 Verified\"><Button>Status</Button></PegaCosmosTooltip>",
+      "card": "<div className=\"ds-card-pega-cosmos\"><h3 className=\"ds-card-title-pega-cosmos\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-pega-cosmos ds-menu-trigger-pega-cosmos\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-pega-cosmos\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-pega-cosmos ds-alert-pega-cosmos-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-pega-cosmos\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-pega-cosmos ds-badge-pega-cosmos-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-pega-cosmos\"><button className=\"ds-accordion-trigger-pega-cosmos\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-pega-cosmos\"><button className=\"ds-page-btn-pega-cosmos active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-pega-cosmos\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-pega-cosmos ds-avatar-md-pega-cosmos\">SL</div>"
     }
   },
   {
@@ -6485,7 +10329,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -6543,6 +10397,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -6555,7 +10451,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<PegaBoltDesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<PegaBoltDesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<PegaBoltDesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<PegaBoltDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></PegaBoltDesignSystemTooltip>"
+      "tooltip": "<PegaBoltDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></PegaBoltDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-pega-bolt\"><h3 className=\"ds-card-title-pega-bolt\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-pega-bolt ds-menu-trigger-pega-bolt\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-pega-bolt\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-pega-bolt ds-alert-pega-bolt-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-pega-bolt\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-pega-bolt ds-badge-pega-bolt-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-pega-bolt\"><button className=\"ds-accordion-trigger-pega-bolt\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-pega-bolt\"><button className=\"ds-page-btn-pega-bolt active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-pega-bolt\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-pega-bolt ds-avatar-md-pega-bolt\">SL</div>"
     }
   },
   {
@@ -6588,7 +10494,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -6649,6 +10565,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -6661,7 +10619,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<PluralsightDesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<PluralsightDesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<PluralsightDesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<PluralsightDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></PluralsightDesignSystemTooltip>"
+      "tooltip": "<PluralsightDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></PluralsightDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-pluralsight\"><h3 className=\"ds-card-title-pluralsight\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-pluralsight ds-menu-trigger-pluralsight\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-pluralsight\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-pluralsight ds-alert-pluralsight-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-pluralsight\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-pluralsight ds-badge-pluralsight-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-pluralsight\"><button className=\"ds-accordion-trigger-pluralsight\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-pluralsight\"><button className=\"ds-page-btn-pluralsight active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-pluralsight\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-pluralsight ds-avatar-md-pluralsight\">SL</div>"
     }
   },
   {
@@ -6694,7 +10662,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -6755,6 +10733,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -6767,7 +10787,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<DynatraceBaristaTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<DynatraceBaristaTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<DynatraceBaristaModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<DynatraceBaristaTooltip content=\"SOC2 Verified\"><Button>Status</Button></DynatraceBaristaTooltip>"
+      "tooltip": "<DynatraceBaristaTooltip content=\"SOC2 Verified\"><Button>Status</Button></DynatraceBaristaTooltip>",
+      "card": "<div className=\"ds-card-barista\"><h3 className=\"ds-card-title-barista\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-barista ds-menu-trigger-barista\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-barista\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-barista ds-alert-barista-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-barista\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-barista ds-badge-barista-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-barista\"><button className=\"ds-accordion-trigger-barista\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-barista\"><button className=\"ds-page-btn-barista active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-barista\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-barista ds-avatar-md-barista\">SL</div>"
     }
   },
   {
@@ -6799,7 +10829,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -6860,6 +10900,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -6872,7 +10954,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<ServiceTitanAnvilTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<ServiceTitanAnvilTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<ServiceTitanAnvilModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<ServiceTitanAnvilTooltip content=\"SOC2 Verified\"><Button>Status</Button></ServiceTitanAnvilTooltip>"
+      "tooltip": "<ServiceTitanAnvilTooltip content=\"SOC2 Verified\"><Button>Status</Button></ServiceTitanAnvilTooltip>",
+      "card": "<div className=\"ds-card-anvil\"><h3 className=\"ds-card-title-anvil\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-anvil ds-menu-trigger-anvil\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-anvil\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-anvil ds-alert-anvil-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-anvil\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-anvil ds-badge-anvil-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-anvil\"><button className=\"ds-accordion-trigger-anvil\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-anvil\"><button className=\"ds-page-btn-anvil active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-anvil\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-anvil ds-avatar-md-anvil\">SL</div>"
     }
   },
   {
@@ -6905,7 +10997,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -6966,6 +11068,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -6978,7 +11122,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<WonderflowWandaTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<WonderflowWandaTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<WonderflowWandaModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<WonderflowWandaTooltip content=\"SOC2 Verified\"><Button>Status</Button></WonderflowWandaTooltip>"
+      "tooltip": "<WonderflowWandaTooltip content=\"SOC2 Verified\"><Button>Status</Button></WonderflowWandaTooltip>",
+      "card": "<div className=\"ds-card-wanda\"><h3 className=\"ds-card-title-wanda\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-wanda ds-menu-trigger-wanda\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-wanda\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-wanda ds-alert-wanda-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-wanda\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-wanda ds-badge-wanda-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-wanda\"><button className=\"ds-accordion-trigger-wanda\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-wanda\"><button className=\"ds-page-btn-wanda active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-wanda\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-wanda ds-avatar-md-wanda\">SL</div>"
     }
   },
   {
@@ -7011,7 +11165,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -7072,6 +11236,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -7084,7 +11290,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<SumUpCircuitUITextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<SumUpCircuitUITabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<SumUpCircuitUIModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<SumUpCircuitUITooltip content=\"SOC2 Verified\"><Button>Status</Button></SumUpCircuitUITooltip>"
+      "tooltip": "<SumUpCircuitUITooltip content=\"SOC2 Verified\"><Button>Status</Button></SumUpCircuitUITooltip>",
+      "card": "<div className=\"ds-card-circuit-ui\"><h3 className=\"ds-card-title-circuit-ui\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-circuit-ui ds-menu-trigger-circuit-ui\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-circuit-ui\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-circuit-ui ds-alert-circuit-ui-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-circuit-ui\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-circuit-ui ds-badge-circuit-ui-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-circuit-ui\"><button className=\"ds-accordion-trigger-circuit-ui\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-circuit-ui\"><button className=\"ds-page-btn-circuit-ui active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-circuit-ui\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-circuit-ui ds-avatar-md-circuit-ui\">SL</div>"
     }
   },
   {
@@ -7116,7 +11332,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -7177,6 +11403,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -7189,7 +11457,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<LINEDesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<LINEDesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<LINEDesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<LINEDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></LINEDesignSystemTooltip>"
+      "tooltip": "<LINEDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></LINEDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-line\"><h3 className=\"ds-card-title-line\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-line ds-menu-trigger-line\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-line\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-line ds-alert-line-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-line\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-line ds-badge-line-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-line\"><button className=\"ds-accordion-trigger-line\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-line\"><button className=\"ds-page-btn-line active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-line\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-line ds-avatar-md-line\">SL</div>"
     }
   },
   {
@@ -7221,7 +11499,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -7282,6 +11570,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -7294,7 +11624,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<SamsungOneUITextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<SamsungOneUITabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<SamsungOneUIModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<SamsungOneUITooltip content=\"SOC2 Verified\"><Button>Status</Button></SamsungOneUITooltip>"
+      "tooltip": "<SamsungOneUITooltip content=\"SOC2 Verified\"><Button>Status</Button></SamsungOneUITooltip>",
+      "card": "<div className=\"ds-card-one-ui\"><h3 className=\"ds-card-title-one-ui\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-one-ui ds-menu-trigger-one-ui\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-one-ui\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-one-ui ds-alert-one-ui-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-one-ui\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-one-ui ds-badge-one-ui-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-one-ui\"><button className=\"ds-accordion-trigger-one-ui\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-one-ui\"><button className=\"ds-page-btn-one-ui active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-one-ui\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-one-ui ds-avatar-md-one-ui\">SL</div>"
     }
   },
   {
@@ -7326,7 +11666,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -7387,6 +11737,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -7399,7 +11791,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<MorningstarDesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<MorningstarDesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<MorningstarDesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<MorningstarDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></MorningstarDesignSystemTooltip>"
+      "tooltip": "<MorningstarDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></MorningstarDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-morningstar\"><h3 className=\"ds-card-title-morningstar\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-morningstar ds-menu-trigger-morningstar\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-morningstar\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-morningstar ds-alert-morningstar-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-morningstar\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-morningstar ds-badge-morningstar-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-morningstar\"><button className=\"ds-accordion-trigger-morningstar\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-morningstar\"><button className=\"ds-page-btn-morningstar active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-morningstar\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-morningstar ds-avatar-md-morningstar\">SL</div>"
     }
   },
   {
@@ -7431,7 +11833,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -7492,6 +11904,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -7504,7 +11958,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<MixpanelDesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<MixpanelDesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<MixpanelDesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<MixpanelDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></MixpanelDesignSystemTooltip>"
+      "tooltip": "<MixpanelDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></MixpanelDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-mixpanel\"><h3 className=\"ds-card-title-mixpanel\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-mixpanel ds-menu-trigger-mixpanel\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-mixpanel\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-mixpanel ds-alert-mixpanel-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-mixpanel\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-mixpanel ds-badge-mixpanel-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-mixpanel\"><button className=\"ds-accordion-trigger-mixpanel\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-mixpanel\"><button className=\"ds-page-btn-mixpanel active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-mixpanel\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-mixpanel ds-avatar-md-mixpanel\">SL</div>"
     }
   },
   {
@@ -7537,7 +12001,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -7598,6 +12072,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -7610,7 +12126,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<GrubhubNachosTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<GrubhubNachosTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<GrubhubNachosModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<GrubhubNachosTooltip content=\"SOC2 Verified\"><Button>Status</Button></GrubhubNachosTooltip>"
+      "tooltip": "<GrubhubNachosTooltip content=\"SOC2 Verified\"><Button>Status</Button></GrubhubNachosTooltip>",
+      "card": "<div className=\"ds-card-nachos\"><h3 className=\"ds-card-title-nachos\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-nachos ds-menu-trigger-nachos\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-nachos\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-nachos ds-alert-nachos-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-nachos\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-nachos ds-badge-nachos-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-nachos\"><button className=\"ds-accordion-trigger-nachos\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-nachos\"><button className=\"ds-page-btn-nachos active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-nachos\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-nachos ds-avatar-md-nachos\">SL</div>"
     }
   },
   {
@@ -7642,7 +12168,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -7703,6 +12239,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -7715,7 +12293,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<LRNLiquidDesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<LRNLiquidDesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<LRNLiquidDesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<LRNLiquidDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></LRNLiquidDesignSystemTooltip>"
+      "tooltip": "<LRNLiquidDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></LRNLiquidDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-liquid\"><h3 className=\"ds-card-title-liquid\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-liquid ds-menu-trigger-liquid\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-liquid\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-liquid ds-alert-liquid-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-liquid\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-liquid ds-badge-liquid-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-liquid\"><button className=\"ds-accordion-trigger-liquid\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-liquid\"><button className=\"ds-page-btn-liquid active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-liquid\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-liquid ds-avatar-md-liquid\">SL</div>"
     }
   },
   {
@@ -7748,7 +12336,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -7809,6 +12407,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -7821,7 +12461,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<MYOBFeelixTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<MYOBFeelixTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<MYOBFeelixModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<MYOBFeelixTooltip content=\"SOC2 Verified\"><Button>Status</Button></MYOBFeelixTooltip>"
+      "tooltip": "<MYOBFeelixTooltip content=\"SOC2 Verified\"><Button>Status</Button></MYOBFeelixTooltip>",
+      "card": "<div className=\"ds-card-feelix\"><h3 className=\"ds-card-title-feelix\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-feelix ds-menu-trigger-feelix\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-feelix\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-feelix ds-alert-feelix-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-feelix\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-feelix ds-badge-feelix-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-feelix\"><button className=\"ds-accordion-trigger-feelix\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-feelix\"><button className=\"ds-page-btn-feelix active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-feelix\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-feelix ds-avatar-md-feelix\">SL</div>"
     }
   },
   {
@@ -7853,7 +12503,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -7914,6 +12574,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -7926,7 +12628,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<elementaryOSHIGTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<elementaryOSHIGTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<elementaryOSHIGModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<elementaryOSHIGTooltip content=\"SOC2 Verified\"><Button>Status</Button></elementaryOSHIGTooltip>"
+      "tooltip": "<elementaryOSHIGTooltip content=\"SOC2 Verified\"><Button>Status</Button></elementaryOSHIGTooltip>",
+      "card": "<div className=\"ds-card-elementary\"><h3 className=\"ds-card-title-elementary\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-elementary ds-menu-trigger-elementary\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-elementary\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-elementary ds-alert-elementary-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-elementary\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-elementary ds-badge-elementary-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-elementary\"><button className=\"ds-accordion-trigger-elementary\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-elementary\"><button className=\"ds-page-btn-elementary active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-elementary\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-elementary ds-avatar-md-elementary\">SL</div>"
     }
   },
   {
@@ -7958,7 +12670,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -8016,6 +12738,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -8028,7 +12792,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<BBCGlobalExperienceLanguageTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<BBCGlobalExperienceLanguageTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<BBCGlobalExperienceLanguageModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<BBCGlobalExperienceLanguageTooltip content=\"SOC2 Verified\"><Button>Status</Button></BBCGlobalExperienceLanguageTooltip>"
+      "tooltip": "<BBCGlobalExperienceLanguageTooltip content=\"SOC2 Verified\"><Button>Status</Button></BBCGlobalExperienceLanguageTooltip>",
+      "card": "<div className=\"ds-card-bbc-gel\"><h3 className=\"ds-card-title-bbc-gel\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-bbc-gel ds-menu-trigger-bbc-gel\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-bbc-gel\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-bbc-gel ds-alert-bbc-gel-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-bbc-gel\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-bbc-gel ds-badge-bbc-gel-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-bbc-gel\"><button className=\"ds-accordion-trigger-bbc-gel\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-bbc-gel\"><button className=\"ds-page-btn-bbc-gel active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-bbc-gel\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-bbc-gel ds-avatar-md-bbc-gel\">SL</div>"
     }
   },
   {
@@ -8061,7 +12835,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -8122,6 +12906,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -8134,7 +12960,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<SproutSocialSeedsTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<SproutSocialSeedsTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<SproutSocialSeedsModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<SproutSocialSeedsTooltip content=\"SOC2 Verified\"><Button>Status</Button></SproutSocialSeedsTooltip>"
+      "tooltip": "<SproutSocialSeedsTooltip content=\"SOC2 Verified\"><Button>Status</Button></SproutSocialSeedsTooltip>",
+      "card": "<div className=\"ds-card-seeds\"><h3 className=\"ds-card-title-seeds\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-seeds ds-menu-trigger-seeds\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-seeds\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-seeds ds-alert-seeds-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-seeds\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-seeds ds-badge-seeds-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-seeds\"><button className=\"ds-accordion-trigger-seeds\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-seeds\"><button className=\"ds-page-btn-seeds active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-seeds\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-seeds ds-avatar-md-seeds\">SL</div>"
     }
   },
   {
@@ -8167,7 +13003,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -8228,6 +13074,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -8240,7 +13128,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<StackOverflowStacksTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<StackOverflowStacksTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<StackOverflowStacksModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<StackOverflowStacksTooltip content=\"SOC2 Verified\"><Button>Status</Button></StackOverflowStacksTooltip>"
+      "tooltip": "<StackOverflowStacksTooltip content=\"SOC2 Verified\"><Button>Status</Button></StackOverflowStacksTooltip>",
+      "card": "<div className=\"ds-card-stacks\"><h3 className=\"ds-card-title-stacks\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-stacks ds-menu-trigger-stacks\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-stacks\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-stacks ds-alert-stacks-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-stacks\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-stacks ds-badge-stacks-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-stacks\"><button className=\"ds-accordion-trigger-stacks\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-stacks\"><button className=\"ds-page-btn-stacks active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-stacks\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-stacks ds-avatar-md-stacks\">SL</div>"
     }
   },
   {
@@ -8273,7 +13171,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -8334,6 +13242,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -8346,7 +13296,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<HudlUniformTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<HudlUniformTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<HudlUniformModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<HudlUniformTooltip content=\"SOC2 Verified\"><Button>Status</Button></HudlUniformTooltip>"
+      "tooltip": "<HudlUniformTooltip content=\"SOC2 Verified\"><Button>Status</Button></HudlUniformTooltip>",
+      "card": "<div className=\"ds-card-uniform\"><h3 className=\"ds-card-title-uniform\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-uniform ds-menu-trigger-uniform\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-uniform\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-uniform ds-alert-uniform-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-uniform\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-uniform ds-badge-uniform-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-uniform\"><button className=\"ds-accordion-trigger-uniform\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-uniform\"><button className=\"ds-page-btn-uniform active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-uniform\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-uniform ds-avatar-md-uniform\">SL</div>"
     }
   },
   {
@@ -8379,7 +13339,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -8440,6 +13410,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -8452,7 +13464,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<VTEXStyleguideTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<VTEXStyleguideTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<VTEXStyleguideModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<VTEXStyleguideTooltip content=\"SOC2 Verified\"><Button>Status</Button></VTEXStyleguideTooltip>"
+      "tooltip": "<VTEXStyleguideTooltip content=\"SOC2 Verified\"><Button>Status</Button></VTEXStyleguideTooltip>",
+      "card": "<div className=\"ds-card-vtex\"><h3 className=\"ds-card-title-vtex\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-vtex ds-menu-trigger-vtex\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-vtex\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-vtex ds-alert-vtex-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-vtex\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-vtex ds-badge-vtex-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-vtex\"><button className=\"ds-accordion-trigger-vtex\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-vtex\"><button className=\"ds-page-btn-vtex active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-vtex\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-vtex ds-avatar-md-vtex\">SL</div>"
     }
   },
   {
@@ -8485,7 +13507,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -8546,6 +13578,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -8558,7 +13632,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<WellhubYogaTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<WellhubYogaTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<WellhubYogaModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<WellhubYogaTooltip content=\"SOC2 Verified\"><Button>Status</Button></WellhubYogaTooltip>"
+      "tooltip": "<WellhubYogaTooltip content=\"SOC2 Verified\"><Button>Status</Button></WellhubYogaTooltip>",
+      "card": "<div className=\"ds-card-yoga\"><h3 className=\"ds-card-title-yoga\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-yoga ds-menu-trigger-yoga\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-yoga\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-yoga ds-alert-yoga-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-yoga\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-yoga ds-badge-yoga-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-yoga\"><button className=\"ds-accordion-trigger-yoga\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-yoga\"><button className=\"ds-page-btn-yoga active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-yoga\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-yoga ds-avatar-md-yoga\">SL</div>"
     }
   },
   {
@@ -8591,7 +13675,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -8652,6 +13746,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -8664,7 +13800,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<IndianaUniversityRivetTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<IndianaUniversityRivetTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<IndianaUniversityRivetModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<IndianaUniversityRivetTooltip content=\"SOC2 Verified\"><Button>Status</Button></IndianaUniversityRivetTooltip>"
+      "tooltip": "<IndianaUniversityRivetTooltip content=\"SOC2 Verified\"><Button>Status</Button></IndianaUniversityRivetTooltip>",
+      "card": "<div className=\"ds-card-rivet\"><h3 className=\"ds-card-title-rivet\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-rivet ds-menu-trigger-rivet\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-rivet\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-rivet ds-alert-rivet-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-rivet\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-rivet ds-badge-rivet-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-rivet\"><button className=\"ds-accordion-trigger-rivet\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-rivet\"><button className=\"ds-page-btn-rivet active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-rivet\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-rivet ds-avatar-md-rivet\">SL</div>"
     }
   },
   {
@@ -8697,7 +13843,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -8758,6 +13914,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -8770,7 +13968,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<PricelineOneTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<PricelineOneTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<PricelineOneModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<PricelineOneTooltip content=\"SOC2 Verified\"><Button>Status</Button></PricelineOneTooltip>"
+      "tooltip": "<PricelineOneTooltip content=\"SOC2 Verified\"><Button>Status</Button></PricelineOneTooltip>",
+      "card": "<div className=\"ds-card-priceline-one\"><h3 className=\"ds-card-title-priceline-one\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-priceline-one ds-menu-trigger-priceline-one\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-priceline-one\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-priceline-one ds-alert-priceline-one-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-priceline-one\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-priceline-one ds-badge-priceline-one-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-priceline-one\"><button className=\"ds-accordion-trigger-priceline-one\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-priceline-one\"><button className=\"ds-page-btn-priceline-one active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-priceline-one\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-priceline-one ds-avatar-md-priceline-one\">SL</div>"
     }
   },
   {
@@ -8803,7 +14011,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -8864,6 +14082,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -8876,7 +14136,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<SEEKStyleGuideBraidTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<SEEKStyleGuideBraidTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<SEEKStyleGuideBraidModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<SEEKStyleGuideBraidTooltip content=\"SOC2 Verified\"><Button>Status</Button></SEEKStyleGuideBraidTooltip>"
+      "tooltip": "<SEEKStyleGuideBraidTooltip content=\"SOC2 Verified\"><Button>Status</Button></SEEKStyleGuideBraidTooltip>",
+      "card": "<div className=\"ds-card-seek\"><h3 className=\"ds-card-title-seek\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-seek ds-menu-trigger-seek\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-seek\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-seek ds-alert-seek-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-seek\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-seek ds-badge-seek-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-seek\"><button className=\"ds-accordion-trigger-seek\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-seek\"><button className=\"ds-page-btn-seek active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-seek\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-seek ds-avatar-md-seek\">SL</div>"
     }
   },
   {
@@ -8909,7 +14179,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": false
+      "tooltip": false,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": false,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": false
     },
     "variants": {
       "buttons": [
@@ -8967,6 +14247,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Not Documented / Omitted in Official Spec"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -8979,7 +14301,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<NHSdigitalservicemanualTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<NHSdigitalservicemanualTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<NHSdigitalservicemanualModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "/* Tooltip omitted in official design system: use visible helper text */"
+      "tooltip": "/* Tooltip omitted in official design system: use visible helper text */",
+      "card": "<div className=\"ds-card-nhs\"><h3 className=\"ds-card-title-nhs\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-nhs ds-menu-trigger-nhs\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-nhs\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-nhs ds-alert-nhs-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-nhs\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-nhs ds-badge-nhs-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-nhs\"><button className=\"ds-accordion-trigger-nhs\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-nhs\"><button className=\"ds-page-btn-nhs active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-nhs\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-nhs ds-avatar-md-nhs\">SL</div>"
     }
   },
   {
@@ -9012,7 +14344,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": false
+      "tooltip": false,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": false
     },
     "variants": {
       "buttons": [
@@ -9073,6 +14415,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Not Documented / Omitted in Official Spec"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -9085,7 +14469,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<SingaporeDesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<SingaporeDesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<SingaporeDesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "/* Tooltip omitted in official design system: use visible helper text */"
+      "tooltip": "/* Tooltip omitted in official design system: use visible helper text */",
+      "card": "<div className=\"ds-card-singapore-gov\"><h3 className=\"ds-card-title-singapore-gov\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-singapore-gov ds-menu-trigger-singapore-gov\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-singapore-gov\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-singapore-gov ds-alert-singapore-gov-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-singapore-gov\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-singapore-gov ds-badge-singapore-gov-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-singapore-gov\"><button className=\"ds-accordion-trigger-singapore-gov\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-singapore-gov\"><button className=\"ds-page-btn-singapore-gov active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-singapore-gov\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-singapore-gov ds-avatar-md-singapore-gov\">SL</div>"
     }
   },
   {
@@ -9118,7 +14512,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": false
     },
     "variants": {
       "buttons": [
@@ -9176,6 +14580,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -9188,7 +14634,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<OntarioDesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<OntarioDesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<OntarioDesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<OntarioDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></OntarioDesignSystemTooltip>"
+      "tooltip": "<OntarioDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></OntarioDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-ontario\"><h3 className=\"ds-card-title-ontario\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-ontario ds-menu-trigger-ontario\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-ontario\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-ontario ds-alert-ontario-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-ontario\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-ontario ds-badge-ontario-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-ontario\"><button className=\"ds-accordion-trigger-ontario\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-ontario\"><button className=\"ds-page-btn-ontario active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-ontario\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-ontario ds-avatar-md-ontario\">SL</div>"
     }
   },
   {
@@ -9220,7 +14676,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -9278,6 +14744,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -9290,7 +14798,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<NewYorkStateDesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<NewYorkStateDesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<NewYorkStateDesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<NewYorkStateDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></NewYorkStateDesignSystemTooltip>"
+      "tooltip": "<NewYorkStateDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></NewYorkStateDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-nys\"><h3 className=\"ds-card-title-nys\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-nys ds-menu-trigger-nys\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-nys\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-nys ds-alert-nys-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-nys\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-nys ds-badge-nys-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-nys\"><button className=\"ds-accordion-trigger-nys\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-nys\"><button className=\"ds-page-btn-nys active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-nys\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-nys ds-avatar-md-nys\">SL</div>"
     }
   },
   {
@@ -9322,7 +14840,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -9383,6 +14911,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -9395,7 +14965,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<UAEDesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<UAEDesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<UAEDesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<UAEDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></UAEDesignSystemTooltip>"
+      "tooltip": "<UAEDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></UAEDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-uae\"><h3 className=\"ds-card-title-uae\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-uae ds-menu-trigger-uae\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-uae\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-uae ds-alert-uae-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-uae\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-uae ds-badge-uae-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-uae\"><button className=\"ds-accordion-trigger-uae\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-uae\"><button className=\"ds-page-btn-uae active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-uae\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-uae ds-avatar-md-uae\">SL</div>"
     }
   },
   {
@@ -9428,7 +15008,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -9489,6 +15079,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -9501,7 +15133,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<HelsinkiDesignSystemHDSTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<HelsinkiDesignSystemHDSTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<HelsinkiDesignSystemHDSModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<HelsinkiDesignSystemHDSTooltip content=\"SOC2 Verified\"><Button>Status</Button></HelsinkiDesignSystemHDSTooltip>"
+      "tooltip": "<HelsinkiDesignSystemHDSTooltip content=\"SOC2 Verified\"><Button>Status</Button></HelsinkiDesignSystemHDSTooltip>",
+      "card": "<div className=\"ds-card-helsinki\"><h3 className=\"ds-card-title-helsinki\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-helsinki ds-menu-trigger-helsinki\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-helsinki\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-helsinki ds-alert-helsinki-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-helsinki\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-helsinki ds-badge-helsinki-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-helsinki\"><button className=\"ds-accordion-trigger-helsinki\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-helsinki\"><button className=\"ds-page-btn-helsinki active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-helsinki\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-helsinki ds-avatar-md-helsinki\">SL</div>"
     }
   },
   {
@@ -9534,7 +15176,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -9595,6 +15247,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -9607,7 +15301,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<NSWDesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<NSWDesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<NSWDesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<NSWDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></NSWDesignSystemTooltip>"
+      "tooltip": "<NSWDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></NSWDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-nsw\"><h3 className=\"ds-card-title-nsw\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-nsw ds-menu-trigger-nsw\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-nsw\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-nsw ds-alert-nsw-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-nsw\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-nsw ds-badge-nsw-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-nsw\"><button className=\"ds-accordion-trigger-nsw\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-nsw\"><button className=\"ds-page-btn-nsw active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-nsw\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-nsw ds-avatar-md-nsw\">SL</div>"
     }
   },
   {
@@ -9640,7 +15344,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": false
+      "tooltip": false,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": false,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": false
     },
     "variants": {
       "buttons": [
@@ -9698,6 +15412,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Not Documented / Omitted in Official Spec"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -9710,7 +15466,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<AustralianGovernmentDesignSystemGOLDTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<AustralianGovernmentDesignSystemGOLDTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<AustralianGovernmentDesignSystemGOLDModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "/* Tooltip omitted in official design system: use visible helper text */"
+      "tooltip": "/* Tooltip omitted in official design system: use visible helper text */",
+      "card": "<div className=\"ds-card-australian-gov\"><h3 className=\"ds-card-title-australian-gov\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-australian-gov ds-menu-trigger-australian-gov\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-australian-gov\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-australian-gov ds-alert-australian-gov-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-australian-gov\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-australian-gov ds-badge-australian-gov-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-australian-gov\"><button className=\"ds-accordion-trigger-australian-gov\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-australian-gov\"><button className=\"ds-page-btn-australian-gov active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-australian-gov\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-australian-gov ds-avatar-md-australian-gov\">SL</div>"
     }
   },
   {
@@ -9743,7 +15509,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": false,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -9801,6 +15577,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -9813,7 +15631,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<DesignersItaliaTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<DesignersItaliaTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<DesignersItaliaModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<DesignersItaliaTooltip content=\"SOC2 Verified\"><Button>Status</Button></DesignersItaliaTooltip>"
+      "tooltip": "<DesignersItaliaTooltip content=\"SOC2 Verified\"><Button>Status</Button></DesignersItaliaTooltip>",
+      "card": "<div className=\"ds-card-italia\"><h3 className=\"ds-card-title-italia\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-italia ds-menu-trigger-italia\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-italia\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-italia ds-alert-italia-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-italia\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-italia ds-badge-italia-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-italia\"><button className=\"ds-accordion-trigger-italia\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-italia\"><button className=\"ds-page-btn-italia active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-italia\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-italia ds-avatar-md-italia\">SL</div>"
     }
   },
   {
@@ -9846,7 +15674,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": false,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": false
     },
     "variants": {
       "buttons": [
@@ -9904,6 +15742,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -9916,7 +15796,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<DetFllesDesignsystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<DetFllesDesignsystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<DetFllesDesignsystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<DetFllesDesignsystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></DetFllesDesignsystemTooltip>"
+      "tooltip": "<DetFllesDesignsystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></DetFllesDesignsystemTooltip>",
+      "card": "<div className=\"ds-card-det-faelles\"><h3 className=\"ds-card-title-det-faelles\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-det-faelles ds-menu-trigger-det-faelles\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-det-faelles\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-det-faelles ds-alert-det-faelles-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-det-faelles\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-det-faelles ds-badge-det-faelles-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-det-faelles\"><button className=\"ds-accordion-trigger-det-faelles\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-det-faelles\"><button className=\"ds-page-btn-det-faelles active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-det-faelles\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-det-faelles ds-avatar-md-det-faelles\">SL</div>"
     }
   },
   {
@@ -9949,7 +15839,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": false
+      "tooltip": false,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": false,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -10007,6 +15907,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Not Documented / Omitted in Official Spec"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -10019,7 +15961,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<SystmedeDesigndeltatDSFRTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<SystmedeDesigndeltatDSFRTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<SystmedeDesigndeltatDSFRModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "/* Tooltip omitted in official design system: use visible helper text */"
+      "tooltip": "/* Tooltip omitted in official design system: use visible helper text */",
+      "card": "<div className=\"ds-card-dsfr\"><h3 className=\"ds-card-title-dsfr\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-dsfr ds-menu-trigger-dsfr\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-dsfr\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-dsfr ds-alert-dsfr-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-dsfr\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-dsfr ds-badge-dsfr-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-dsfr\"><button className=\"ds-accordion-trigger-dsfr\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-dsfr\"><button className=\"ds-page-btn-dsfr active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-dsfr\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-dsfr ds-avatar-md-dsfr\">SL</div>"
     }
   },
   {
@@ -10052,7 +16004,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -10113,6 +16075,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -10125,7 +16129,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<trivagoAhoyTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<trivagoAhoyTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<trivagoAhoyModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<trivagoAhoyTooltip content=\"SOC2 Verified\"><Button>Status</Button></trivagoAhoyTooltip>"
+      "tooltip": "<trivagoAhoyTooltip content=\"SOC2 Verified\"><Button>Status</Button></trivagoAhoyTooltip>",
+      "card": "<div className=\"ds-card-ahoy\"><h3 className=\"ds-card-title-ahoy\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-ahoy ds-menu-trigger-ahoy\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-ahoy\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-ahoy ds-alert-ahoy-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-ahoy\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-ahoy ds-badge-ahoy-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-ahoy\"><button className=\"ds-accordion-trigger-ahoy\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-ahoy\"><button className=\"ds-page-btn-ahoy active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-ahoy\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-ahoy ds-avatar-md-ahoy\">SL</div>"
     }
   },
   {
@@ -10157,7 +16171,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -10218,6 +16242,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -10230,7 +16296,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<TractorSupplyTractieTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<TractorSupplyTractieTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<TractorSupplyTractieModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<TractorSupplyTractieTooltip content=\"SOC2 Verified\"><Button>Status</Button></TractorSupplyTractieTooltip>"
+      "tooltip": "<TractorSupplyTractieTooltip content=\"SOC2 Verified\"><Button>Status</Button></TractorSupplyTractieTooltip>",
+      "card": "<div className=\"ds-card-tractie\"><h3 className=\"ds-card-title-tractie\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-tractie ds-menu-trigger-tractie\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-tractie\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-tractie ds-alert-tractie-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-tractie\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-tractie ds-badge-tractie-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-tractie\"><button className=\"ds-accordion-trigger-tractie\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-tractie\"><button className=\"ds-page-btn-tractie active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-tractie\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-tractie ds-avatar-md-tractie\">SL</div>"
     }
   },
   {
@@ -10263,7 +16339,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -10324,6 +16410,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -10336,7 +16464,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<AXADesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<AXADesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<AXADesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<AXADesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></AXADesignSystemTooltip>"
+      "tooltip": "<AXADesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></AXADesignSystemTooltip>",
+      "card": "<div className=\"ds-card-axa\"><h3 className=\"ds-card-title-axa\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-axa ds-menu-trigger-axa\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-axa\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-axa ds-alert-axa-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-axa\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-axa ds-badge-axa-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-axa\"><button className=\"ds-accordion-trigger-axa\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-axa\"><button className=\"ds-page-btn-axa active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-axa\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-axa ds-avatar-md-axa\">SL</div>"
     }
   },
   {
@@ -10369,7 +16507,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -10430,6 +16578,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -10442,7 +16632,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<AlfaBankARUIFeatherTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<AlfaBankARUIFeatherTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<AlfaBankARUIFeatherModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<AlfaBankARUIFeatherTooltip content=\"SOC2 Verified\"><Button>Status</Button></AlfaBankARUIFeatherTooltip>"
+      "tooltip": "<AlfaBankARUIFeatherTooltip content=\"SOC2 Verified\"><Button>Status</Button></AlfaBankARUIFeatherTooltip>",
+      "card": "<div className=\"ds-card-arui-feather\"><h3 className=\"ds-card-title-arui-feather\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-arui-feather ds-menu-trigger-arui-feather\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-arui-feather\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-arui-feather ds-alert-arui-feather-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-arui-feather\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-arui-feather ds-badge-arui-feather-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-arui-feather\"><button className=\"ds-accordion-trigger-arui-feather\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-arui-feather\"><button className=\"ds-page-btn-arui-feather active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-arui-feather\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-arui-feather ds-avatar-md-arui-feather\">SL</div>"
     }
   },
   {
@@ -10474,7 +16674,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -10535,6 +16745,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -10547,7 +16799,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<BeelineDesignSystemTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<BeelineDesignSystemTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<BeelineDesignSystemModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<BeelineDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></BeelineDesignSystemTooltip>"
+      "tooltip": "<BeelineDesignSystemTooltip content=\"SOC2 Verified\"><Button>Status</Button></BeelineDesignSystemTooltip>",
+      "card": "<div className=\"ds-card-beeline\"><h3 className=\"ds-card-title-beeline\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-beeline ds-menu-trigger-beeline\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-beeline\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-beeline ds-alert-beeline-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-beeline\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-beeline ds-badge-beeline-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-beeline\"><button className=\"ds-accordion-trigger-beeline\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-beeline\"><button className=\"ds-page-btn-beeline active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-beeline\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-beeline ds-avatar-md-beeline\">SL</div>"
     }
   },
   {
@@ -10579,7 +16841,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -10640,6 +16912,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -10652,7 +16966,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<MarvelStyleguideTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<MarvelStyleguideTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<MarvelStyleguideModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<MarvelStyleguideTooltip content=\"SOC2 Verified\"><Button>Status</Button></MarvelStyleguideTooltip>"
+      "tooltip": "<MarvelStyleguideTooltip content=\"SOC2 Verified\"><Button>Status</Button></MarvelStyleguideTooltip>",
+      "card": "<div className=\"ds-card-marvel\"><h3 className=\"ds-card-title-marvel\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-marvel ds-menu-trigger-marvel\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-marvel\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-marvel ds-alert-marvel-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-marvel\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-marvel ds-badge-marvel-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-marvel\"><button className=\"ds-accordion-trigger-marvel\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-marvel\"><button className=\"ds-page-btn-marvel active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-marvel\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-marvel ds-avatar-md-marvel\">SL</div>"
     }
   },
   {
@@ -10685,7 +17009,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -10746,6 +17080,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -10758,7 +17134,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<MicrosoftOfficeUIFabricTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<MicrosoftOfficeUIFabricTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<MicrosoftOfficeUIFabricModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<MicrosoftOfficeUIFabricTooltip content=\"SOC2 Verified\"><Button>Status</Button></MicrosoftOfficeUIFabricTooltip>"
+      "tooltip": "<MicrosoftOfficeUIFabricTooltip content=\"SOC2 Verified\"><Button>Status</Button></MicrosoftOfficeUIFabricTooltip>",
+      "card": "<div className=\"ds-card-office-fabric\"><h3 className=\"ds-card-title-office-fabric\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-office-fabric ds-menu-trigger-office-fabric\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-office-fabric\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-office-fabric ds-alert-office-fabric-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-office-fabric\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-office-fabric ds-badge-office-fabric-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-office-fabric\"><button className=\"ds-accordion-trigger-office-fabric\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-office-fabric\"><button className=\"ds-page-btn-office-fabric active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-office-fabric\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-office-fabric ds-avatar-md-office-fabric\">SL</div>"
     }
   },
   {
@@ -10791,7 +17177,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -10852,6 +17248,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -10864,7 +17302,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<PinterestGestaltTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<PinterestGestaltTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<PinterestGestaltModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<PinterestGestaltTooltip content=\"SOC2 Verified\"><Button>Status</Button></PinterestGestaltTooltip>"
+      "tooltip": "<PinterestGestaltTooltip content=\"SOC2 Verified\"><Button>Status</Button></PinterestGestaltTooltip>",
+      "card": "<div className=\"ds-card-gestalt\"><h3 className=\"ds-card-title-gestalt\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-gestalt ds-menu-trigger-gestalt\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-gestalt\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-gestalt ds-alert-gestalt-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-gestalt\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-gestalt ds-badge-gestalt-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-gestalt\"><button className=\"ds-accordion-trigger-gestalt\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-gestalt\"><button className=\"ds-page-btn-gestalt active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-gestalt\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-gestalt ds-avatar-md-gestalt\">SL</div>"
     }
   },
   {
@@ -10897,7 +17345,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -10958,6 +17416,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -10970,7 +17470,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<ContentfulForma36Textarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<ContentfulForma36Tabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<ContentfulForma36Modal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<ContentfulForma36Tooltip content=\"SOC2 Verified\"><Button>Status</Button></ContentfulForma36Tooltip>"
+      "tooltip": "<ContentfulForma36Tooltip content=\"SOC2 Verified\"><Button>Status</Button></ContentfulForma36Tooltip>",
+      "card": "<div className=\"ds-card-forma-36\"><h3 className=\"ds-card-title-forma-36\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-forma-36 ds-menu-trigger-forma-36\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-forma-36\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-forma-36 ds-alert-forma-36-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-forma-36\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-forma-36 ds-badge-forma-36-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-forma-36\"><button className=\"ds-accordion-trigger-forma-36\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-forma-36\"><button className=\"ds-page-btn-forma-36 active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-forma-36\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-forma-36 ds-avatar-md-forma-36\">SL</div>"
     }
   },
   {
@@ -11003,7 +17513,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -11064,6 +17584,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -11076,7 +17638,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<CultureAmpKaizenTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<CultureAmpKaizenTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<CultureAmpKaizenModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<CultureAmpKaizenTooltip content=\"SOC2 Verified\"><Button>Status</Button></CultureAmpKaizenTooltip>"
+      "tooltip": "<CultureAmpKaizenTooltip content=\"SOC2 Verified\"><Button>Status</Button></CultureAmpKaizenTooltip>",
+      "card": "<div className=\"ds-card-kaizen\"><h3 className=\"ds-card-title-kaizen\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-kaizen ds-menu-trigger-kaizen\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-kaizen\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-kaizen ds-alert-kaizen-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-kaizen\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-kaizen ds-badge-kaizen-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-kaizen\"><button className=\"ds-accordion-trigger-kaizen\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-kaizen\"><button className=\"ds-page-btn-kaizen active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-kaizen\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-kaizen ds-avatar-md-kaizen\">SL</div>"
     }
   },
   {
@@ -11109,7 +17681,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -11170,6 +17752,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -11182,7 +17806,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<MondaycomVibeTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<MondaycomVibeTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<MondaycomVibeModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<MondaycomVibeTooltip content=\"SOC2 Verified\"><Button>Status</Button></MondaycomVibeTooltip>"
+      "tooltip": "<MondaycomVibeTooltip content=\"SOC2 Verified\"><Button>Status</Button></MondaycomVibeTooltip>",
+      "card": "<div className=\"ds-card-vibe\"><h3 className=\"ds-card-title-vibe\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-vibe ds-menu-trigger-vibe\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-vibe\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-vibe ds-alert-vibe-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-vibe\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-vibe ds-badge-vibe-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-vibe\"><button className=\"ds-accordion-trigger-vibe\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-vibe\"><button className=\"ds-page-btn-vibe active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-vibe\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-vibe ds-avatar-md-vibe\">SL</div>"
     }
   },
   {
@@ -11215,7 +17849,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -11276,6 +17920,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -11288,7 +17974,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<SemrushIntergalacticTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<SemrushIntergalacticTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<SemrushIntergalacticModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<SemrushIntergalacticTooltip content=\"SOC2 Verified\"><Button>Status</Button></SemrushIntergalacticTooltip>"
+      "tooltip": "<SemrushIntergalacticTooltip content=\"SOC2 Verified\"><Button>Status</Button></SemrushIntergalacticTooltip>",
+      "card": "<div className=\"ds-card-intergalactic\"><h3 className=\"ds-card-title-intergalactic\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-intergalactic ds-menu-trigger-intergalactic\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-intergalactic\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-intergalactic ds-alert-intergalactic-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-intergalactic\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-intergalactic ds-badge-intergalactic-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-intergalactic\"><button className=\"ds-accordion-trigger-intergalactic\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-intergalactic\"><button className=\"ds-page-btn-intergalactic active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-intergalactic\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-intergalactic ds-avatar-md-intergalactic\">SL</div>"
     }
   },
   {
@@ -11321,7 +18017,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -11382,6 +18088,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -11394,7 +18142,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<FreshworksCrayonsTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<FreshworksCrayonsTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<FreshworksCrayonsModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<FreshworksCrayonsTooltip content=\"SOC2 Verified\"><Button>Status</Button></FreshworksCrayonsTooltip>"
+      "tooltip": "<FreshworksCrayonsTooltip content=\"SOC2 Verified\"><Button>Status</Button></FreshworksCrayonsTooltip>",
+      "card": "<div className=\"ds-card-crayons\"><h3 className=\"ds-card-title-crayons\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-crayons ds-menu-trigger-crayons\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-crayons\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-crayons ds-alert-crayons-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-crayons\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-crayons ds-badge-crayons-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-crayons\"><button className=\"ds-accordion-trigger-crayons\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-crayons\"><button className=\"ds-page-btn-crayons active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-crayons\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-crayons ds-avatar-md-crayons\">SL</div>"
     }
   },
   {
@@ -11427,7 +18185,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -11488,6 +18256,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -11500,7 +18310,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<AlaskaAirlinesAuroTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<AlaskaAirlinesAuroTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<AlaskaAirlinesAuroModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<AlaskaAirlinesAuroTooltip content=\"SOC2 Verified\"><Button>Status</Button></AlaskaAirlinesAuroTooltip>"
+      "tooltip": "<AlaskaAirlinesAuroTooltip content=\"SOC2 Verified\"><Button>Status</Button></AlaskaAirlinesAuroTooltip>",
+      "card": "<div className=\"ds-card-auro\"><h3 className=\"ds-card-title-auro\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-auro ds-menu-trigger-auro\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-auro\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-auro ds-alert-auro-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-auro\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-auro ds-badge-auro-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-auro\"><button className=\"ds-accordion-trigger-auro\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-auro\"><button className=\"ds-page-btn-auro active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-auro\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-auro ds-avatar-md-auro\">SL</div>"
     }
   },
   {
@@ -11533,7 +18353,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -11594,6 +18424,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -11606,7 +18478,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<SiemensIndustrialExperienceIXTextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<SiemensIndustrialExperienceIXTabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<SiemensIndustrialExperienceIXModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<SiemensIndustrialExperienceIXTooltip content=\"SOC2 Verified\"><Button>Status</Button></SiemensIndustrialExperienceIXTooltip>"
+      "tooltip": "<SiemensIndustrialExperienceIXTooltip content=\"SOC2 Verified\"><Button>Status</Button></SiemensIndustrialExperienceIXTooltip>",
+      "card": "<div className=\"ds-card-siemens-ix\"><h3 className=\"ds-card-title-siemens-ix\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-siemens-ix ds-menu-trigger-siemens-ix\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-siemens-ix\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-siemens-ix ds-alert-siemens-ix-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-siemens-ix\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-siemens-ix ds-badge-siemens-ix-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-siemens-ix\"><button className=\"ds-accordion-trigger-siemens-ix\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-siemens-ix\"><button className=\"ds-page-btn-siemens-ix active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-siemens-ix\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-siemens-ix ds-avatar-md-siemens-ix\">SL</div>"
     }
   },
   {
@@ -11639,7 +18521,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -11700,6 +18592,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -11712,7 +18646,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<NASAJPLExplorer1Textarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<NASAJPLExplorer1Tabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<NASAJPLExplorer1Modal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<NASAJPLExplorer1Tooltip content=\"SOC2 Verified\"><Button>Status</Button></NASAJPLExplorer1Tooltip>"
+      "tooltip": "<NASAJPLExplorer1Tooltip content=\"SOC2 Verified\"><Button>Status</Button></NASAJPLExplorer1Tooltip>",
+      "card": "<div className=\"ds-card-nasa-jpl\"><h3 className=\"ds-card-title-nasa-jpl\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-nasa-jpl ds-menu-trigger-nasa-jpl\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-nasa-jpl\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-nasa-jpl ds-alert-nasa-jpl-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-nasa-jpl\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-nasa-jpl ds-badge-nasa-jpl-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-nasa-jpl\"><button className=\"ds-accordion-trigger-nasa-jpl\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-nasa-jpl\"><button className=\"ds-page-btn-nasa-jpl active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-nasa-jpl\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-nasa-jpl ds-avatar-md-nasa-jpl\">SL</div>"
     }
   },
   {
@@ -11745,7 +18689,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -11806,6 +18760,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -11818,7 +18814,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<daisyUITextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<daisyUITabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<daisyUIModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<daisyUITooltip content=\"SOC2 Verified\"><Button>Status</Button></daisyUITooltip>"
+      "tooltip": "<daisyUITooltip content=\"SOC2 Verified\"><Button>Status</Button></daisyUITooltip>",
+      "card": "<div className=\"ds-card-daisyui\"><h3 className=\"ds-card-title-daisyui\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-daisyui ds-menu-trigger-daisyui\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-daisyui\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-daisyui ds-alert-daisyui-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-daisyui\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-daisyui ds-badge-daisyui-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-daisyui\"><button className=\"ds-accordion-trigger-daisyui\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-daisyui\"><button className=\"ds-page-btn-daisyui active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-daisyui\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-daisyui ds-avatar-md-daisyui\">SL</div>"
     }
   },
   {
@@ -11851,7 +18857,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -11912,6 +18928,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "Hover & Keyboard Focus Bubble with Pointer Arrow"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -11924,7 +18982,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<HeroUITextarea label=\"Notes\" rows={4} placeholder=\"Service notes...\" />",
       "tabs": "<HeroUITabs items={['Overview', 'Settings', 'Activity']} />",
       "dialog": "<HeroUIModal open={isOpen} onClose={closeModal} title=\"Delete Environment?\" />",
-      "tooltip": "<HeroUITooltip content=\"SOC2 Verified\"><Button>Status</Button></HeroUITooltip>"
+      "tooltip": "<HeroUITooltip content=\"SOC2 Verified\"><Button>Status</Button></HeroUITooltip>",
+      "card": "<div className=\"ds-card-heroui\"><h3 className=\"ds-card-title-heroui\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-heroui ds-menu-trigger-heroui\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-heroui\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-heroui ds-alert-heroui-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-heroui\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-heroui ds-badge-heroui-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-heroui\"><button className=\"ds-accordion-trigger-heroui\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-heroui\"><button className=\"ds-page-btn-heroui active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-heroui\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-heroui ds-avatar-md-heroui\">SL</div>"
     }
   },
   {
@@ -11956,7 +19024,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -12001,6 +19079,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -12013,7 +19133,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-paper-css\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-paper-css\"><button className=\"ds-tab-paper-css active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-paper-css\"><h3 className=\"ds-dialog-header-paper-css\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-paper-css\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-paper-css\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-paper-css\"><h3 className=\"ds-card-title-paper-css\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-paper-css ds-menu-trigger-paper-css\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-paper-css\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-paper-css ds-alert-paper-css-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-paper-css\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-paper-css ds-badge-paper-css-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-paper-css\"><button className=\"ds-accordion-trigger-paper-css\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-paper-css\"><button className=\"ds-page-btn-paper-css active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-paper-css\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-paper-css ds-avatar-md-paper-css\">SL</div>"
     }
   },
   {
@@ -12045,7 +19175,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -12090,6 +19230,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -12102,7 +19284,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-nes-css\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-nes-css\"><button className=\"ds-tab-nes-css active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-nes-css\"><h3 className=\"ds-dialog-header-nes-css\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-nes-css\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-nes-css\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-nes-css\"><h3 className=\"ds-card-title-nes-css\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-nes-css ds-menu-trigger-nes-css\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-nes-css\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-nes-css ds-alert-nes-css-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-nes-css\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-nes-css ds-badge-nes-css-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-nes-css\"><button className=\"ds-accordion-trigger-nes-css\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-nes-css\"><button className=\"ds-page-btn-nes-css active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-nes-css\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-nes-css ds-avatar-md-nes-css\">SL</div>"
     }
   },
   {
@@ -12134,7 +19326,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": false,
+      "breadcrumbs": false,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -12179,6 +19381,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -12191,7 +19435,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-rpgui\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-rpgui\"><button className=\"ds-tab-rpgui active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-rpgui\"><h3 className=\"ds-dialog-header-rpgui\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-rpgui\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-rpgui\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-rpgui\"><h3 className=\"ds-card-title-rpgui\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-rpgui ds-menu-trigger-rpgui\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-rpgui\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-rpgui ds-alert-rpgui-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-rpgui\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-rpgui ds-badge-rpgui-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-rpgui\"><button className=\"ds-accordion-trigger-rpgui\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-rpgui\"><button className=\"ds-page-btn-rpgui active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-rpgui\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-rpgui ds-avatar-md-rpgui\">SL</div>"
     }
   },
   {
@@ -12223,7 +19477,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": false
     },
     "variants": {
       "buttons": [
@@ -12268,6 +19532,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -12280,7 +19586,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-terminal-css\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-terminal-css\"><button className=\"ds-tab-terminal-css active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-terminal-css\"><h3 className=\"ds-dialog-header-terminal-css\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-terminal-css\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-terminal-css\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-terminal-css\"><h3 className=\"ds-card-title-terminal-css\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-terminal-css ds-menu-trigger-terminal-css\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-terminal-css\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-terminal-css ds-alert-terminal-css-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-terminal-css\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-terminal-css ds-badge-terminal-css-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-terminal-css\"><button className=\"ds-accordion-trigger-terminal-css\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-terminal-css\"><button className=\"ds-page-btn-terminal-css active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-terminal-css\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-terminal-css ds-avatar-md-terminal-css\">SL</div>"
     }
   },
   {
@@ -12312,7 +19628,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -12357,6 +19683,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -12369,7 +19737,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-webtui\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-webtui\"><button className=\"ds-tab-webtui active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-webtui\"><h3 className=\"ds-dialog-header-webtui\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-webtui\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-webtui\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-webtui\"><h3 className=\"ds-card-title-webtui\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-webtui ds-menu-trigger-webtui\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-webtui\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-webtui ds-alert-webtui-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-webtui\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-webtui ds-badge-webtui-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-webtui\"><button className=\"ds-accordion-trigger-webtui\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-webtui\"><button className=\"ds-page-btn-webtui active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-webtui\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-webtui ds-avatar-md-webtui\">SL</div>"
     }
   },
   {
@@ -12401,7 +19779,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -12446,6 +19834,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -12458,7 +19888,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-xp-css\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-xp-css\"><button className=\"ds-tab-xp-css active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-xp-css\"><h3 className=\"ds-dialog-header-xp-css\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-xp-css\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-xp-css\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-xp-css\"><h3 className=\"ds-card-title-xp-css\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-xp-css ds-menu-trigger-xp-css\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-xp-css\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-xp-css ds-alert-xp-css-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-xp-css\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-xp-css ds-badge-xp-css-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-xp-css\"><button className=\"ds-accordion-trigger-xp-css\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-xp-css\"><button className=\"ds-page-btn-xp-css active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-xp-css\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-xp-css ds-avatar-md-xp-css\">SL</div>"
     }
   },
   {
@@ -12490,7 +19930,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -12535,6 +19985,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -12547,7 +20039,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-7-css\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-7-css\"><button className=\"ds-tab-7-css active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-7-css\"><h3 className=\"ds-dialog-header-7-css\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-7-css\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-7-css\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-7-css\"><h3 className=\"ds-card-title-7-css\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-7-css ds-menu-trigger-7-css\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-7-css\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-7-css ds-alert-7-css-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-7-css\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-7-css ds-badge-7-css-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-7-css\"><button className=\"ds-accordion-trigger-7-css\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-7-css\"><button className=\"ds-page-btn-7-css active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-7-css\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-7-css ds-avatar-md-7-css\">SL</div>"
     }
   },
   {
@@ -12579,7 +20081,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -12624,6 +20136,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -12636,7 +20190,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-arwes\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-arwes\"><button className=\"ds-tab-arwes active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-arwes\"><h3 className=\"ds-dialog-header-arwes\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-arwes\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-arwes\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-arwes\"><h3 className=\"ds-card-title-arwes\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-arwes ds-menu-trigger-arwes\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-arwes\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-arwes ds-alert-arwes-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-arwes\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-arwes ds-badge-arwes-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-arwes\"><button className=\"ds-accordion-trigger-arwes\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-arwes\"><button className=\"ds-page-btn-arwes active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-arwes\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-arwes ds-avatar-md-arwes\">SL</div>"
     }
   },
   {
@@ -12668,7 +20232,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -12713,6 +20287,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -12725,7 +20341,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-warcraftcn-ui\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-warcraftcn-ui\"><button className=\"ds-tab-warcraftcn-ui active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-warcraftcn-ui\"><h3 className=\"ds-dialog-header-warcraftcn-ui\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-warcraftcn-ui\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-warcraftcn-ui\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-warcraftcn-ui\"><h3 className=\"ds-card-title-warcraftcn-ui\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-warcraftcn-ui ds-menu-trigger-warcraftcn-ui\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-warcraftcn-ui\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-warcraftcn-ui ds-alert-warcraftcn-ui-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-warcraftcn-ui\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-warcraftcn-ui ds-badge-warcraftcn-ui-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-warcraftcn-ui\"><button className=\"ds-accordion-trigger-warcraftcn-ui\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-warcraftcn-ui\"><button className=\"ds-page-btn-warcraftcn-ui active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-warcraftcn-ui\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-warcraftcn-ui ds-avatar-md-warcraftcn-ui\">SL</div>"
     }
   },
   {
@@ -12757,7 +20383,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -12802,6 +20438,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -12814,7 +20492,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-metro-ui\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-metro-ui\"><button className=\"ds-tab-metro-ui active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-metro-ui\"><h3 className=\"ds-dialog-header-metro-ui\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-metro-ui\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-metro-ui\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-metro-ui\"><h3 className=\"ds-card-title-metro-ui\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-metro-ui ds-menu-trigger-metro-ui\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-metro-ui\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-metro-ui ds-alert-metro-ui-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-metro-ui\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-metro-ui ds-badge-metro-ui-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-metro-ui\"><button className=\"ds-accordion-trigger-metro-ui\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-metro-ui\"><button className=\"ds-page-btn-metro-ui active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-metro-ui\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-metro-ui ds-avatar-md-metro-ui\">SL</div>"
     }
   },
   {
@@ -12846,7 +20534,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -12891,6 +20589,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -12903,7 +20643,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-react95\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-react95\"><button className=\"ds-tab-react95 active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-react95\"><h3 className=\"ds-dialog-header-react95\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-react95\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-react95\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-react95\"><h3 className=\"ds-card-title-react95\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-react95 ds-menu-trigger-react95\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-react95\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-react95 ds-alert-react95-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-react95\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-react95 ds-badge-react95-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-react95\"><button className=\"ds-accordion-trigger-react95\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-react95\"><button className=\"ds-page-btn-react95 active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-react95\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-react95 ds-avatar-md-react95\">SL</div>"
     }
   },
   {
@@ -12935,7 +20685,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -12980,6 +20740,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -12992,7 +20794,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-neobrutalism\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-neobrutalism\"><button className=\"ds-tab-neobrutalism active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-neobrutalism\"><h3 className=\"ds-dialog-header-neobrutalism\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-neobrutalism\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-neobrutalism\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-neobrutalism\"><h3 className=\"ds-card-title-neobrutalism\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-neobrutalism ds-menu-trigger-neobrutalism\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-neobrutalism\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-neobrutalism ds-alert-neobrutalism-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-neobrutalism\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-neobrutalism ds-badge-neobrutalism-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-neobrutalism\"><button className=\"ds-accordion-trigger-neobrutalism\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-neobrutalism\"><button className=\"ds-page-btn-neobrutalism active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-neobrutalism\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-neobrutalism ds-avatar-md-neobrutalism\">SL</div>"
     }
   },
   {
@@ -13024,7 +20836,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -13069,6 +20891,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -13081,7 +20945,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-hana-ui\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-hana-ui\"><button className=\"ds-tab-hana-ui active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-hana-ui\"><h3 className=\"ds-dialog-header-hana-ui\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-hana-ui\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-hana-ui\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-hana-ui\"><h3 className=\"ds-card-title-hana-ui\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-hana-ui ds-menu-trigger-hana-ui\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-hana-ui\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-hana-ui ds-alert-hana-ui-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-hana-ui\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-hana-ui ds-badge-hana-ui-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-hana-ui\"><button className=\"ds-accordion-trigger-hana-ui\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-hana-ui\"><button className=\"ds-page-btn-hana-ui active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-hana-ui\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-hana-ui ds-avatar-md-hana-ui\">SL</div>"
     }
   },
   {
@@ -13113,7 +20987,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": true,
+      "breadcrumbs": true,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -13158,6 +21042,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -13170,7 +21096,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-vengeance-ui\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-vengeance-ui\"><button className=\"ds-tab-vengeance-ui active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-vengeance-ui\"><h3 className=\"ds-dialog-header-vengeance-ui\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-vengeance-ui\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-vengeance-ui\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-vengeance-ui\"><h3 className=\"ds-card-title-vengeance-ui\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-vengeance-ui ds-menu-trigger-vengeance-ui\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-vengeance-ui\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-vengeance-ui ds-alert-vengeance-ui-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-vengeance-ui\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-vengeance-ui ds-badge-vengeance-ui-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-vengeance-ui\"><button className=\"ds-accordion-trigger-vengeance-ui\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-vengeance-ui\"><button className=\"ds-page-btn-vengeance-ui active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-vengeance-ui\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-vengeance-ui ds-avatar-md-vengeance-ui\">SL</div>"
     }
   },
   {
@@ -13202,7 +21138,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": true,
+      "pagination": false,
+      "breadcrumbs": false,
+      "avatar": true
     },
     "variants": {
       "buttons": [
@@ -13247,6 +21193,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -13259,7 +21247,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-psone-css\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-psone-css\"><button className=\"ds-tab-psone-css active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-psone-css\"><h3 className=\"ds-dialog-header-psone-css\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-psone-css\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-psone-css\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-psone-css\"><h3 className=\"ds-card-title-psone-css\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-psone-css ds-menu-trigger-psone-css\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-psone-css\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-psone-css ds-alert-psone-css-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-psone-css\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-psone-css ds-badge-psone-css-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-psone-css\"><button className=\"ds-accordion-trigger-psone-css\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-psone-css\"><button className=\"ds-page-btn-psone-css active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-psone-css\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-psone-css ds-avatar-md-psone-css\">SL</div>"
     }
   },
   {
@@ -13291,7 +21289,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": true,
       "tabs": true,
       "dialog": true,
-      "tooltip": true
+      "tooltip": true,
+      "card": true,
+      "dropdownMenu": true,
+      "table": true,
+      "alert": true,
+      "toast": true,
+      "badge": true,
+      "accordion": false,
+      "pagination": true,
+      "breadcrumbs": false,
+      "avatar": false
     },
     "variants": {
       "buttons": [
@@ -13336,6 +21344,48 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       ],
       "tooltips": [
         "default"
+      ],
+      "cards": [
+        "default",
+        "interactive"
+      ],
+      "menus": [
+        "default"
+      ],
+      "tables": [
+        "default",
+        "sortable",
+        "selectable"
+      ],
+      "alerts": [
+        "info",
+        "success",
+        "error"
+      ],
+      "toasts": [
+        "default"
+      ],
+      "badges": [
+        "primary",
+        "success",
+        "warning",
+        "error",
+        "neutral"
+      ],
+      "accordions": [
+        "default"
+      ],
+      "paginations": [
+        "default"
+      ],
+      "breadcrumbs": [
+        "default"
+      ],
+      "avatars": [
+        "small",
+        "medium",
+        "large",
+        "group"
       ]
     },
     "canonicalCode": {
@@ -13348,7 +21398,17 @@ export const DESIGN_SYSTEMS: DesignSystemMeta[] = [
       "textarea": "<textarea className=\"ds-textarea-c64-css\" rows={4} />",
       "tabs": "<div className=\"ds-tablist-c64-css\"><button className=\"ds-tab-c64-css active\">Overview</button></div>",
       "dialog": "<div className=\"ds-dialog-box-c64-css\"><h3 className=\"ds-dialog-header-c64-css\">Dialog</h3></div>",
-      "tooltip": "<div className=\"ds-tooltip-bubble-c64-css\">Tooltip info</div>"
+      "tooltip": "<div className=\"ds-tooltip-bubble-c64-css\">Tooltip info</div>",
+      "card": "<div className=\"ds-card-c64-css\"><h3 className=\"ds-card-title-c64-css\">Card Title</h3></div>",
+      "dropdown-menu": "<button className=\"ds-btn-c64-css ds-menu-trigger-c64-css\">Actions ▾</button>",
+      "table": "<table className=\"ds-table-c64-css\"><thead><tr><th>Name</th></tr></thead></table>",
+      "alert": "<div className=\"ds-alert-c64-css ds-alert-c64-css-info\">Notice</div>",
+      "toast": "<div className=\"ds-toast-c64-css\">Settings saved</div>",
+      "badge": "<span className=\"ds-badge-c64-css ds-badge-c64-css-primary\">Active</span>",
+      "accordion": "<div className=\"ds-accordion-item-c64-css\"><button className=\"ds-accordion-trigger-c64-css\">Title</button></div>",
+      "pagination": "<nav className=\"ds-pagination-c64-css\"><button className=\"ds-page-btn-c64-css active\">1</button></nav>",
+      "breadcrumbs": "<nav className=\"ds-breadcrumbs-c64-css\"><ol><li>Home</li></ol></nav>",
+      "avatar": "<div className=\"ds-avatar-c64-css ds-avatar-md-c64-css\">SL</div>"
     }
   }
 ];

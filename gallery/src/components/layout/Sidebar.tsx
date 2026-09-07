@@ -33,6 +33,16 @@ const COMPONENTS = [
   { id: 'tabs', label: 'Tabs' },
   { id: 'dialog', label: 'Dialogs' },
   { id: 'tooltip', label: 'Tooltips' },
+  { id: 'card', label: 'Cards' },
+  { id: 'dropdown-menu', label: 'Dropdowns' },
+  { id: 'table', label: 'Tables' },
+  { id: 'alert', label: 'Alerts' },
+  { id: 'toast', label: 'Toasts' },
+  { id: 'badge', label: 'Badges' },
+  { id: 'accordion', label: 'Accordions' },
+  { id: 'pagination', label: 'Pagination' },
+  { id: 'breadcrumbs', label: 'Breadcrumbs' },
+  { id: 'avatar', label: 'Avatars' },
 ];
 
 export const Sidebar: React.FC<SidebarProps> = ({
@@ -64,7 +74,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   return (
     <aside className={`app-sidebar ${isMobileOpen ? 'mobile-open' : ''}`}>
       <div>
-        <div className="sidebar-heading">Components (10)</div>
+        <div className="sidebar-heading">Components (20)</div>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4px', marginBottom: '16px' }}>
           {COMPONENTS.map(c => {
             const isActive = currentRoute === `/components/${c.id}`;

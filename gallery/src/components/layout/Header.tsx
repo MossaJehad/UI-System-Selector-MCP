@@ -21,6 +21,16 @@ const ALL_COMPONENTS: { id: ComponentCategory; label: string }[] = [
   { id: 'tabs', label: 'Tabs' },
   { id: 'dialog', label: 'Dialogs' },
   { id: 'tooltip', label: 'Tooltips' },
+  { id: 'card', label: 'Cards' },
+  { id: 'dropdown-menu', label: 'Dropdown Menus' },
+  { id: 'table', label: 'Tables' },
+  { id: 'alert', label: 'Alerts' },
+  { id: 'toast', label: 'Toasts' },
+  { id: 'badge', label: 'Badges' },
+  { id: 'accordion', label: 'Accordions' },
+  { id: 'pagination', label: 'Pagination' },
+  { id: 'breadcrumbs', label: 'Breadcrumbs' },
+  { id: 'avatar', label: 'Avatars' },
 ];
 
 export const Header: React.FC<HeaderProps> = ({
@@ -94,7 +104,9 @@ export const Header: React.FC<HeaderProps> = ({
                 padding: '8px',
                 zIndex: 1000,
                 display: 'grid',
-                gridTemplateColumns: 'repeat(2, 140px)',
+                gridTemplateColumns: 'repeat(2, 150px)',
+                maxHeight: '440px',
+                overflowY: 'auto',
                 gap: '4px',
               }}
             >

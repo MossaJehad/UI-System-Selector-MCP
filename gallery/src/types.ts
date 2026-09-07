@@ -8,7 +8,17 @@ export type ComponentCategory =
   | 'textarea'
   | 'tabs'
   | 'dialog'
-  | 'tooltip';
+  | 'tooltip'
+  | 'card'
+  | 'dropdown-menu'
+  | 'table'
+  | 'alert'
+  | 'toast'
+  | 'badge'
+  | 'accordion'
+  | 'pagination'
+  | 'breadcrumbs'
+  | 'avatar';
 
 export type SystemStatus =
   | 'active'
@@ -44,6 +54,16 @@ export interface ComponentSupport {
   tabs: boolean;
   dialog: boolean;
   tooltip: boolean;
+  card?: boolean;
+  dropdownMenu?: boolean;
+  table?: boolean;
+  alert?: boolean;
+  toast?: boolean;
+  badge?: boolean;
+  accordion?: boolean;
+  pagination?: boolean;
+  breadcrumbs?: boolean;
+  avatar?: boolean;
 }
 
 export interface SystemTokens {
@@ -83,6 +103,16 @@ export interface DesignSystemMeta {
     tabs?: string[];
     dialogs?: string[];
     tooltips?: string[];
+    cards?: string[];
+    menus?: string[];
+    tables?: string[];
+    alerts?: string[];
+    toasts?: string[];
+    badges?: string[];
+    accordions?: string[];
+    paginations?: string[];
+    breadcrumbs?: string[];
+    avatars?: string[];
   };
   canonicalCode: {
     button: string;
@@ -95,6 +125,17 @@ export interface DesignSystemMeta {
     tabs: string;
     dialog: string;
     tooltip: string;
+    card?: string;
+    'dropdown-menu'?: string;
+    table?: string;
+    alert?: string;
+    toast?: string;
+    badge?: string;
+    accordion?: string;
+    pagination?: string;
+    breadcrumbs?: string;
+    avatar?: string;
+    [key: string]: string | undefined;
   };
 }
 
@@ -109,6 +150,16 @@ export interface DesignSystemComponents {
   Tabs: React.FC;
   Dialog: React.FC;
   Tooltip: React.FC;
+  Card: React.FC;
+  DropdownMenu: React.FC;
+  Table: React.FC;
+  Alert: React.FC;
+  Toast: React.FC;
+  Badge: React.FC;
+  Accordion: React.FC;
+  Pagination: React.FC;
+  Breadcrumbs: React.FC;
+  Avatar: React.FC;
 }
 
 export interface DesignSystemEntry {

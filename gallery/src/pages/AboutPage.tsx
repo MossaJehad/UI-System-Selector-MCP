@@ -38,11 +38,11 @@ export const AboutPage: React.FC = () => {
 
       <div className="component-card">
         <div className="card-header">
-          <h2 style={{ fontSize: '16px', fontWeight: 700 }}>10 Core Components Across 130 Systems</h2>
+          <h2 style={{ fontSize: '16px', fontWeight: 700 }}>20 Core Components Across 130 Systems</h2>
         </div>
         <div className="card-body" style={{ display: 'flex', flexDirection: 'column', gap: '14px', fontSize: '15px', lineHeight: 1.6 }}>
           <p>
-            To provide comprehensive breadth and precision, the gallery implements 10 fundamental interactive components across all 130 systems:
+            To provide comprehensive breadth and precision, the gallery implements 20 fundamental interactive components across all 130 systems:
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '12px', marginTop: '8px' }}>
             <div style={{ padding: '14px', backgroundColor: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
@@ -84,6 +84,46 @@ export const AboutPage: React.FC = () => {
             <div style={{ padding: '14px', backgroundColor: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
               <div style={{ fontWeight: 700, marginBottom: '4px' }}>10. Tooltips</div>
               <div style={{ fontSize: '12px', color: 'var(--fg-muted)' }}>Hover and keyboard focus directional popover bubbles with pointer arrows.</div>
+            </div>
+            <div style={{ padding: '14px', backgroundColor: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
+              <div style={{ fontWeight: 700, marginBottom: '4px' }}>11. Cards</div>
+              <div style={{ fontSize: '12px', color: 'var(--fg-muted)' }}>Structured card containers with header, body, footer actions, and system-specific elevations.</div>
+            </div>
+            <div style={{ padding: '14px', backgroundColor: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
+              <div style={{ fontWeight: 700, marginBottom: '4px' }}>12. Dropdown Menus</div>
+              <div style={{ fontSize: '12px', color: 'var(--fg-muted)' }}>Contextual action popups with interactive items, keyboard support, and backdrop dismissal.</div>
+            </div>
+            <div style={{ padding: '14px', backgroundColor: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
+              <div style={{ fontWeight: 700, marginBottom: '4px' }}>13. Tables / Data Tables</div>
+              <div style={{ fontSize: '12px', color: 'var(--fg-muted)' }}>Data tables with structured column headers, row hover states, and formatted metadata cells.</div>
+            </div>
+            <div style={{ padding: '14px', backgroundColor: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
+              <div style={{ fontWeight: 700, marginBottom: '4px' }}>14. Alerts</div>
+              <div style={{ fontSize: '12px', color: 'var(--fg-muted)' }}>Contextual feedback banners supporting Info, Success, Warning, and Danger severity states.</div>
+            </div>
+            <div style={{ padding: '14px', backgroundColor: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
+              <div style={{ fontWeight: 700, marginBottom: '4px' }}>15. Toasts / Snackbars</div>
+              <div style={{ fontSize: '12px', color: 'var(--fg-muted)' }}>Transient interactive feedback messages with live trigger buttons and dismiss behavior.</div>
+            </div>
+            <div style={{ padding: '14px', backgroundColor: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
+              <div style={{ fontWeight: 700, marginBottom: '4px' }}>16. Badges / Tags / Chips</div>
+              <div style={{ fontSize: '12px', color: 'var(--fg-muted)' }}>Compact status badges, metadata tags, and count pills with semantic tints.</div>
+            </div>
+            <div style={{ padding: '14px', backgroundColor: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
+              <div style={{ fontWeight: 700, marginBottom: '4px' }}>17. Accordions / Disclosures</div>
+              <div style={{ fontSize: '12px', color: 'var(--fg-muted)' }}>Collapsible content disclosure sections with smooth chevron rotation and state tracking.</div>
+            </div>
+            <div style={{ padding: '14px', backgroundColor: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
+              <div style={{ fontWeight: 700, marginBottom: '4px' }}>18. Pagination</div>
+              <div style={{ fontSize: '12px', color: 'var(--fg-muted)' }}>Multi-page controls with active indicators, boundaries, and previous/next actions.</div>
+            </div>
+            <div style={{ padding: '14px', backgroundColor: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
+              <div style={{ fontWeight: 700, marginBottom: '4px' }}>19. Breadcrumbs</div>
+              <div style={{ fontSize: '12px', color: 'var(--fg-muted)' }}>Hierarchical trail navigation showing parents, current active item, and divider tokens.</div>
+            </div>
+            <div style={{ padding: '14px', backgroundColor: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
+              <div style={{ fontWeight: 700, marginBottom: '4px' }}>20. Avatars</div>
+              <div style={{ fontSize: '12px', color: 'var(--fg-muted)' }}>User representation tokens with initials fallback, online status pips, and size variations.</div>
             </div>
           </div>
         </div>

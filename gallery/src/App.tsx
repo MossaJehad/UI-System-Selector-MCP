@@ -66,6 +66,16 @@ export const App: React.FC = () => {
       'tabs',
       'dialog',
       'tooltip',
+      'card',
+      'dropdown-menu',
+      'table',
+      'alert',
+      'toast',
+      'badge',
+      'accordion',
+      'pagination',
+      'breadcrumbs',
+      'avatar',
     ];
 
     if (currentRoute.startsWith('/components/')) {

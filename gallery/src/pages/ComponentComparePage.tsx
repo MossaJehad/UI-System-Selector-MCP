@@ -65,6 +65,56 @@ const TITLES: Record<ComponentCategory, { title: string; subtitle: string }> = {
     subtitle:
       'Compare contextual tooltip overlays. Test hover and keyboard focus triggers, directional indicator pointers, and authentic accessibility notices for civic systems that omit floating tooltips.',
   },
+  card: {
+    title: 'Card Component Comparison',
+    subtitle:
+      'Compare card containers across real design systems. Observe distinct borders, elevations, selected states, and interactive actions across enterprise consoles, tech giants, and retro libraries.',
+  },
+  'dropdown-menu': {
+    title: 'Dropdown Menu / Action Menu Comparison',
+    subtitle:
+      'Compare interactive action dropdown menus across design systems. Test live opening, item selection, outside-click dismissal, keyboard navigation (Esc), and destructive action styling.',
+  },
+  table: {
+    title: 'Table / Data Table Comparison',
+    subtitle:
+      'Compare data table components across design systems. Test live column sorting (Name A–Z / Z–A), individual row checkboxes, select-all controls, and horizontal scroll responsiveness.',
+  },
+  alert: {
+    title: 'Alert / Notice / Banner Comparison',
+    subtitle:
+      'Compare persistent alert banners across design systems. Inspect Info, Success, and Error severity states with smooth dismissibility and accessible notification semantics.',
+  },
+  toast: {
+    title: 'Toast / Snackbar Comparison',
+    subtitle:
+      'Compare temporary feedback toast notifications across design systems. Trigger live auto-dismissing toasts (4s) with dismiss buttons and authentic notices for government guidelines that omit transient alerts.',
+  },
+  badge: {
+    title: 'Badge / Tag / Chip Comparison',
+    subtitle:
+      'Compare status badges, numerical counters, removable tags, and selectable filter chips across design systems. Test real interactive removal and active chip toggling.',
+  },
+  accordion: {
+    title: 'Accordion / Disclosure Comparison',
+    subtitle:
+      'Compare expandable accordion panels across design systems. Test smooth multi-section disclosure toggles, rotating chevrons, and keyboard accessibility.',
+  },
+  pagination: {
+    title: 'Pagination Navigation Comparison',
+    subtitle:
+      'Compare pagination controls across real design systems. Click through pages 1 to 5, test active page highlighting, and verify disabled previous/next boundaries.',
+  },
+  breadcrumbs: {
+    title: 'Breadcrumbs Navigation Comparison',
+    subtitle:
+      'Compare hierarchical breadcrumb trails across design systems. Inspect semantic ordered lists, system-specific separators (/, ›, •), and current-page styling.',
+  },
+  avatar: {
+    title: 'Avatar & User Identity Comparison',
+    subtitle:
+      'Compare user avatar components with initials, online/busy presence status indicators, size variants (Small, Medium, Large), and overlapping collaborator groups without relying on generated images.',
+  },
 };
 
 export const ComponentComparePage: React.FC<ComponentComparePageProps> = ({
@@ -182,6 +232,26 @@ export const ComponentComparePage: React.FC<ComponentComparePageProps> = ({
         return <components.Dialog />;
       case 'tooltip':
         return <components.Tooltip />;
+      case 'card':
+        return <components.Card />;
+      case 'dropdown-menu':
+        return <components.DropdownMenu />;
+      case 'table':
+        return <components.Table />;
+      case 'alert':
+        return <components.Alert />;
+      case 'toast':
+        return <components.Toast />;
+      case 'badge':
+        return <components.Badge />;
+      case 'accordion':
+        return <components.Accordion />;
+      case 'pagination':
+        return <components.Pagination />;
+      case 'breadcrumbs':
+        return <components.Breadcrumbs />;
+      case 'avatar':
+        return <components.Avatar />;
       default:
         return <components.Button />;
     }
