@@ -22,6 +22,9 @@
     "ui-systems": "./bin/ui-systems.js"
   },
   "scripts": {
+    "dev": "npm --prefix gallery run dev",
+    "gallery:build": "npm --prefix gallery run build",
+    "gallery:preview": "npm --prefix gallery run preview",
     "build": "tsc -p tsconfig.build.json",
     "prepack": "npm run build",
     "start": "node bin/mcp-server.js",
