@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DesignSystemEntry } from '../types.ts';
+import { DesignSystemEntry, ComponentCategory } from '../types.ts';
 
 interface SystemDetailPageProps {
   systemId: string;
@@ -19,9 +19,7 @@ export const SystemDetailPage: React.FC<SystemDetailPageProps> = ({
   const nextEntry =
     currentIndex < entries.length - 1 ? entries[currentIndex + 1] : entries[0];
 
-  const [activeCodeTab, setActiveCodeTab] = useState<
-    'button' | 'input' | 'select' | 'radio'
-  >('button');
+  const [activeCodeTab, setActiveCodeTab] = useState<ComponentCategory>('button');
 
   return (
     <div>
@@ -209,6 +207,84 @@ export const SystemDetailPage: React.FC<SystemDetailPageProps> = ({
           </div>
         </section>
 
+        {/* Checkbox */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>5. Checkbox Components</h2>
+              <span className="org-tag">Single Consent, Group Select, Indeterminate & Disabled</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.Checkbox />
+          </div>
+        </section>
+
+        {/* Switch / Toggle */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>6. Switch / Toggle Switches</h2>
+              <span className="org-tag">Interactive Toggle Switches with Sliding Thumb Transitions</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.Switch />
+          </div>
+        </section>
+
+        {/* Textarea */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>7. Textarea Multiline Input</h2>
+              <span className="org-tag">Interactive Character Counter, Placeholder, Error & Disabled</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.Textarea />
+          </div>
+        </section>
+
+        {/* Tabs */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>8. Tabs Navigation</h2>
+              <span className="org-tag">Accessible Tab Panels & Arrow Navigation</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.Tabs />
+          </div>
+        </section>
+
+        {/* Dialog / Modal */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>9. Dialog / Modal Windows</h2>
+              <span className="org-tag">Interactive Surface with Backdrop & Keyboard Dismissal (Esc)</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.Dialog />
+          </div>
+        </section>
+
+        {/* Tooltip */}
+        <section className="component-card">
+          <div className="card-header">
+            <div className="card-header-left">
+              <h2 style={{ fontSize: '16px', fontWeight: 700 }}>10. Tooltip Overlays</h2>
+              <span className="org-tag">Mouse Hover & Keyboard Focus Bubble with Pointer</span>
+            </div>
+          </div>
+          <div className="card-body">
+            <components.Tooltip />
+          </div>
+        </section>
+
         {/* Canonical Code */}
         <section className="component-card">
           <div className="card-header">
@@ -216,8 +292,19 @@ export const SystemDetailPage: React.FC<SystemDetailPageProps> = ({
               <h2 style={{ fontSize: '16px', fontWeight: 700 }}>Canonical Component API</h2>
               <span className="org-tag">Official implementation code for {meta.name}</span>
             </div>
-            <div style={{ display: 'flex', gap: '6px' }}>
-              {(['button', 'input', 'select', 'radio'] as const).map(tab => (
+            <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+              {([
+                'button',
+                'input',
+                'select',
+                'radio',
+                'checkbox',
+                'switch',
+                'textarea',
+                'tabs',
+                'dialog',
+                'tooltip',
+              ] as const).map(tab => (
                 <button
                   key={tab}
                   type="button"
@@ -241,10 +328,7 @@ export const SystemDetailPage: React.FC<SystemDetailPageProps> = ({
           <div className="card-body">
             <div className="code-box" style={{ marginTop: 0 }}>
               <code>
-                {activeCodeTab === 'button' && meta.canonicalCode.button}
-                {activeCodeTab === 'input' && meta.canonicalCode.input}
-                {activeCodeTab === 'select' && meta.canonicalCode.select}
-                {activeCodeTab === 'radio' && meta.canonicalCode.radio}
+                {meta.canonicalCode[activeCodeTab]}
               </code>
             </div>
           </div>

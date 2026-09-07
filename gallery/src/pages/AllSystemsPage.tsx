@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DesignSystemEntry } from '../types.ts';
+import { DesignSystemEntry, ComponentCategory } from '../types.ts';
 import { SearchFilterBar } from '../components/common/SearchFilterBar.tsx';
 
 interface AllSystemsPageProps {
@@ -17,9 +17,7 @@ export const AllSystemsPage: React.FC<AllSystemsPageProps> = ({
   selectedCategory,
   onCategoryChange,
 }) => {
-  const [activeComponentTab, setActiveComponentTab] = useState<
-    'button' | 'input' | 'select' | 'radio'
-  >('button');
+  const [activeComponentTab, setActiveComponentTab] = useState<ComponentCategory>('button');
 
   // Filter systems
   const filtered = entries.filter(entry => {
@@ -44,7 +42,7 @@ export const AllSystemsPage: React.FC<AllSystemsPageProps> = ({
           Design Systems Directory
         </h1>
         <p style={{ color: 'var(--fg-muted)', fontSize: '15px', maxWidth: '850px' }}>
-          Explore <strong>44 real production design systems</strong> from tech giants, enterprise clouds, e-commerce leaders, and civic governments. Compare Button, Input, Select, and Radio Button implementations with authentic visual fidelities.
+          Explore <strong>44 real production design systems</strong> from tech giants, enterprise clouds, e-commerce leaders, and civic governments. Compare 10 fundamental components across all systems with authentic visual fidelities.
         </p>
       </div>
 
@@ -61,28 +59,36 @@ export const AllSystemsPage: React.FC<AllSystemsPageProps> = ({
         <div style={{ fontSize: '14px', fontWeight: 600, color: 'var(--fg-muted)' }}>
           Preview Component:
         </div>
-        <div style={{ display: 'flex', gap: '6px' }}>
-          {(['button', 'input', 'select', 'radio'] as const).map(tab => (
+        <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+          {([
+            { id: 'button', label: 'Buttons' },
+            { id: 'input', label: 'Inputs' },
+            { id: 'select', label: 'Selects' },
+            { id: 'radio', label: 'Radios' },
+            { id: 'checkbox', label: 'Checkboxes' },
+            { id: 'switch', label: 'Switches' },
+            { id: 'textarea', label: 'Textareas' },
+            { id: 'tabs', label: 'Tabs' },
+            { id: 'dialog', label: 'Dialogs' },
+            { id: 'tooltip', label: 'Tooltips' },
+          ] as const).map(tab => (
             <button
-              key={tab}
+              key={tab.id}
               type="button"
-              onClick={() => setActiveComponentTab(tab)}
+              onClick={() => setActiveComponentTab(tab.id)}
               style={{
-                padding: '6px 14px',
+                padding: '6px 12px',
                 borderRadius: '6px',
                 fontSize: '13px',
                 fontWeight: 600,
                 border: '1px solid var(--border-color)',
-                backgroundColor: activeComponentTab === tab ? 'var(--accent-primary)' : 'var(--bg-surface)',
-                color: activeComponentTab === tab ? '#ffffff' : 'var(--fg-default)',
+                backgroundColor: activeComponentTab === tab.id ? 'var(--accent-primary)' : 'var(--bg-surface)',
+                color: activeComponentTab === tab.id ? '#ffffff' : 'var(--fg-default)',
                 cursor: 'pointer',
                 transition: 'all 0.15s ease',
               }}
             >
-              {tab === 'button' && 'Buttons'}
-              {tab === 'input' && 'Inputs'}
-              {tab === 'select' && 'Selects'}
-              {tab === 'radio' && 'Radio Buttons'}
+              {tab.label}
             </button>
           ))}
         </div>
@@ -130,6 +136,12 @@ export const AllSystemsPage: React.FC<AllSystemsPageProps> = ({
                 {activeComponentTab === 'input' && <components.Input />}
                 {activeComponentTab === 'select' && <components.Select />}
                 {activeComponentTab === 'radio' && <components.Radio />}
+                {activeComponentTab === 'checkbox' && <components.Checkbox />}
+                {activeComponentTab === 'switch' && <components.Switch />}
+                {activeComponentTab === 'textarea' && <components.Textarea />}
+                {activeComponentTab === 'tabs' && <components.Tabs />}
+                {activeComponentTab === 'dialog' && <components.Dialog />}
+                {activeComponentTab === 'tooltip' && <components.Tooltip />}
               </div>
 
               <div className="card-footer">

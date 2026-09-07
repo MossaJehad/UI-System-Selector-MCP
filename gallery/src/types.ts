@@ -1,4 +1,14 @@
-export type ComponentCategory = 'button' | 'input' | 'select' | 'radio';
+export type ComponentCategory =
+  | 'button'
+  | 'input'
+  | 'select'
+  | 'radio'
+  | 'checkbox'
+  | 'switch'
+  | 'textarea'
+  | 'tabs'
+  | 'dialog'
+  | 'tooltip';
 
 export type SystemCategory =
   | 'tech-giant'
@@ -34,12 +44,24 @@ export interface DesignSystemMeta {
     inputs: string[];
     selects: string[];
     radios: string[];
+    checkboxes?: string[];
+    switches?: string[];
+    textareas?: string[];
+    tabs?: string[];
+    dialogs?: string[];
+    tooltips?: string[];
   };
   canonicalCode: {
     button: string;
     input: string;
     select: string;
     radio: string;
+    checkbox: string;
+    switch: string;
+    textarea: string;
+    tabs: string;
+    dialog: string;
+    tooltip: string;
   };
 }
 
@@ -48,6 +70,12 @@ export interface DesignSystemComponents {
   Input: React.FC;
   Select: React.FC;
   Radio: React.FC;
+  Checkbox: React.FC;
+  Switch: React.FC;
+  Textarea: React.FC;
+  Tabs: React.FC;
+  Dialog: React.FC;
+  Tooltip: React.FC;
 }
 
 export interface DesignSystemEntry {

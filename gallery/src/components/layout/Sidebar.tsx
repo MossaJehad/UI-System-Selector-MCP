@@ -22,6 +22,19 @@ const CATEGORIES: { id: string; label: string }[] = [
   { id: 'specialty-retro', label: 'Specialty & Retro' },
 ];
 
+const COMPONENTS = [
+  { id: 'button', label: 'Buttons' },
+  { id: 'input', label: 'Inputs' },
+  { id: 'select', label: 'Selects' },
+  { id: 'radio', label: 'Radios' },
+  { id: 'checkbox', label: 'Checkboxes' },
+  { id: 'switch', label: 'Switches' },
+  { id: 'textarea', label: 'Textareas' },
+  { id: 'tabs', label: 'Tabs' },
+  { id: 'dialog', label: 'Dialogs' },
+  { id: 'tooltip', label: 'Tooltips' },
+];
+
 export const Sidebar: React.FC<SidebarProps> = ({
   systems,
   selectedCategory,
@@ -37,6 +50,28 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
   return (
     <aside className={`app-sidebar ${isMobileOpen ? 'mobile-open' : ''}`}>
+      <div>
+        <div className="sidebar-heading">Components (10)</div>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4px', marginBottom: '16px' }}>
+          {COMPONENTS.map(c => {
+            const isActive = currentRoute === `/components/${c.id}`;
+            return (
+              <a
+                key={c.id}
+                href={`#/components/${c.id}`}
+                className={`category-item ${isActive ? 'active' : ''}`}
+                style={{ padding: '5px 8px', fontSize: '12px', textAlign: 'left', textDecoration: 'none' }}
+                onClick={() => {
+                  if (isMobileOpen) onCloseMobile();
+                }}
+              >
+                <span>{c.label}</span>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+
       <div>
         <div className="sidebar-heading">Filter by Domain</div>
         <div className="category-filter-list">

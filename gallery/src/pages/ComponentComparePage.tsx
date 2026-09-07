@@ -33,6 +33,36 @@ const TITLES: Record<ComponentCategory, { title: string; subtitle: string }> = {
     subtitle:
       'Compare radio button controls and interactive radio groups. Observe differences in circle sizes, brand accent colors, inset pips, and keyboard focus states.',
   },
+  checkbox: {
+    title: 'Checkbox Component Comparison',
+    subtitle:
+      'Compare checkbox controls across 44 design systems. Inspect single consent selections, multi-select groups, indeterminate states, and system-specific corner radii and brand accents.',
+  },
+  switch: {
+    title: 'Switch / Toggle Comparison',
+    subtitle:
+      'Compare binary toggle switches across design systems. Test live toggling for automated backups and debug flags, noting pill vs. square track contours, thumb transitions, and focus outlines.',
+  },
+  textarea: {
+    title: 'Textarea Field Comparison',
+    subtitle:
+      'Compare multiline text inputs across systems. Evaluate dynamic character count trackers, placeholder styling, error states, and system-specific bottom border vs boxed border styling.',
+  },
+  tabs: {
+    title: 'Tabs Navigation Comparison',
+    subtitle:
+      'Compare tab navigation components across 44 design systems. Experience accessible keyboard navigation (Left/Right arrow keys), segmented pills, 3D bevels, and active underline indicators.',
+  },
+  dialog: {
+    title: 'Dialog / Modal Comparison',
+    subtitle:
+      'Compare interactive modal dialogs across systems. Trigger full-screen backdrops, keyboard dismissal (Esc), close buttons, and system-specific surface radiuses (from 28px in Material 3 to beveled 3D windows in Win98).',
+  },
+  tooltip: {
+    title: 'Tooltip Component Comparison',
+    subtitle:
+      'Compare contextual tooltip overlays. Test hover and keyboard focus triggers, directional indicator pointers, and authentic brand styling across enterprise, developer, and civic systems.',
+  },
 };
 
 export const ComponentComparePage: React.FC<ComponentComparePageProps> = ({
@@ -98,6 +128,24 @@ export const ComponentComparePage: React.FC<ComponentComparePageProps> = ({
           } else if (componentType === 'radio') {
             compNode = <components.Radio />;
             snippet = meta.canonicalCode.radio;
+          } else if (componentType === 'checkbox') {
+            compNode = <components.Checkbox />;
+            snippet = meta.canonicalCode.checkbox;
+          } else if (componentType === 'switch') {
+            compNode = <components.Switch />;
+            snippet = meta.canonicalCode.switch;
+          } else if (componentType === 'textarea') {
+            compNode = <components.Textarea />;
+            snippet = meta.canonicalCode.textarea;
+          } else if (componentType === 'tabs') {
+            compNode = <components.Tabs />;
+            snippet = meta.canonicalCode.tabs;
+          } else if (componentType === 'dialog') {
+            compNode = <components.Dialog />;
+            snippet = meta.canonicalCode.dialog;
+          } else if (componentType === 'tooltip') {
+            compNode = <components.Tooltip />;
+            snippet = meta.canonicalCode.tooltip;
           }
 
           return (

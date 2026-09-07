@@ -55,56 +55,33 @@ export const App: React.FC = () => {
       return <SystemDetailPage systemId={systemId} entries={SYSTEM_LIST} />;
     }
 
-    if (currentRoute === '/components/button') {
-      return (
-        <ComponentComparePage
-          componentType="button"
-          entries={SYSTEM_LIST}
-          searchQuery={searchQuery}
-          onSearchChange={setSearchQuery}
-          selectedCategory={selectedCategory}
-          onCategoryChange={setSelectedCategory}
-        />
-      );
-    }
+    const validComponents: ComponentCategory[] = [
+      'button',
+      'input',
+      'select',
+      'radio',
+      'checkbox',
+      'switch',
+      'textarea',
+      'tabs',
+      'dialog',
+      'tooltip',
+    ];
 
-    if (currentRoute === '/components/input') {
-      return (
-        <ComponentComparePage
-          componentType="input"
-          entries={SYSTEM_LIST}
-          searchQuery={searchQuery}
-          onSearchChange={setSearchQuery}
-          selectedCategory={selectedCategory}
-          onCategoryChange={setSelectedCategory}
-        />
-      );
-    }
-
-    if (currentRoute === '/components/select') {
-      return (
-        <ComponentComparePage
-          componentType="select"
-          entries={SYSTEM_LIST}
-          searchQuery={searchQuery}
-          onSearchChange={setSearchQuery}
-          selectedCategory={selectedCategory}
-          onCategoryChange={setSelectedCategory}
-        />
-      );
-    }
-
-    if (currentRoute === '/components/radio') {
-      return (
-        <ComponentComparePage
-          componentType="radio"
-          entries={SYSTEM_LIST}
-          searchQuery={searchQuery}
-          onSearchChange={setSearchQuery}
-          selectedCategory={selectedCategory}
-          onCategoryChange={setSelectedCategory}
-        />
-      );
+    if (currentRoute.startsWith('/components/')) {
+      const comp = currentRoute.replace('/components/', '') as ComponentCategory;
+      if (validComponents.includes(comp)) {
+        return (
+          <ComponentComparePage
+            componentType={comp}
+            entries={SYSTEM_LIST}
+            searchQuery={searchQuery}
+            onSearchChange={setSearchQuery}
+            selectedCategory={selectedCategory}
+            onCategoryChange={setSelectedCategory}
+          />
+        );
+      }
     }
 
     if (currentRoute === '/about') {
