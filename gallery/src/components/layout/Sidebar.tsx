@@ -1,5 +1,5 @@
-import React from 'react';
-import { DesignSystemMeta, SystemCategory } from '../../types.ts';
+import React, { useState, useMemo } from 'react';
+import { DesignSystemMeta } from '../../types.ts';
 
 interface SidebarProps {
   systems: DesignSystemMeta[];
@@ -11,7 +11,7 @@ interface SidebarProps {
 }
 
 const CATEGORIES: { id: string; label: string }[] = [
-  { id: 'all', label: 'All Categories' },
+  { id: 'all', label: 'All Domains' },
   { id: 'tech-giant', label: 'Tech Giants' },
   { id: 'enterprise', label: 'Enterprise & Cloud' },
   { id: 'developer-tools', label: 'Developer Tools' },
@@ -43,10 +43,23 @@ export const Sidebar: React.FC<SidebarProps> = ({
   isMobileOpen,
   onCloseMobile,
 }) => {
-  const filteredSystems =
-    selectedCategory === 'all'
+  const [sidebarFilter, setSidebarFilter] = useState('');
+
+  const filteredSystems = useMemo(() => {
+    let list = selectedCategory === 'all'
       ? systems
       : systems.filter(s => s.category === selectedCategory);
+
+    if (sidebarFilter.trim()) {
+      const q = sidebarFilter.toLowerCase().trim();
+      list = list.filter(s =>
+        s.name.toLowerCase().includes(q) ||
+        s.organization.toLowerCase().includes(q) ||
+        s.id.toLowerCase().includes(q)
+      );
+    }
+    return list;
+  }, [systems, selectedCategory, sidebarFilter]);
 
   return (
     <aside className={`app-sidebar ${isMobileOpen ? 'mobile-open' : ''}`}>
@@ -99,11 +112,34 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </div>
       </div>
 
-      <div style={{ flex: 1, overflowY: 'auto' }}>
-        <div className="sidebar-heading">
-          Systems ({filteredSystems.length})
+      <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column' }}>
+        <div className="sidebar-heading" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <span>Systems ({filteredSystems.length})</span>
+          <span style={{ fontSize: '10px', textTransform: 'none', color: 'var(--fg-muted)' }}>
+            Total: {systems.length}
+          </span>
         </div>
-        <div className="system-nav-list">
+
+        {/* Quick search inside sidebar */}
+        <div style={{ marginBottom: '8px' }}>
+          <input
+            type="text"
+            placeholder="Filter systems..."
+            value={sidebarFilter}
+            onChange={e => setSidebarFilter(e.target.value)}
+            style={{
+              width: '100%',
+              padding: '5px 8px',
+              fontSize: '12px',
+              borderRadius: '4px',
+              border: '1px solid var(--border-color)',
+              background: 'var(--bg-surface)',
+              color: 'var(--fg-default)',
+            }}
+          />
+        </div>
+
+        <div className="system-nav-list" style={{ flex: 1 }}>
           {filteredSystems.map(sys => {
             const isActive = currentRoute === `/systems/${sys.id}`;
             return (
@@ -115,19 +151,29 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   if (isMobileOpen) onCloseMobile();
                 }}
               >
-                <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <span style={{ display: 'flex', alignItems: 'center', gap: '8px', overflow: 'hidden' }}>
                   <span
                     style={{
                       width: '8px',
                       height: '8px',
+                      minWidth: '8px',
                       borderRadius: '50%',
                       backgroundColor: sys.tokens.primaryColor,
                       display: 'inline-block',
                     }}
                   />
-                  <span>{sys.name}</span>
+                  <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                    {sys.name}
+                  </span>
                 </span>
-                <span style={{ fontSize: '11px', opacity: 0.6 }}>{sys.organization}</span>
+                <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  {sys.status === 'legacy' && (
+                    <span style={{ fontSize: '9px', padding: '1px 3px', borderRadius: '3px', background: '#fef3c7', color: '#92400e' }}>
+                      Legacy
+                    </span>
+                  )}
+                  <span style={{ fontSize: '11px', opacity: 0.6, whiteSpace: 'nowrap' }}>{sys.organization}</span>
+                </span>
               </a>
             );
           })}

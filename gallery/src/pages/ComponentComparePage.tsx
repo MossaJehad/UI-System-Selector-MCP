@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import { ComponentCategory, DesignSystemEntry } from '../types.ts';
 import { ComponentCard } from '../components/common/ComponentCard.tsx';
 import { SearchFilterBar } from '../components/common/SearchFilterBar.tsx';
@@ -12,11 +12,13 @@ interface ComponentComparePageProps {
   onCategoryChange: (category: string) => void;
 }
 
+const PAGE_SIZE = 24;
+
 const TITLES: Record<ComponentCategory, { title: string; subtitle: string }> = {
   button: {
     title: 'Button Component Comparison',
     subtitle:
-      'Compare Primary, Secondary, Tertiary/Ghost, Danger, and Disabled buttons across 44 design systems. Notice the distinct corner radii (from 0px rectangular in Carbon to 9999px pills in Material), hover elevations, and double-ring focus treatments.',
+      'Compare Primary, Secondary, Tertiary/Ghost, Danger, and Disabled buttons across real design systems. Notice the distinct corner radii (from 0px rectangular in Carbon & Helsinki to 9999px pills in Material & Gestalt), hover elevations, and double-ring focus treatments.',
   },
   input: {
     title: 'Input Field Comparison',
@@ -26,7 +28,7 @@ const TITLES: Record<ComponentCategory, { title: string; subtitle: string }> = {
   select: {
     title: 'Select Dropdown Comparison',
     subtitle:
-      'Compare interactive HTML select controls across 44 design systems. All selects are fully functional with native options, custom indicator chevrons, and system-specific heights and radii.',
+      'Compare interactive HTML select controls across real design systems. All selects are fully functional with native options, custom indicator chevrons, and system-specific heights and radii.',
   },
   radio: {
     title: 'Radio Button Comparison',
@@ -36,12 +38,12 @@ const TITLES: Record<ComponentCategory, { title: string; subtitle: string }> = {
   checkbox: {
     title: 'Checkbox Component Comparison',
     subtitle:
-      'Compare checkbox controls across 44 design systems. Inspect single consent selections, multi-select groups, indeterminate states, and system-specific corner radii and brand accents.',
+      'Compare checkbox controls across real design systems. Inspect single consent selections, multi-select groups, indeterminate states, and system-specific corner radii and brand accents.',
   },
   switch: {
     title: 'Switch / Toggle Comparison',
     subtitle:
-      'Compare binary toggle switches across design systems. Test live toggling for automated backups and debug flags, noting pill vs. square track contours, thumb transitions, and focus outlines.',
+      'Compare binary toggle switches across design systems. Test live toggling for automated backups and debug flags, noting pill vs. square track contours, thumb transitions, and authentic notices for government systems that intentionally omit switches for accessibility.',
   },
   textarea: {
     title: 'Textarea Field Comparison',
@@ -51,7 +53,7 @@ const TITLES: Record<ComponentCategory, { title: string; subtitle: string }> = {
   tabs: {
     title: 'Tabs Navigation Comparison',
     subtitle:
-      'Compare tab navigation components across 44 design systems. Experience accessible keyboard navigation (Left/Right arrow keys), segmented pills, 3D bevels, and active underline indicators.',
+      'Compare tab navigation components across real design systems. Experience accessible keyboard navigation (Left/Right arrow keys), segmented pills, 3D bevels, and active underline indicators.',
   },
   dialog: {
     title: 'Dialog / Modal Comparison',
@@ -61,7 +63,7 @@ const TITLES: Record<ComponentCategory, { title: string; subtitle: string }> = {
   tooltip: {
     title: 'Tooltip Component Comparison',
     subtitle:
-      'Compare contextual tooltip overlays. Test hover and keyboard focus triggers, directional indicator pointers, and authentic brand styling across enterprise, developer, and civic systems.',
+      'Compare contextual tooltip overlays. Test hover and keyboard focus triggers, directional indicator pointers, and authentic accessibility notices for civic systems that omit floating tooltips.',
   },
 };
 
@@ -74,28 +76,137 @@ export const ComponentComparePage: React.FC<ComponentComparePageProps> = ({
   onCategoryChange,
 }) => {
   const info = TITLES[componentType];
+  const [selectedStatus, setSelectedStatus] = useState('all');
+  const [selectedType, setSelectedType] = useState('all');
+  const [selectedLetter, setSelectedLetter] = useState('All');
+  const [currentPage, setCurrentPage] = useState(1);
 
-  const filtered = entries.filter(entry => {
-    const m = entry.meta;
-    const matchesCategory =
-      selectedCategory === 'all' || m.category === selectedCategory;
-    const query = searchQuery.toLowerCase().trim();
-    const matchesSearch =
-      query === '' ||
-      m.name.toLowerCase().includes(query) ||
-      m.organization.toLowerCase().includes(query) ||
-      m.categoryLabel.toLowerCase().includes(query) ||
-      m.description.toLowerCase().includes(query);
+  const filtered = useMemo(() => {
+    return entries.filter(entry => {
+      const m = entry.meta;
 
-    return matchesCategory && matchesSearch;
-  });
+      // Category filter
+      if (selectedCategory !== 'all' && m.category !== selectedCategory) {
+        return false;
+      }
+
+      // Status filter
+      if (selectedStatus === 'active' && m.status !== 'active') {
+        return false;
+      }
+      if (selectedStatus === 'legacy' && m.status !== 'legacy' && m.status !== 'deprecated') {
+        return false;
+      }
+
+      // Type filter
+      if (selectedType !== 'all' && m.type !== selectedType) {
+        return false;
+      }
+
+      // Letter filter
+      if (selectedLetter !== 'All') {
+        if (m.name.charAt(0).toUpperCase() !== selectedLetter) {
+          return false;
+        }
+      }
+
+      // Search query
+      const query = searchQuery.toLowerCase().trim();
+      if (query !== '') {
+        const matchesName = m.name.toLowerCase().includes(query);
+        const matchesOrg = m.organization.toLowerCase().includes(query);
+        const matchesCat = m.categoryLabel.toLowerCase().includes(query);
+        const matchesDesc = m.description.toLowerCase().includes(query);
+        const matchesId = m.id.toLowerCase().includes(query);
+        if (!matchesName && !matchesOrg && !matchesCat && !matchesDesc && !matchesId) {
+          return false;
+        }
+      }
+
+      return true;
+    });
+  }, [entries, selectedCategory, selectedStatus, selectedType, selectedLetter, searchQuery]);
+
+  const handleCategoryChange = (cat: string) => {
+    onCategoryChange(cat);
+    setCurrentPage(1);
+  };
+
+  const handleStatusChange = (status: string) => {
+    setSelectedStatus(status);
+    setCurrentPage(1);
+  };
+
+  const handleTypeChange = (type: string) => {
+    setSelectedType(type);
+    setCurrentPage(1);
+  };
+
+  const handleLetterChange = (letter: string) => {
+    setSelectedLetter(letter);
+    setCurrentPage(1);
+  };
+
+  const handleSearchChange = (query: string) => {
+    onSearchChange(query);
+    setCurrentPage(1);
+  };
+
+  // Pagination
+  const totalPages = Math.ceil(filtered.length / PAGE_SIZE) || 1;
+  const paginatedEntries = useMemo(() => {
+    const start = (currentPage - 1) * PAGE_SIZE;
+    return filtered.slice(start, start + PAGE_SIZE);
+  }, [filtered, currentPage]);
+
+  const renderComponent = (entry: DesignSystemEntry) => {
+    const { components } = entry;
+    switch (componentType) {
+      case 'button':
+        return <components.Button />;
+      case 'input':
+        return <components.Input />;
+      case 'select':
+        return <components.Select />;
+      case 'radio':
+        return <components.Radio />;
+      case 'checkbox':
+        return <components.Checkbox />;
+      case 'switch':
+        return <components.Switch />;
+      case 'textarea':
+        return <components.Textarea />;
+      case 'tabs':
+        return <components.Tabs />;
+      case 'dialog':
+        return <components.Dialog />;
+      case 'tooltip':
+        return <components.Tooltip />;
+      default:
+        return <components.Button />;
+    }
+  };
 
   return (
     <div>
       <div style={{ marginBottom: '28px' }}>
-        <h1 style={{ fontSize: '28px', fontWeight: 800, letterSpacing: '-0.5px', marginBottom: '8px' }}>
-          {info.title}
-        </h1>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+          <h1 style={{ fontSize: '28px', fontWeight: 800, letterSpacing: '-0.5px', margin: 0 }}>
+            {info.title}
+          </h1>
+          <span
+            style={{
+              padding: '2px 8px',
+              borderRadius: '9999px',
+              backgroundColor: 'var(--accent-subtle, rgba(37, 99, 235, 0.1))',
+              color: 'var(--accent-primary)',
+              fontSize: '13px',
+              fontWeight: 700,
+            }}
+          >
+            {entries.length} Systems
+          </span>
+        </div>
         <p style={{ color: 'var(--fg-muted)', fontSize: '15px', maxWidth: '900px', lineHeight: 1.6 }}>
           {info.subtitle}
         </p>
@@ -103,59 +214,30 @@ export const ComponentComparePage: React.FC<ComponentComparePageProps> = ({
 
       <SearchFilterBar
         searchQuery={searchQuery}
-        onSearchChange={onSearchChange}
+        onSearchChange={handleSearchChange}
         selectedCategory={selectedCategory}
-        onCategoryChange={onCategoryChange}
+        onCategoryChange={handleCategoryChange}
+        selectedStatus={selectedStatus}
+        onStatusChange={handleStatusChange}
+        selectedType={selectedType}
+        onTypeChange={handleTypeChange}
+        selectedLetter={selectedLetter}
+        onLetterChange={handleLetterChange}
         totalCount={entries.length}
         filteredCount={filtered.length}
       />
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-        {filtered.map(entry => {
-          const { meta, components } = entry;
-          let compNode: React.ReactNode = null;
-          let snippet = '';
-
-          if (componentType === 'button') {
-            compNode = <components.Button />;
-            snippet = meta.canonicalCode.button;
-          } else if (componentType === 'input') {
-            compNode = <components.Input />;
-            snippet = meta.canonicalCode.input;
-          } else if (componentType === 'select') {
-            compNode = <components.Select />;
-            snippet = meta.canonicalCode.select;
-          } else if (componentType === 'radio') {
-            compNode = <components.Radio />;
-            snippet = meta.canonicalCode.radio;
-          } else if (componentType === 'checkbox') {
-            compNode = <components.Checkbox />;
-            snippet = meta.canonicalCode.checkbox;
-          } else if (componentType === 'switch') {
-            compNode = <components.Switch />;
-            snippet = meta.canonicalCode.switch;
-          } else if (componentType === 'textarea') {
-            compNode = <components.Textarea />;
-            snippet = meta.canonicalCode.textarea;
-          } else if (componentType === 'tabs') {
-            compNode = <components.Tabs />;
-            snippet = meta.canonicalCode.tabs;
-          } else if (componentType === 'dialog') {
-            compNode = <components.Dialog />;
-            snippet = meta.canonicalCode.dialog;
-          } else if (componentType === 'tooltip') {
-            compNode = <components.Tooltip />;
-            snippet = meta.canonicalCode.tooltip;
-          }
-
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '24px' }}>
+        {paginatedEntries.map(entry => {
+          const { meta } = entry;
           return (
             <ComponentCard
               key={meta.id}
               meta={meta}
               componentName={componentType}
-              canonicalSnippet={snippet}
+              canonicalSnippet={meta.canonicalCode[componentType] || ''}
             >
-              {compNode}
+              {renderComponent(entry)}
             </ComponentCard>
           );
         })}
@@ -172,14 +254,118 @@ export const ComponentComparePage: React.FC<ComponentComparePageProps> = ({
           >
             <div style={{ fontSize: '32px', marginBottom: '12px' }}>🔍</div>
             <h3 style={{ fontSize: '18px', fontWeight: 700, marginBottom: '6px' }}>
-              No matching design systems
+              No design systems found
             </h3>
-            <p style={{ color: 'var(--fg-muted)', fontSize: '14px' }}>
-              Try searching with different keywords or selecting &ldquo;All&rdquo;.
+            <p style={{ color: 'var(--fg-muted)', fontSize: '14px', maxWidth: '400px', margin: '0 auto 16px' }}>
+              Try searching with different terms or selecting &ldquo;All Domains&rdquo;.
             </p>
+            <button
+              type="button"
+              onClick={() => {
+                handleSearchChange('');
+                handleCategoryChange('all');
+                handleStatusChange('all');
+                handleTypeChange('all');
+                handleLetterChange('All');
+              }}
+              style={{
+                padding: '8px 16px',
+                borderRadius: '6px',
+                backgroundColor: 'var(--accent-primary)',
+                color: '#ffffff',
+                border: 'none',
+                fontWeight: 600,
+                fontSize: '13px',
+                cursor: 'pointer',
+              }}
+            >
+              Reset All Filters
+            </button>
           </div>
         )}
       </div>
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            marginTop: '28px',
+            paddingTop: '16px',
+            borderTop: '1px solid var(--border-subtle)',
+            flexWrap: 'wrap',
+            gap: '12px',
+          }}
+        >
+          <div style={{ fontSize: '13px', color: 'var(--fg-muted)' }}>
+            Showing {((currentPage - 1) * PAGE_SIZE) + 1}–{Math.min(currentPage * PAGE_SIZE, filtered.length)} of {filtered.length} systems
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <button
+              type="button"
+              disabled={currentPage === 1}
+              onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+              style={{
+                padding: '6px 12px',
+                borderRadius: '6px',
+                border: '1px solid var(--border-color)',
+                background: 'var(--bg-surface)',
+                color: currentPage === 1 ? 'var(--fg-muted)' : 'var(--fg-default)',
+                cursor: currentPage === 1 ? 'not-allowed' : 'pointer',
+                opacity: currentPage === 1 ? 0.5 : 1,
+                fontSize: '13px',
+                fontWeight: 500,
+              }}
+            >
+              ← Previous
+            </button>
+
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+              <button
+                key={page}
+                type="button"
+                onClick={() => setCurrentPage(page)}
+                style={{
+                  width: '32px',
+                  height: '32px',
+                  borderRadius: '6px',
+                  border: '1px solid',
+                  borderColor: currentPage === page ? 'var(--accent-primary)' : 'var(--border-color)',
+                  background: currentPage === page ? 'var(--accent-primary)' : 'var(--bg-surface)',
+                  color: currentPage === page ? '#ffffff' : 'var(--fg-default)',
+                  cursor: 'pointer',
+                  fontWeight: currentPage === page ? 700 : 500,
+                  fontSize: '13px',
+                }}
+              >
+                {page}
+              </button>
+            ))}
+
+            <button
+              type="button"
+              disabled={currentPage === totalPages}
+              onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+              style={{
+                padding: '6px 12px',
+                borderRadius: '6px',
+                border: '1px solid var(--border-color)',
+                background: 'var(--bg-surface)',
+                color: currentPage === totalPages ? 'var(--fg-muted)' : 'var(--fg-default)',
+                cursor: currentPage === totalPages ? 'not-allowed' : 'pointer',
+                opacity: currentPage === totalPages ? 0.5 : 1,
+                fontSize: '13px',
+                fontWeight: 500,
+              }}
+            >
+              Next →
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

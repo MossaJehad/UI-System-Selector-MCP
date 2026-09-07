@@ -10,6 +10,19 @@ export type ComponentCategory =
   | 'dialog'
   | 'tooltip';
 
+export type SystemStatus =
+  | 'active'
+  | 'legacy'
+  | 'deprecated'
+  | 'unknown';
+
+export type SystemType =
+  | 'design-system'
+  | 'ui-library'
+  | 'platform-guidelines'
+  | 'government-design-system'
+  | 'legacy-ui';
+
 export type SystemCategory =
   | 'tech-giant'
   | 'enterprise'
@@ -19,6 +32,19 @@ export type SystemCategory =
   | 'automotive'
   | 'modern-react'
   | 'specialty-retro';
+
+export interface ComponentSupport {
+  button: boolean;
+  input: boolean;
+  select: boolean;
+  radio: boolean;
+  checkbox: boolean;
+  switch: boolean;
+  textarea: boolean;
+  tabs: boolean;
+  dialog: boolean;
+  tooltip: boolean;
+}
 
 export interface SystemTokens {
   primaryColor: string;
@@ -32,13 +58,20 @@ export interface DesignSystemMeta {
   id: string;
   name: string;
   organization: string;
+  status: SystemStatus;
+  type: SystemType;
   category: SystemCategory;
   categoryLabel: string;
   docsUrl: string;
+  officialUrl?: string;
   repoUrl?: string;
   description: string;
   aestheticNotes: string;
   tokens: SystemTokens;
+  platforms?: string[];
+  framework?: string;
+  openSource?: boolean;
+  componentSupport: ComponentSupport;
   variants: {
     buttons: string[];
     inputs: string[];

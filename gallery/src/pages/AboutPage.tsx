@@ -8,7 +8,7 @@ export const AboutPage: React.FC = () => {
           About Design Systems Gallery
         </h1>
         <p style={{ color: 'var(--fg-default)', fontSize: '16px', lineHeight: 1.6 }}>
-          <strong>Design Systems Gallery</strong> is an interactive visual encyclopedia and component reference library demonstrating how the <em>same UI components</em> look and behave across <strong>44 real production design systems</strong>.
+          <strong>Design Systems Gallery</strong> is an interactive visual encyclopedia and component reference library demonstrating how the <em>same UI components</em> look and behave across <strong>114 real production design systems</strong>.
         </p>
       </div>
 
@@ -24,11 +24,11 @@ export const AboutPage: React.FC = () => {
             Meanwhile, global software leaders and public institutions have engineered dozens of <strong>battle-tested, domain-optimized design systems</strong>:
           </p>
           <ul style={{ paddingLeft: '24px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-            <li><strong>GitHub Primer:</strong> Engineered for developers, code diffs, and low cognitive overhead.</li>
-            <li><strong>AWS Cloudscape:</strong> High-density operational cloud management consoles.</li>
-            <li><strong>IBM Carbon:</strong> Structured enterprise data analytics with Section 508 accessibility.</li>
-            <li><strong>Shopify Polaris:</strong> Gold standard merchant e-commerce administration.</li>
-            <li><strong>GOV.UK &amp; USWDS:</strong> High-legibility public accessibility and federal standards.</li>
+            <li><strong>GitHub Primer, Red Hat &amp; GitLab Pajamas:</strong> Engineered for developers, code diffs, and developer workflows.</li>
+            <li><strong>AWS Cloudscape, VMware Clarity &amp; Cisco Momentum:</strong> High-density operational cloud management consoles.</li>
+            <li><strong>IBM Carbon, Esri Calcite &amp; Dynatrace Barista:</strong> Structured enterprise data analytics, geospatial GIS, and telemetry.</li>
+            <li><strong>Shopify Polaris, VTEX &amp; SumUp Circuit:</strong> Gold standard merchant e-commerce and point-of-sale administration.</li>
+            <li><strong>GOV.UK, USWDS, Singapore GovTech, NSW &amp; DSFR:</strong> High-legibility public accessibility and federal standards.</li>
             <li><strong>Porsche &amp; Audi:</strong> Ultra-precise automotive luxury minimalism.</li>
           </ul>
         </div>
@@ -36,11 +36,11 @@ export const AboutPage: React.FC = () => {
 
       <div className="component-card">
         <div className="card-header">
-          <h2 style={{ fontSize: '16px', fontWeight: 700 }}>10 Core Components Implemented</h2>
+          <h2 style={{ fontSize: '16px', fontWeight: 700 }}>10 Core Components Across 114 Systems</h2>
         </div>
         <div className="card-body" style={{ display: 'flex', flexDirection: 'column', gap: '14px', fontSize: '15px', lineHeight: 1.6 }}>
           <p>
-            To provide comprehensive breadth and precision, the gallery implements 10 fundamental interactive components across all 44 systems:
+            To provide comprehensive breadth and precision, the gallery implements 10 fundamental interactive components across all 114 systems:
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '12px', marginTop: '8px' }}>
             <div style={{ padding: '14px', backgroundColor: 'var(--bg-subtle)', borderRadius: 'var(--radius-md)' }}>
@@ -100,6 +100,7 @@ export const AboutPage: React.FC = () => {
             <li><strong>Material Design 3:</strong> 9999px full-pill buttons and floating label styling.</li>
             <li><strong>GOV.UK:</strong> Iconic yellow focus ring (#ffdd00) and heavy 2px black borders.</li>
             <li><strong>98.css:</strong> Authentic 3D beveled Windows 98 operating system borders.</li>
+            <li><strong>Documented Omissions:</strong> Several civic and government guidelines (such as GOV.UK, NHS, Codex, DSFR) deliberately omit components like Switches or Tooltips due to strict cognitive accessibility or touch-target standards. Rather than fabricating fake implementations, the gallery authentically flags them as unsupported with clear documentation context.</li>
             <li><strong>Zero heavy media:</strong> The components themselves are the product. No unnecessary decorative images or illustrations.</li>
           </ul>
         </div>

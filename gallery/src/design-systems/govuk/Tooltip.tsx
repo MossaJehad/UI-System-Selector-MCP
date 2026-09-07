@@ -1,31 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export const Tooltip: React.FC = () => {
-  const [visible, setVisible] = useState(false);
-
   return (
-    <div className="ds-govuk" style={{ display: 'flex', alignItems: 'center', gap: '24px', flexWrap: 'wrap', padding: '16px 0' }}>
-      <div className="ds-tooltip-wrapper-govuk">
-        <button
-          type="button"
-          className="ds-btn-govuk ds-btn-govuk-secondary"
-          onMouseEnter={() => setVisible(true)}
-          onMouseLeave={() => setVisible(false)}
-          onFocus={() => setVisible(true)}
-          onBlur={() => setVisible(false)}
-        >
-          Hover or Focus Me
-        </button>
-
-        <div className={`ds-tooltip-bubble-govuk ${visible ? 'visible' : ''}`} role="tooltip">
-          Security verified: SOC2 AA &amp; ISO 27001
-          <span className="ds-tooltip-arrow-govuk" />
-        </div>
+    <div className="ds-unsupported-card">
+      <div className="ds-unsupported-card-title">
+        Component Not Documented / Omitted by Design
       </div>
-
-      <div style={{ fontSize: '13px', color: 'var(--fg-muted)' }}>
-        Supports mouse hover and keyboard focus states with system-specific tooltip styling.
-      </div>
+      <p className="ds-unsupported-card-desc">
+        This design system avoids floating tooltip hover overlays in favor of always-visible inline helper text and accessible disclosure panels, ensuring full touch and screen-reader parity.
+      </p>
+      <a href="https://design-system.service.gov.uk" target="_blank" rel="noopener noreferrer" className="ds-unsupported-card-link">
+        Consult Official Documentation →
+      </a>
     </div>
   );
 };

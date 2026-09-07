@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { ComponentCategory } from '../../types.ts';
 
+import { DESIGN_SYSTEMS } from '../../registry/data.ts';
+
 interface HeaderProps {
   currentRoute: string;
   theme: 'light' | 'dark';
@@ -56,7 +58,7 @@ export const Header: React.FC<HeaderProps> = ({
         <a href="#/" className="brand-title">
           <span>Design Systems Gallery</span>
         </a>
-        <span className="brand-badge">44 Systems</span>
+        <span className="brand-badge">{DESIGN_SYSTEMS.length} Systems</span>
       </div>
 
       <nav className="header-nav">

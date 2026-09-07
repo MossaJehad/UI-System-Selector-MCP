@@ -81,7 +81,36 @@ export const SystemDetailPage: React.FC<SystemDetailPageProps> = ({
               <span>{meta.name}</span>
             </h1>
           </div>
-          <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
+            <span
+              style={{
+                fontSize: '12px',
+                fontWeight: 600,
+                padding: '4px 8px',
+                borderRadius: '6px',
+                background: meta.status === 'active' ? '#dcfce7' : '#fef3c7',
+                color: meta.status === 'active' ? '#166534' : '#92400e',
+                border: '1px solid',
+                borderColor: meta.status === 'active' ? '#bbf7d0' : '#fde68a',
+                textTransform: 'capitalize',
+              }}
+            >
+              {meta.status}
+            </span>
+            <span
+              style={{
+                fontSize: '12px',
+                fontWeight: 600,
+                padding: '4px 8px',
+                borderRadius: '6px',
+                background: 'var(--bg-subtle)',
+                color: 'var(--fg-default)',
+                border: '1px solid var(--border-color)',
+                textTransform: 'capitalize',
+              }}
+            >
+              {meta.type.replace(/-/g, ' ')}
+            </span>
             <span className="brand-badge">{meta.categoryLabel}</span>
             <a
               href={meta.docsUrl}
@@ -110,6 +139,13 @@ export const SystemDetailPage: React.FC<SystemDetailPageProps> = ({
           <span>Organization: <strong>{meta.organization}</strong></span>
           <span>•</span>
           <span>Category: <strong>{meta.categoryLabel}</strong></span>
+          <span>•</span>
+          <span>
+            Component Coverage:{' '}
+            <strong>
+              {Object.values(meta.componentSupport).filter(Boolean).length}/10 Components Documented
+            </strong>
+          </span>
         </div>
 
         <p className="detail-description">{meta.description}</p>

@@ -32,6 +32,36 @@ export const ComponentCard: React.FC<ComponentCardProps> = ({
             <span>{meta.name}</span>
           </a>
           <span className="org-tag">by {meta.organization}</span>
+          {meta.status === 'legacy' && (
+            <span
+              style={{
+                fontSize: '11px',
+                fontWeight: 600,
+                padding: '2px 6px',
+                borderRadius: '4px',
+                background: '#fef3c7',
+                color: '#92400e',
+                border: '1px solid #fde68a',
+              }}
+            >
+              Legacy
+            </span>
+          )}
+          {meta.status === 'deprecated' && (
+            <span
+              style={{
+                fontSize: '11px',
+                fontWeight: 600,
+                padding: '2px 6px',
+                borderRadius: '4px',
+                background: '#fee2e2',
+                color: '#991b1b',
+                border: '1px solid #fecaca',
+              }}
+            >
+              Deprecated
+            </span>
+          )}
         </div>
 
         <div className="spec-pills">
@@ -56,7 +86,7 @@ export const ComponentCard: React.FC<ComponentCardProps> = ({
         {showCode && (
           <div className="code-box">
             <div style={{ fontSize: '11px', textTransform: 'uppercase', color: 'var(--fg-muted)', marginBottom: '4px' }}>
-              Canonical Code ({meta.name})
+              Canonical Code ({meta.name} - {componentName})
             </div>
             <code>{canonicalSnippet}</code>
           </div>
